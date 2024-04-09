@@ -14,7 +14,8 @@ body {
     background-color: var(--cor-de-fundo);
     font-family: 'Raleway';
     margin: 0;
-    overflow-x: hidden; /* Esconde barra de rolagem horizontal */
+    overflow-x: hidden;
+    /* Esconde barra de rolagem horizontal */
 }
 
 ol,
@@ -34,30 +35,43 @@ a {
 section.menu {
     width: 100%;
     display: flex;
-    justify-content: center; /* Centra horizontalmente el contenido */
-    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center;
+    /* Centra horizontalmente el contenido */
+    align-items: center;
+    /* Centra verticalmente el contenido */
 }
 
 .menu__header {
-    width: 100%; /* Ocupa todo el ancho disponible del viewport */
-    max-width: 85%; /* Ancho máximo permitido */
+    width: 100%;
+    /* Ocupa todo el ancho disponible del viewport */
+    max-width: 85%;
+    /* Ancho máximo permitido */
     height: 88px;
     display: flex;
-    justify-content: center; /* Alinea los elementos del encabezado en los extremos */
-    align-items: center; /* Centra verticalmente los elementos del encabezado */
-     /* Añade espacio interno a los lados del encabezado */
-    background: var(--cor-de-first-section); /* Color de fondo del encabezado */
-    margin-top: 0; /* Elimina el margen superior */
-    padding: 0 20px; /* Añade espacio interno a los lados del encabezado */
+    justify-content: center;
+    /* Alinea los elementos del encabezado en los extremos */
+    align-items: center;
+    /* Centra verticalmente los elementos del encabezado */
+    /* Añade espacio interno a los lados del encabezado */
+    background: var(--cor-de-first-section);
+    /* Color de fondo del encabezado */
+    margin-top: 0;
+    /* Elimina el margen superior */
+    padding: 0 20px;
+    /* Añade espacio interno a los lados del encabezado */
     /* Centra y distribuye el espacio equitativamente */
-    margin: 0 ; /* Centra el encabezado horizontalmente */
+    margin: 0;
+    /* Centra el encabezado horizontalmente */
 }
 
 /* Estilo para el logo en el encabezado */
 .menu__logo {
-    width: 70px; /* Tamaño del logo */
-    height: 40px; /* Mantiene la proporción del logo */
-    margin-right: 10px; /* Margen derecho para separación */
+    width: 70px;
+    /* Tamaño del logo */
+    height: 40px;
+    /* Mantiene la proporción del logo */
+    margin-right: 10px;
+    /* Margen derecho para separación */
 }
 
 .menu__title {
@@ -65,27 +79,34 @@ section.menu {
     font-size: 16px;
     font-weight: bold;
 }
+
 /* Estilo para el icono de menú */
 .menu__toggle {
-    display: none; /* Oculta el icono de menú */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    display: none;
+    /* Oculta el icono de menú */
+    cursor: pointer;
+    /* Cambia el cursor al pasar por encima */
 }
 
 /* Estilo para el icono de barras en el menú */
 .menu__toggle i.fas.fa-bars {
-    font-size: 30px; /* Cambia el tamaño del ícono de barras */
+    font-size: 30px;
+    /* Cambia el tamaño del ícono de barras */
 }
 
 
 .menu__nav {
-    display: block; /* Mostrar el menú en pantallas grandes por defecto */
+    display: block;
+    /* Mostrar el menú en pantallas grandes por defecto */
 }
 
 /* Estilo para la lista del menú */
 .menu__list {
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos de la lista del menú */
-    margin-top: 10px; /* Margen superior para separación */
+    align-items: center;
+    /* Centra verticalmente los elementos de la lista del menú */
+    margin-top: 10px;
+    /* Margen superior para separación */
     font-size: 16px;
     font-size: medium;
     list-style-type: none;
@@ -98,20 +119,25 @@ section.menu {
 
 /* Estilo para el elemento de contacto en la lista del menú */
 .menu__list__item-contacto {
-    margin-left: auto; /* Empuja el elemento de contacto hacia la derecha tanto como sea posible */
+    margin-left: auto;
+    /* Empuja el elemento de contacto hacia la derecha tanto como sea posible */
     font-weight: bold;
 }
 
 /* *Sección Título */
 .title {
     display: flex;
-    justify-content: center; /* Centra horizontalmente en el viewport */
-    align-items: center; /* Centra verticalmente en el viewport */
-    width: 100%; /* Ocupa todo el ancho disponible del viewport */
+    justify-content: center;
+    /* Centra horizontalmente en el viewport */
+    align-items: center;
+    /* Centra verticalmente en el viewport */
+    width: 100%;
+    /* Ocupa todo el ancho disponible del viewport */
 }
 
 .title__div {
-    width: 100%; /* Ancho máximo permitido */
+    width: 100%;
+    /* Ancho máximo permitido */
     max-width: 88%;
     height: 368px;
     display: flex;
@@ -123,15 +149,20 @@ section.menu {
 }
 
 .title__profile {
-    order: 2; /* Cambia el orden del elemento */
-    width: 368px; /* Ancho de la imagen del perfil */
-    height: 368px; /* Altura automática manteniendo la proporción */
+    order: 2;
+    /* Cambia el orden del elemento */
+    width: 368px;
+    /* Ancho de la imagen del perfil */
+    height: 368px;
+    /* Altura automática manteniendo la proporción */
     margin-left: 20px;
 }
 
 .title__container {
-    order: 1; /* Cambia el orden del elemento */
-    flex: 1; /* El contenido ocupará el espacio restante */
+    order: 1;
+    /* Cambia el orden del elemento */
+    flex: 1;
+    /* El contenido ocupará el espacio restante */
     background: var(--cor-de-first-section);
 }
 
@@ -142,7 +173,8 @@ section.menu {
 
 .title__subsection {
     font-size: 22px;
-    margin-bottom: 16px; /* Margen inferior para separación */
+    margin-bottom: 16px;
+    /* Margen inferior para separación */
     font-weight: normal;
 }
 
@@ -157,7 +189,8 @@ section.menu {
 
 .title__network__item a {
     text-decoration: none;
-    color: #333333; /* Color del texto */
+    color: #333333;
+    /* Color del texto */
     display: flex;
     align-items: center;
     margin-right: 20px;
@@ -165,23 +198,27 @@ section.menu {
     font-weight: medium;
 }
 
-
-
 /* *Sección Sobre mí */
 .about {
     background-color: #EAF2FD;
     display: flex;
-    justify-content: center; /* Centra horizontalmente en el viewport */
-    align-items: center; /* Centra verticalmente en el viewport */
-    width: 100%; /* Ocupa todo el ancho disponible del viewport */
+    justify-content: center;
+    /* Centra horizontalmente en el viewport */
+    align-items: center;
+    /* Centra verticalmente en el viewport */
+    width: 100%;
+    /* Ocupa todo el ancho disponible del viewport */
 }
 
 .about__container {
     display: flex;
-    flex-direction: column; /* Cambia a disposición en columna */
+    flex-direction: column;
+    /* Cambia a disposición en columna */
     justify-content: center;
-    align-items: flex-start; /* Alinea los elementos a la izquierda */
-    width: 100%; /* Ancho máximo permitido */
+    align-items: flex-start;
+    /* Alinea los elementos a la izquierda */
+    width: 100%;
+    /* Ancho máximo permitido */
     max-width: 88%;
     height: 255px;
     background-color: #EAF2FD;
@@ -201,44 +238,61 @@ section.menu {
 /* *Sección Skills */
 .skills {
     display: flex;
-    justify-content: center; /* Centra horizontalmente en el viewport */
-    align-items: center; /* Centra verticalmente en el viewport */
-    width: 100%; /* Ocupa todo el ancho disponible del viewport */
+    justify-content: center;
+    /* Centra horizontalmente en el viewport */
+    align-items: center;
+    /* Centra verticalmente en el viewport */
+    width: 100%;
+    /* Ocupa todo el ancho disponible del viewport */
 }
 
 .skills__container {
     display: flex;
-    flex-direction: column; /* Cambia la disposición a columna */
-    justify-content: center; /* Centra verticalmente en el viewport */
-    align-items: center; /* Centra horizontalmente */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 88%; /* Ancho máximo permitido */
-    height: 244px; /* Usar altura completa del viewport */
+    flex-direction: column;
+    /* Cambia la disposición a columna */
+    justify-content: center;
+    /* Centra verticalmente en el viewport */
+    align-items: center;
+    /* Centra horizontalmente */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    max-width: 88%;
+    /* Ancho máximo permitido */
+    height: 244px;
+    /* Usar altura completa del viewport */
     margin-top: 10px;
 }
 
 .skills__title {
     font-size: 32px;
     font-weight: 500;
-    margin-bottom: 24px; /* Espaciado inferior */
+    margin-bottom: 24px;
+    /* Espaciado inferior */
     margin-top: 5px;
 }
 
 .skills__line {
     display: flex;
-    justify-content: space-between; /* Distribuye los elementos con espacio proporcional */
-    align-items:center; /* Centra verticalmente */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
-    width: 100%; /* Ocupa todo el ancho disponible */
+    justify-content: space-between;
+    /* Distribuye los elementos con espacio proporcional */
+    align-items: center;
+    /* Centra verticalmente */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en varias líneas */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
     margin-right: 30px;
     margin-left: 30px;
 }
 
 .skills__box {
     display: flex;
-    flex-direction: column; /* Cambia la disposición a columna */
-    justify-content: flex-end; /* Alinea los elementos al final */
-    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    flex-direction: column;
+    /* Cambia la disposición a columna */
+    justify-content: flex-end;
+    /* Alinea los elementos al final */
+    align-items: flex-start;
+    /* Alinea los elementos a la izquierda */
     width: 185px;
     height: 174px;
     background: var(--cor-de-first-section);
@@ -250,50 +304,68 @@ section.menu {
 }
 
 .skills__name {
-    margin-top: auto; /* Mueve el nombre hacia la parte inferior */
+    margin-top: auto;
+    /* Mueve el nombre hacia la parte inferior */
 }
 
 /* *Sección Hobbies */
 .hobbies {
     display: flex;
-    justify-content: center; /* Centra horizontalmente en el viewport */
-    align-items: center; /* Centra verticalmente en el viewport */
-    width: 100%; /* Ocupa todo el ancho disponible del viewport */
+    justify-content: center;
+    /* Centra horizontalmente en el viewport */
+    align-items: center;
+    /* Centra verticalmente en el viewport */
+    width: 100%;
+    /* Ocupa todo el ancho disponible del viewport */
 }
 
 .hobbies__container {
     display: flex;
-    flex-direction: column; /* Cambia la disposición a columna */
-    justify-content: center; /* Centra verticalmente en el viewport */
-    align-items: center; /* Centra horizontalmente */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 87%; /* Ancho máximo permitido */
-    height: 244px; /* Usar altura completa del viewport */
+    flex-direction: column;
+    /* Cambia la disposición a columna */
+    justify-content: center;
+    /* Centra verticalmente en el viewport */
+    align-items: center;
+    /* Centra horizontalmente */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    max-width: 87%;
+    /* Ancho máximo permitido */
+    height: 244px;
+    /* Usar altura completa del viewport */
     margin-top: 25px;
 }
 
 .hobbies__title {
     font-size: 32px;
     font-weight: 500;
-    margin-bottom: 24px; /* Espaciado inferior */
+    margin-bottom: 24px;
+    /* Espaciado inferior */
     margin-top: 5px;
 }
 
 .hobbies__line {
     display: flex;
-    justify-content: space-between; /* Distribuye los elementos con espacio proporcional */
-    align-items:center; /* Centra verticalmente */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
-    width: 100%; /* Ocupa todo el ancho disponible */
+    justify-content: space-between;
+    /* Distribuye los elementos con espacio proporcional */
+    align-items: center;
+    /* Centra verticalmente */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en varias líneas */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
     margin-right: 30px;
     margin-left: 30px;
 }
 
 .hobbies__box {
     display: flex;
-    flex-direction: column; /* Cambia la disposición a columna */
-    justify-content: flex-end; /* Alinea los elementos al final */
-    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    flex-direction: column;
+    /* Cambia la disposición a columna */
+    justify-content: flex-end;
+    /* Alinea los elementos al final */
+    align-items: flex-start;
+    /* Alinea los elementos a la izquierda */
     width: 185px;
     height: 174px;
     background: var(--cor-de-first-section);
@@ -305,27 +377,37 @@ section.menu {
 }
 
 .hobbies__name {
-    margin-top: auto; /* Mueve el nombre hacia la parte inferior */
+    margin-top: auto;
+    /* Mueve el nombre hacia la parte inferior */
     background-color: #ffffff;
 }
 
 /* *Sección Formación Académica */
 .academic {
     display: flex;
-    justify-content: center; /* Centra verticalmente en el viewport */
-    align-items: center; /* Centra horizontalmente */
-    width: 100%; /* Ocupa todo el ancho disponible */
+    justify-content: center;
+    /* Centra verticalmente en el viewport */
+    align-items: center;
+    /* Centra horizontalmente */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
     background: var(--cor-de-second-section);
-    height: 581px; /* Usar altura completa del viewport */
+    height: 581px;
+    /* Usar altura completa del viewport */
 }
 
 .academic__container {
     display: flex;
-    flex-direction: column; /* Cambia la disposición a columna */
-    justify-content: center; /* Centra verticalmente en el viewport */
-    align-items: center; /* Centra horizontalmente */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    height: 540px; /* Usar altura completa del viewport */
+    flex-direction: column;
+    /* Cambia la disposición a columna */
+    justify-content: center;
+    /* Centra verticalmente en el viewport */
+    align-items: center;
+    /* Centra horizontalmente */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    height: 540px;
+    /* Usar altura completa del viewport */
     margin-bottom: 75px;
 }
 
@@ -338,15 +420,19 @@ section.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; /* Ocupa todo el ancho disponible */
-    max-width:  87%;
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    max-width: 87%;
 }
 
 .academic__courses__box {
     display: flex;
-    flex-direction: column; /* Cambia la disposición a columna */
-    justify-content:center; /* Alinea los elementos al final */
-    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    flex-direction: column;
+    /* Cambia la disposición a columna */
+    justify-content: center;
+    /* Alinea los elementos al final */
+    align-items: flex-start;
+    /* Alinea los elementos a la izquierda */
     width: 368px;
     background: var(--cor-de-first-section);
     height: 280px;
@@ -357,16 +443,19 @@ section.menu {
 .academic__courses__list {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Distribuye los elementos uniformemente */
-    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    justify-content: center;
+    /* Distribuye los elementos uniformemente */
+    align-items: flex-start;
+    /* Alinea los elementos a la izquierda */
     width: 100%;
-    padding: 0;    
+    padding: 0;
 }
 
 .academic__courses__item {
     display: flex;
     justify-content: center;
-    align-items: center; /* Centra verticalmente el contenido */
+    align-items: center;
+    /* Centra verticalmente el contenido */
     width: 100%;
     height: 135px;
     margin-top: 155px;
@@ -377,8 +466,10 @@ section.menu {
     width: 192px;
     height: 130px;
     display: flex;
-    justify-content: center; /* Centra horizontalmente la imagen */
-    align-items: flex-end; /* Centra verticalmente la imagen */
+    justify-content: center;
+    /* Centra horizontalmente la imagen */
+    align-items: flex-end;
+    /* Centra verticalmente la imagen */
 }
 
 
@@ -390,7 +481,8 @@ section.menu {
 .academic__courses__item__subtitle {
     font-size: 16px;
     font-weight: normal;
-    margin: 0; /* Establece margen a cero para eliminar cualquier espacio adicional */
+    margin: 0;
+    /* Establece margen a cero para eliminar cualquier espacio adicional */
 }
 
 
@@ -398,40 +490,53 @@ section.menu {
 
 .experience {
     display: flex;
-    flex-direction: column; /* Cambia la disposición a columna */
-    justify-content: center; /* Alinear los elementos a la izquierda */
-    align-items: center; /* Centra los elementos verticalmente */
-    width: 100%; /* Ocupa todo el ancho disponible del viewport */
+    flex-direction: column;
+    /* Cambia la disposición a columna */
+    justify-content: center;
+    /* Alinear los elementos a la izquierda */
+    align-items: center;
+    /* Centra los elementos verticalmente */
+    width: 100%;
+    /* Ocupa todo el ancho disponible del viewport */
 }
 
 .container {
-    width: 100%; /* Ocupa todo el ancho disponible del viewport */
-    max-width: 87%; /* Ancho máximo permitido */
+    width: 100%;
+    /* Ocupa todo el ancho disponible del viewport */
+    max-width: 87%;
+    /* Ancho máximo permitido */
 }
 
 .experience__section__title {
-    text-align: center; /* Centra el título */
+    text-align: center;
+    /* Centra el título */
     font-size: 32px;
     font-weight: bold;
-    margin-bottom: 32px; /* Espaciado inferior */
+    margin-bottom: 32px;
+    /* Espaciado inferior */
 }
 
 .experience__box {
     display: flex;
-    flex-direction: row; /* Cambia la disposición a fila */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    flex-direction: row;
+    /* Cambia la disposición a fila */
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
     height: 406px;
 }
 
 .experience__img {
     width: 752px;
     height: 406px;
-    margin: 0 30px 0 0; /* Margen derecho para separación */
+    margin: 0 30px 0 0;
+    /* Margen derecho para separación */
 }
 
 .experience__info-container {
-    flex: 1; /* El contenido ocupará el espacio restante */
+    flex: 1;
+    /* El contenido ocupará el espacio restante */
     width: 368px;
     height: 112px;
 }
@@ -449,7 +554,8 @@ section.menu {
 .experience__description {
     display: flex;
     flex-direction: row;
-    align-items: flex-start; /* Alinear los elementos a la izquierda */
+    align-items: flex-start;
+    /* Alinear los elementos a la izquierda */
     width: 100%;
 }
 
@@ -457,18 +563,19 @@ section.menu {
 .experience__repo,
 .experience__demo {
     font-size: 16px;
-    font-weight:normal;
+    font-weight: normal;
 }
 
 .experiencia__botao--repo,
-.experience__botao--demo, 
+.experience__botao--demo,
 button {
     width: 120px;
     height: 51px;
     border: 1px solid var(--cor-de-booton);
     cursor: pointer;
     font-size: 16px;
-    margin-right: 10px; /* Espaciado entre botones */
+    margin-right: 10px;
+    /* Espaciado entre botones */
 }
 
 .experiencia__botao--repo {
@@ -479,26 +586,35 @@ button {
 
 section.formcontato {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    flex-direction: column; /* Cambia la disposición a columna */
-    width: 100%; /* Ocupa todo el ancho disponible del viewport */
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    flex-direction: column;
+    /* Cambia la disposición a columna */
+    width: 100%;
+    /* Ocupa todo el ancho disponible del viewport */
     background: var(--cor-de-second-section);
 }
 
 .formcontato__contacto {
     display: flex;
-    justify-content: space-between; /* Espacio entre la imagen y el texto */
-    align-items: center; /* Centra verticalmente */
-    width: 100%; /* Ancho máximo permitido */
+    justify-content: space-between;
+    /* Espacio entre la imagen y el texto */
+    align-items: center;
+    /* Centra verticalmente */
+    width: 100%;
+    /* Ancho máximo permitido */
     max-width: 87%;
     height: 660px;
 }
 
 .formcontato--box {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
     height: 660px;
 }
 
@@ -509,16 +625,22 @@ section.formcontato {
 }
 
 .formcontato__text {
-    flex: 1; /* El contenido ocupará el espacio restante */
-    text-align:left;
+    flex: 1;
+    /* El contenido ocupará el espacio restante */
+    text-align: left;
     margin-left: 20px;
     width: 660px;
-    height: 559px; /* Cambia la altura a automática para que se ajuste al contenido */
+    height: 559px;
+    /* Cambia la altura a automática para que se ajuste al contenido */
     display: flex;
-    flex-direction: column; /* Cambia la disposición a columna para apilar los elementos */
-    justify-content: center; /* Centra verticalmente el contenido */
-    align-items: flex-start; /* Alinea los elementos a la izquierda */
-    padding: 0 20px 20px 0; /* Añade espacio interno */
+    flex-direction: column;
+    /* Cambia la disposición a columna para apilar los elementos */
+    justify-content: center;
+    /* Centra verticalmente el contenido */
+    align-items: flex-start;
+    /* Alinea los elementos a la izquierda */
+    padding: 0 20px 20px 0;
+    /* Añade espacio interno */
 }
 
 .formcontato__title {
@@ -535,13 +657,14 @@ section.formcontato {
 
 .formcontato__form {
     display: flex;
-    flex-direction: column; /* Cambia la disposición a columna para apilar los elementos */
+    flex-direction: column;
+    /* Cambia la disposición a columna para apilar los elementos */
 }
 
 .formcontato__input,
 .formcontato__textarea {
     width: 656px;
-    height: 56px;  
+    height: 56px;
     margin-bottom: 16px;
     border: none;
 }
@@ -563,7 +686,8 @@ section.formcontato {
 
 .formcontato__input::placeholder,
 .formcontato__textarea::placeholder {
-    padding-left: 10px; /* Agrega padding izquierdo al placeholder */
+    padding-left: 10px;
+    /* Agrega padding izquierdo al placeholder */
 }
 
 /* *Sección Footer */
@@ -580,56 +704,14 @@ section.formcontato {
     color: var(--cor-de-texto)
 }
 
-/* *** Estilos para dispositivos con ancho máximo de 900px *** */
-@media screen and (max-width: 900px) {
-     /* Estilo para el icono de menú */
-    .menu__toggle {
-        margin-right: 20px;
-    }
-    /* Estilo para el menú de navegación */
-    .menu__nav {
-        display: none; /* Ocultar el menú principal por defecto en dispositivos pequeños */
-        width: 25%; /* Ocupar todo el ancho disponible */
-        position: absolute; /* Posicionar de manera absoluta */
-        top: 90px; /* Distancia desde la parte superior */
-        right: 0; /* Pegar al borde derecho */
-        background-color: #f8f9fa; /* Color de fondo */
-        padding: 20px 20px 0 20px; /* Espaciado interno */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
-        z-index: 1; /* Asegurar que esté encima de otros elementos */
-    }
-    /* Estilo para la lista de elementos del menú */
-    .menu__list {
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        padding: 0;
-        list-style-type: none;
-        align-items: flex-start; /* Alinear los elementos a la izquierda */
-    }
-    .menu__list__item,
-    .menu__list__item__contato {
-        margin-bottom: 5px;
-        align-self: flex-start; /* Alinear cada elemento a la izquierda */
-        width: 100%; /* Ocupar todo el ancho disponible */
-        transition: background-color 0.3s ease; /* Transición para cambiar el color de fondo */
-        height: 15px;
-        padding: 8px; /* Ajustar el padding para aumentar el tamaño del área de clic */
-        height: auto; /* Ajustar la altura automáticamente según el contenido */
-    }
-    .menu__list__item:hover,
-    .menu__list__item__contato:hover {
-        background-color: #ddd; /* Cambiar color de fondo en hover */
-        border-radius: 5px;
-        
-    }
-    /* Mostrar el menú principal cuando tiene la clase 'show' */
-    .menu__nav.show {
-        display: block;
-    }
 
+/* *** Estilos para dispositivos con ancho mínimo de 1290px *** */
+@media screen and (min-width: 1290px) and (max-width: 1339px) {
+
+    /* *Sección Título */
     .title__div {
-        width: 100%; /* Ancho máximo permitido */
+        width: 100%;
+        /* Ancho máximo permitido */
         max-width: 88%;
         height: 250px;
         display: flex;
@@ -641,23 +723,477 @@ section.formcontato {
         padding-left: 10px;
     }
 
-    /* Sección del Header/Title/Hero */
     .title__profile {
-    order: 2; /* Cambia el orden del elemento */
-    width: 240px; /* Ancho de la imagen del perfil */
-    height: 240px; /* Altura automática manteniendo la proporción */
-    margin-left: 20px;
-    margin-right: 10px;
+        order: 2;
+        /* Cambia el orden del elemento */
+        width: 240px;
+        /* Ancho de la imagen del perfil */
+        height: 240px;
+        /* Altura automática manteniendo la proporción */
+        margin-left: 20px;
+        margin-right: 10px;
     }
 
     .title__bio {
         font-size: 30px;
         font-weight: bold;
     }
-    
+
     .title__subsection {
         font-size: 16px;
-        margin-bottom: 16px; /* Margen inferior para separación */
+        margin-bottom: 16px;
+        /* Margen inferior para separación */
         font-weight: normal;
+    }
+
+    /* *Sección Sobre mí */
+    .about {
+        background-color: #EAF2FD;
+        display: flex;
+        justify-content: center;
+        /* Centra horizontalmente en el viewport */
+        align-items: center;
+        /* Centra verticalmente en el viewport */
+        width: 100%;
+        /* Ocupa todo el ancho disponible del viewport */
+        height: 275px;
+        padding-bottom: 30px;
+        margin-bottom: 10%;
+    }
+
+    /* *Sección Skills */
+    .skills {
+        display: flex;
+        justify-content: flex-end;
+        /* Centra horizontalmente en el viewport */
+        align-items: center;
+        /* Centra verticalmente en el viewport */
+        width: 100%;
+        /* Ocupa todo el ancho disponible del viewport */
+        padding-top: 30px;
+        height: 40%;
+        /* Usar altura completa del viewport */
+        padding-bottom: 30px;
+        margin-bottom: 15%;
+    }
+
+    .skills__line {
+        justify-content: center;
+        /* Centra los elementos en una línea */
+    }
+
+    .skills__box {
+        width: 150px;
+        /* Reducir el ancho del cuadro */
+        height: 180px;
+        /* Reducir la altura del cuadro */
+        margin: 30px;
+    }
+
+    /* *Sección Hobbies */
+    .hobbies {
+        display: flex;
+        justify-content: flex-end;
+        /* Centra horizontalmente en el viewport */
+        align-items: center;
+        /* Centra verticalmente en el viewport */
+        width: 100%;
+        /* Ocupa todo el ancho disponible del viewport */
+        padding-top: 30px;
+        height: 390px;
+        /* Usar altura completa del viewport */
+        padding-bottom: 10px;
+        margin-bottom: 8%;
+
+    }
+
+    .hobbies__line {
+        justify-content: center;
+        /* Centra los elementos en una línea */
+    }
+
+    .hobbies__box {
+        width: 150px;
+        /* Reducir el ancho del cuadro */
+        height: 180px;
+        /* Reducir la altura del cuadro */
+        margin: 30px;
+    }
+
+    .experience__box {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* *** Estilos para dispositivos con ancho minimo 800px *** */
+@media screen and (min-width: 800px) and (max-width: 1290px) {
+
+    /* Estilo para el icono de menú */
+    .menu__toggle {
+        margin-right: 20px;
+    }
+
+    /* Estilo para el menú de navegación */
+    .menu__nav {
+        display: none;
+        /* Ocultar el menú principal por defecto en dispositivos pequeños */
+        width: 25%;
+        /* Ocupar todo el ancho disponible */
+        position: absolute;
+        /* Posicionar de manera absoluta */
+        top: 90px;
+        /* Distancia desde la parte superior */
+        right: 0;
+        /* Pegar al borde derecho */
+        background-color: #f8f9fa;
+        /* Color de fondo */
+        padding: 20px 20px 0 20px;
+        /* Espaciado interno */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        /* Sombra */
+        z-index: 1;
+    }
+
+    /* Estilo para la lista de elementos del menú */
+    .menu__list {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 0;
+        list-style-type: none;
+        align-items: flex-start;
+        /* Alinear los elementos a la izquierda */
+    }
+
+    .menu__list__item,
+    .menu__list__item__contato {
+        margin-bottom: 5px;
+        align-self: flex-start;
+        /* Alinear cada elemento a la izquierda */
+        width: 100%;
+        /* Ocupar todo el ancho disponible */
+        transition: background-color 0.3s ease;
+        /* Transición para cambiar el color de fondo */
+        height: 15px;
+        padding: 8px;
+        /* Ajustar el padding para aumentar el tamaño del área de clic */
+        height: auto;
+        /* Ajustar la altura automáticamente según el contenido */
+    }
+
+    .menu__list__item:hover,
+    .menu__list__item__contato:hover {
+        background-color: #ddd;
+        /* Cambiar color de fondo en hover */
+        border-radius: 5px;
+
+    }
+
+    /* Mostrar el menú principal cuando tiene la clase 'show' */
+    .menu__nav.show {
+        display: block;
+    }
+
+    /* *Sección Título */
+    .title__div {
+        width: 100%;
+        /* Ancho máximo permitido */
+        max-width: 88%;
+        height: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--cor-de-first-section);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+
+    .title__profile {
+        order: 2;
+        /* Cambia el orden del elemento */
+        width: 240px;
+        /* Ancho de la imagen del perfil */
+        height: 240px;
+        /* Altura automática manteniendo la proporción */
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .title__bio {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .title__subsection {
+        font-size: 16px;
+        margin-bottom: 16px;
+        /* Margen inferior para separación */
+        font-weight: normal;
+    }
+
+    /* *Sección Sobre mí */
+    .about {
+        padding-bottom: 30px;
+        margin-bottom: 5%;
+    }
+
+    /* *Sección Skills */
+    .skills {
+        padding-top: 20px;
+        margin-bottom: 35%;
+    }
+
+    .skills__line {
+        justify-content: center;
+        /* Centra los elementos en una línea */
+    }
+
+    .skills__box {
+        width: 150px;
+        /* Reducir el ancho del cuadro */
+        height: 180px;
+        /* Reducir la altura del cuadro */
+        margin: 30px;
+    }
+
+    /* *Sección Academic */
+    .academic__title {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .academic__courses__box {
+        width: 350px;
+        /* Reducir el ancho del cuadro */
+        height: 250px;
+        /* Reducir la altura del cuadro */
+        margin: 10px;
+    }
+
+    /* *Sección Hobbies */
+    .hobbies {
+        padding-bottom: 20px;
+        margin-bottom: 15%;
+    }
+
+    .hobbies__box {
+        width: 150px;
+        /* Reducir el ancho del cuadro */
+        height: 180px;
+        /* Reducir la altura del cuadro */
+        margin: 30px;
+    }
+
+    /* *Sección Experiencia */
+    .experience__img {
+        width: 400px;
+        height: 360px;
+        margin: 0 30px 0 30px;
+        /* Margen derecho para separación */
+    }
+
+    /* *Sección Formulario de Contacto */
+    .formcontato__img {
+        width: 300px;
+        height: 400px;
+    }
+
+    .formcontato__input,
+    .formcontato__textarea {
+        width: 350px;
+        height: 56px;
+        margin-bottom: 16px;
+        border: none;
+    }
+}
+
+
+
+/* *** Estilos para dispositivos con ancho minimo 800px *** */
+@media screen and (min-width: 800px) and (max-width: 1290px) {
+
+    /* Estilo para el icono de menú */
+    .menu__toggle {
+        margin-right: 20px;
+    }
+
+    /* Estilo para el menú de navegación */
+    .menu__nav {
+        display: none;
+        /* Ocultar el menú principal por defecto en dispositivos pequeños */
+        width: 25%;
+        /* Ocupar todo el ancho disponible */
+        position: absolute;
+        /* Posicionar de manera absoluta */
+        top: 90px;
+        /* Distancia desde la parte superior */
+        right: 0;
+        /* Pegar al borde derecho */
+        background-color: #f8f9fa;
+        /* Color de fondo */
+        padding: 20px 20px 0 20px;
+        /* Espaciado interno */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        /* Sombra */
+        z-index: 1;
+    }
+
+    /* Estilo para la lista de elementos del menú */
+    .menu__list {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 0;
+        list-style-type: none;
+        align-items: flex-start;
+        /* Alinear los elementos a la izquierda */
+    }
+
+    .menu__list__item,
+    .menu__list__item__contato {
+        margin-bottom: 5px;
+        align-self: flex-start;
+        /* Alinear cada elemento a la izquierda */
+        width: 100%;
+        /* Ocupar todo el ancho disponible */
+        transition: background-color 0.3s ease;
+        /* Transición para cambiar el color de fondo */
+        height: 15px;
+        padding: 8px;
+        /* Ajustar el padding para aumentar el tamaño del área de clic */
+        height: auto;
+        /* Ajustar la altura automáticamente según el contenido */
+    }
+
+    .menu__list__item:hover,
+    .menu__list__item__contato:hover {
+        background-color: #ddd;
+        /* Cambiar color de fondo en hover */
+        border-radius: 5px;
+
+    }
+
+    /* Mostrar el menú principal cuando tiene la clase 'show' */
+    .menu__nav.show {
+        display: block;
+    }
+
+    /* *Sección Título */
+    .title__div {
+        width: 100%;
+        /* Ancho máximo permitido */
+        max-width: 88%;
+        height: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--cor-de-first-section);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+
+    .title__profile {
+        order: 2;
+        /* Cambia el orden del elemento */
+        width: 240px;
+        /* Ancho de la imagen del perfil */
+        height: 240px;
+        /* Altura automática manteniendo la proporción */
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .title__bio {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .title__subsection {
+        font-size: 16px;
+        margin-bottom: 16px;
+        /* Margen inferior para separación */
+        font-weight: normal;
+    }
+
+    /* *Sección Sobre mí */
+    .about {
+        margin-bottom: 20%;
+    }
+
+    /* *Sección Skills */
+    .skills {
+        margin-bottom: 35%;
+    }
+
+    .skills__line {
+        justify-content: center;
+        /* Centra los elementos en una línea */
+    }
+
+    .skills__box {
+        width: 150px;
+        /* Reducir el ancho del cuadro */
+        height: 180px;
+        /* Reducir la altura del cuadro */
+        margin: 30px;
+    }
+
+    /* *Sección Academic */
+    .academic__title {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .academic__courses__box {
+        width: 350px;
+        /* Reducir el ancho del cuadro */
+        height: 250px;
+        /* Reducir la altura del cuadro */
+        margin: 10px;
+    }
+
+    /* *Sección Hobbies */
+    .hobbies {
+        padding-bottom: 20px;
+        margin-bottom: 15%;
+    }
+
+    .hobbies__box {
+        width: 150px;
+        /* Reducir el ancho del cuadro */
+        height: 180px;
+        /* Reducir la altura del cuadro */
+        margin: 30px;
+    }
+
+    /* *Sección Experiencia */
+    .experience__img {
+        width: 440px;
+        height: 360px;
+        margin: 0 30px 0 30px;
+        /* Margen derecho para separación */
+    }
+
+    /* *Sección Formulario de Contacto */
+    .formcontato__contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 30px 30px 85px 30px;
+    }
+    .formcontato__img {
+        width: 350px;
+        height: 200px;
+    }
+
+    .formcontato__input,
+    .formcontato__textarea {
+        width: 550px;
+        height: 56px;
+        margin-bottom: 16px;
+        border: none;
     }
 }
