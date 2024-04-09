@@ -3,9 +3,10 @@
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
     --cor-de-fundo: #F5F5F5;
     --cor-de-first-section: #FFFFFF;
-    --cor-de-secundary-section: #EAF2FD;
+    --cor-de-second-section: #EAF2FD;
     --cor-de-booton: #2A7AE4;
     --cor-de-texto: #000000;
+    --cor-de-second-texto: #FFFFFF;
     --cor-de-link: #000;
 }
 
@@ -309,7 +310,7 @@ section.menu {
     justify-content: center; /* Centra verticalmente en el viewport */
     align-items: center; /* Centra horizontalmente */
     width: 100%; /* Ocupa todo el ancho disponible */
-    background: var(--cor-de-secundary-section);
+    background: var(--cor-de-second-section);
     height: 581px; /* Usar altura completa del viewport */
 }
 
@@ -470,13 +471,14 @@ button {
 }
 
 /* *Sección Contacto */
+
 section.formcontato {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
     flex-direction: column; /* Cambia la disposición a columna */
     width: 100%; /* Ocupa todo el ancho disponible del viewport */
-    background-color: #EAF2FD;
+    background: var(--cor-de-second-section);
 }
 
 .formcontato__contacto {
@@ -485,18 +487,14 @@ section.formcontato {
     align-items: center; /* Centra verticalmente */
     width: 100%; /* Ancho máximo permitido */
     max-width: 87%;
-    margin-top: 24px; /* Espaciado superior */
     height: 660px;
-    background-color: #6bffa9;
 }
 
 .formcontato--box {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
-    max-width:  87%;
     height: 660px;
-    background-color: #f56bff;
 }
 
 .formcontato__img {
@@ -507,25 +505,32 @@ section.formcontato {
 
 .formcontato__text {
     flex: 1; /* El contenido ocupará el espacio restante */
-    background-color: #01c017;
     text-align:left;
+    margin-left: 20px;
     width: 660px;
-    height: 596px;
+    height: 559px; /* Cambia la altura a automática para que se ajuste al contenido */
+    display: flex;
+    flex-direction: column; /* Cambia la disposición a columna para apilar los elementos */
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    padding: 0 20px 20px 0; /* Añade espacio interno */
 }
 
 .formcontato__title {
     font-size: 32px;
     font-weight: bold;
+    margin: 15px;
+    margin-top: 23px;
 }
 
 .formcontato__subtext {
     font-size: 16px;
-    margin-top: 16px;
+
 }
 
 .formcontato__form {
-    margin-top: 32px;
-    
+    display: flex;
+    flex-direction: column; /* Cambia la disposición a columna para apilar los elementos */
 }
 
 .formcontato__input,
@@ -545,27 +550,29 @@ section.formcontato {
     height: 51px;
     font-size: 16px;
     font-weight: normal;
-    background-color: rgb(229, 255, 0);
-    color: var(--cor-de-link);
+    background: var(--cor-de-booton);
+    color: var(--cor-de-second-texto);
     border: none;
     cursor: pointer;
 }
 
-/* Sección Footer */.footer {
+.formcontato__input::placeholder,
+.formcontato__textarea::placeholder {
+    padding-left: 10px; /* Agrega padding izquierdo al placeholder */
+}
+
+/* *Sección Footer */
+.footer {
     height: 102px;
     font-size: 16px;
     font-weight: medium;
     text-align: center;
-    background-color: #e02626;
+    background: var(--cor-de-first-section);
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-}
-
-.footer__rodape {
-    /* Estilos adicionales para el contenido dentro del footer */
-    color: white; /* Color del texto */
+    color: var(--cor-de-texto)
 }
 
 /* *** Estilos para dispositivos con ancho máximo de 900px *** */
