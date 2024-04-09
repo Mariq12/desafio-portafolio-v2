@@ -211,7 +211,6 @@ section.menu {
     max-width: 88%; /* Ancho máximo permitido */
     height: 244px; /* Usar altura completa del viewport */
     margin-top: 10px;
-    background-color: #216ad1;
 }
 
 .skills__title {
@@ -227,7 +226,6 @@ section.menu {
     align-items:center; /* Centra verticalmente */
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
     width: 100%; /* Ocupa todo el ancho disponible */
-    background-color: #6bffa9;
     margin-right: 30px;
     margin-left: 30px;
 }
@@ -266,7 +264,6 @@ section.menu {
     align-items: center; /* Centra horizontalmente */
     width: 100%; /* Ocupa todo el ancho disponible */
     max-width: 87%; /* Ancho máximo permitido */
-    background-color: rgb(0, 255, 21);
     height: 244px; /* Usar altura completa del viewport */
     margin-top: 25px;
 }
@@ -284,7 +281,6 @@ section.menu {
     align-items:center; /* Centra verticalmente */
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
     width: 100%; /* Ocupa todo el ancho disponible */
-    background-color: #6bffa9;
     margin-right: 30px;
     margin-left: 30px;
 }
@@ -315,7 +311,7 @@ section.menu {
     justify-content: center; /* Centra verticalmente en el viewport */
     align-items: center; /* Centra horizontalmente */
     width: 100%; /* Ocupa todo el ancho disponible */
-    background-color: #EAF2FD;
+    background: var(--cor-de-secundary-section);
     height: 581px; /* Usar altura completa del viewport */
 }
 
@@ -325,35 +321,36 @@ section.menu {
     justify-content: center; /* Centra verticalmente en el viewport */
     align-items: center; /* Centra horizontalmente */
     width: 100%; /* Ocupa todo el ancho disponible */
-    max-width:  87%; /* Ancho máximo permitido */
-    background-color: rgb(255, 200, 0);
     height: 540px; /* Usar altura completa del viewport */
-    margin-top: 25px;
+    margin-bottom: 75px;
+    background-color: #01c017;
+
 }
 
 .academic__title {
     font-size: 32px;
     font-weight: 500;
-    margin-bottom: 24px; /* Espaciado inferior */
-    margin-top: 0;
-    background-color: palevioletred;
 }
 
 .academic__courses {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     width: 100%; /* Ocupa todo el ancho disponible */
     max-width:  87%;
-    background-color: rgb(15, 212, 45);
-    height: 347px;
+    background-color: #ba00c7;
 }
 
 .academic__courses__box {
+    display: flex;
+    flex-direction: column; /* Cambia la disposición a columna */
+    justify-content:center; /* Alinea los elementos al final */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
     width: 368px;
-    background-color: #122ceb;
-    height: 347px;
+    background: var(--cor-de-first-section);
+    height: 280px;
     padding: 0;
+    margin-top: 0;
 }
 
 .academic__courses__list {
@@ -362,7 +359,6 @@ section.menu {
     justify-content: center; /* Distribuye los elementos uniformemente */
     align-items: flex-start; /* Alinea los elementos a la izquierda */
     width: 100%;
-    height: 286px;
     padding: 0;    
 }
 
@@ -371,10 +367,9 @@ section.menu {
     justify-content: center;
     align-items: center; /* Centra verticalmente el contenido */
     width: 100%;
-    background-color: #e21313;
-    height: 132px;
-    margin-top: 95px;
-    margin-bottom: 25px;
+    height: 135px;
+    margin-top: 155px;
+    margin-bottom: 75px;
 }
 
 .academic__courses__item__img {
@@ -383,14 +378,8 @@ section.menu {
     display: flex;
     justify-content: center; /* Centra horizontalmente la imagen */
     align-items: flex-end; /* Centra verticalmente la imagen */
-    background-color: #ffffff;
 }
 
-.academic__courses__item__datos {
-    margin-top: 15px;
-    background-color: #f482fc;
-
-}
 
 .academic__courses__item__title {
     font-size: 22px;
