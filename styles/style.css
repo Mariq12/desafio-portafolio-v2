@@ -105,7 +105,7 @@ section.menu {
 
 .title__div {
     width: 100%; /* Ancho máximo permitido */
-    max-width: 1180px;
+    max-width: 87%;
     height: 368px;
     display: flex;
     justify-content: space-between;
@@ -173,7 +173,7 @@ section.menu {
     justify-content: center;
     align-items: flex-start; /* Alinea los elementos a la izquierda */
     width: 100%; /* Ancho máximo permitido */
-    max-width: 1180px;
+    max-width: 87%;
     height: 255px;
     background-color: #EAF2FD;
 }
@@ -203,7 +203,7 @@ section.menu {
     justify-content: center; /* Centra verticalmente en el viewport */
     align-items: center; /* Centra horizontalmente */
     width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 1180px; /* Ancho máximo permitido */
+    max-width: 87%; /* Ancho máximo permitido */
     background-color: rgb(255, 0, 204);
     height: 244px; /* Usar altura completa del viewport */
     margin-top: 25px;
@@ -223,7 +223,7 @@ section.menu {
     align-items: center; /* Centra verticalmente */
     flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente a la línea */
     width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 1180px; /* Ancho máximo permitido */
+    max-width:  87%; /* Ancho máximo permitido */
 }
 
 .skills__box {
@@ -262,7 +262,7 @@ section.menu {
     justify-content: center; /* Centra verticalmente en el viewport */
     align-items: center; /* Centra horizontalmente */
     width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 1180px; /* Ancho máximo permitido */
+    max-width: 87%; /* Ancho máximo permitido */
     background-color: rgb(0, 255, 21);
     height: 244px; /* Usar altura completa del viewport */
     margin-top: 25px;
@@ -281,7 +281,7 @@ section.menu {
     align-items: center; /* Centra verticalmente */
     flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente a la línea */
     width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 1180px; /* Ancho máximo permitido */
+    max-width:  87%; /* Ancho máximo permitido */
 }
 
 .hobbies__box {
@@ -322,7 +322,7 @@ section.menu {
     justify-content: center; /* Centra verticalmente en el viewport */
     align-items: center; /* Centra horizontalmente */
     width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 1180px; /* Ancho máximo permitido */
+    max-width:  87%; /* Ancho máximo permitido */
     background-color: rgb(255, 200, 0);
     height: 540px; /* Usar altura completa del viewport */
     margin-top: 25px;
@@ -341,7 +341,7 @@ section.menu {
     justify-content: space-around;
     align-items: flex-start;
     width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 1180px;
+    max-width:  87%;
     background-color: rgb(15, 212, 45);
     height: 347px;
 }
@@ -412,6 +412,12 @@ section.menu {
     background-color: #fa8bde;
 }
 
+.container {
+    width: 100%; /* Ocupa todo el ancho disponible del viewport */
+    max-width: 87%; /* Ancho máximo permitido */
+    background-color: rgb(216, 63, 3);
+}
+
 .experience__section__title {
     text-align: center; /* Centra el título */
     font-size: 32px;
@@ -424,8 +430,7 @@ section.menu {
     flex-direction: row; /* Cambia la disposición a fila */
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
-    max-width: 1136px;
-    background-color: rgb(59, 231, 228);
+    background-color: rgb(182, 231, 59);
     height: 406px;
     margin-top: 24px; /* Espaciado superior */
     margin-top: 24px; /* Espaciado superior */
@@ -499,7 +504,6 @@ section.formcontato {
     flex-direction: column; /* Cambia la disposición a columna */
     width: 100%; /* Ocupa todo el ancho disponible del viewport */
     background-color: #EAF2FD;
-    padding: 64px 32px; /* Ajusta el relleno interior */
 }
 
 .formcontato__contacto {
@@ -507,7 +511,7 @@ section.formcontato {
     justify-content: space-between; /* Espacio entre la imagen y el texto */
     align-items: center; /* Centra verticalmente */
     width: 100%; /* Ancho máximo permitido */
-    max-width: 1180px;
+    max-width: 87%;
     margin-top: 24px; /* Espaciado superior */
     height: 660px;
     background-color: #6bffa9;
@@ -517,7 +521,7 @@ section.formcontato {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
-    max-width: 1180px;
+    max-width:  87%;
     height: 660px;
     background-color: #f56bff;
 }
