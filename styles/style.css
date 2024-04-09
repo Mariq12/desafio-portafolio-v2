@@ -2,6 +2,12 @@
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
     --cor-de-fundo: #F5F5F5;
+    --cor-de-first-section: #FFFFFF;
+    --cor-de-secundary-section: #EAF2FD;
+    --cor-de-booton: #2A7AE4;
+    --cor-de-borders: #2A7AE4;
+    --cor-de-booton-text:  #2A7AE4;
+    --cor-de-texto: #000000;
     --cor-de-link: #000;
 }
 
@@ -41,11 +47,9 @@ section.menu {
     justify-content: center; /* Alinea los elementos del encabezado en los extremos */
     align-items: center; /* Centra verticalmente los elementos del encabezado */
      /* Añade espacio interno a los lados del encabezado */
-    background-color: #ffffff; /* Color de fondo del encabezado */
+    background: var(--cor-de-first-section); /* Color de fondo del encabezado */
     margin-top: 0; /* Elimina el margen superior */
-
     padding: 0 20px; /* Añade espacio interno a los lados del encabezado */
-
     /* Centra y distribuye el espacio equitativamente */
     margin: 0 ; /* Centra el encabezado horizontalmente */
 }
@@ -82,12 +86,11 @@ section.menu {
     font-size: 16px;
     font-size: medium;
     list-style-type: none;
-    background-color: yellow;
 }
 
 /* Estilo para los elementos de la lista del menú */
 .menu__list__item {
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 /* Estilo para el elemento de contacto en la lista del menú */
@@ -105,12 +108,14 @@ section.menu {
 
 .title__div {
     width: 100%; /* Ancho máximo permitido */
-    max-width: 87%;
+    max-width: 88%;
     height: 368px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(21, 0, 255);
+    background: var(--cor-de-first-section);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .title__profile {
@@ -123,7 +128,7 @@ section.menu {
 .title__container {
     order: 1; /* Cambia el orden del elemento */
     flex: 1; /* El contenido ocupará el espacio restante */
-    background-color: #ffffff;
+    background: var(--cor-de-first-section);
 }
 
 .title__bio {
@@ -173,7 +178,7 @@ section.menu {
     justify-content: center;
     align-items: flex-start; /* Alinea los elementos a la izquierda */
     width: 100%; /* Ancho máximo permitido */
-    max-width: 87%;
+    max-width: 88%;
     height: 255px;
     background-color: #EAF2FD;
 }
@@ -203,14 +208,13 @@ section.menu {
     justify-content: center; /* Centra verticalmente en el viewport */
     align-items: center; /* Centra horizontalmente */
     width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 87%; /* Ancho máximo permitido */
-    background-color: rgb(255, 0, 204);
+    max-width: 88%; /* Ancho máximo permitido */
     height: 244px; /* Usar altura completa del viewport */
-    margin-top: 25px;
+    margin-top: 10px;
+    background-color: #216ad1;
 }
 
 .skills__title {
-    background-color: #e02626;
     font-size: 32px;
     font-weight: 500;
     margin-bottom: 24px; /* Espaciado inferior */
@@ -219,11 +223,13 @@ section.menu {
 
 .skills__line {
     display: flex;
-    justify-content: space-around; /* Distribuye los elementos con espacio proporcional */
-    align-items: center; /* Centra verticalmente */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente a la línea */
+    justify-content: space-between; /* Distribuye los elementos con espacio proporcional */
+    align-items:center; /* Centra verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
     width: 100%; /* Ocupa todo el ancho disponible */
-    max-width:  87%; /* Ancho máximo permitido */
+    background-color: #6bffa9;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .skills__box {
@@ -231,11 +237,9 @@ section.menu {
     flex-direction: column; /* Cambia la disposición a columna */
     justify-content: flex-end; /* Alinea los elementos al final */
     align-items: flex-start; /* Alinea los elementos a la izquierda */
-    width: 176px;
+    width: 185px;
     height: 174px;
-    color: #e02626;
-    background-color: #ffffff;
-    margin-bottom: 20px;
+    background: var(--cor-de-first-section);
 }
 
 .skills__img {
@@ -245,7 +249,6 @@ section.menu {
 
 .skills__name {
     margin-top: auto; /* Mueve el nombre hacia la parte inferior */
-    background-color: #ffffff;
 }
 
 /* *Sección Hobbies */
@@ -277,11 +280,13 @@ section.menu {
 
 .hobbies__line {
     display: flex;
-    justify-content: space-around; /* Distribuye los elementos con espacio proporcional */
-    align-items: center; /* Centra verticalmente */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente a la línea */
+    justify-content: space-between; /* Distribuye los elementos con espacio proporcional */
+    align-items:center; /* Centra verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
     width: 100%; /* Ocupa todo el ancho disponible */
-    max-width:  87%; /* Ancho máximo permitido */
+    background-color: #6bffa9;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .hobbies__box {
@@ -289,11 +294,9 @@ section.menu {
     flex-direction: column; /* Cambia la disposición a columna */
     justify-content: flex-end; /* Alinea los elementos al final */
     align-items: flex-start; /* Alinea los elementos a la izquierda */
-    width: 176px;
+    width: 185px;
     height: 174px;
-    color: #e02626;
-    background-color: #ffffff;
-    margin-bottom: 20px;
+    background: var(--cor-de-first-section);
 }
 
 .hobbies__img {
