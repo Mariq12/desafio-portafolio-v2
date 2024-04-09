@@ -5,8 +5,6 @@
     --cor-de-first-section: #FFFFFF;
     --cor-de-secundary-section: #EAF2FD;
     --cor-de-booton: #2A7AE4;
-    --cor-de-borders: #2A7AE4;
-    --cor-de-booton-text:  #2A7AE4;
     --cor-de-texto: #000000;
     --cor-de-link: #000;
 }
@@ -323,13 +321,11 @@ section.menu {
     width: 100%; /* Ocupa todo el ancho disponible */
     height: 540px; /* Usar altura completa del viewport */
     margin-bottom: 75px;
-    background-color: #01c017;
-
 }
 
 .academic__title {
     font-size: 32px;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .academic__courses {
@@ -338,7 +334,6 @@ section.menu {
     align-items: center;
     width: 100%; /* Ocupa todo el ancho disponible */
     max-width:  87%;
-    background-color: #ba00c7;
 }
 
 .academic__courses__box {
@@ -397,11 +392,10 @@ section.menu {
 
 .experience {
     display: flex;
-    justify-content: center;
-    align-items: center; /* Centra horizontalmente */
     flex-direction: column; /* Cambia la disposición a columna */
+    justify-content: center; /* Alinear los elementos a la izquierda */
+    align-items: center; /* Centra los elementos verticalmente */
     width: 100%; /* Ocupa todo el ancho disponible del viewport */
-    background-color: #fa8bde;
 }
 
 .container {
@@ -422,33 +416,27 @@ section.menu {
     flex-direction: row; /* Cambia la disposición a fila */
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
-    background-color: rgb(182, 231, 59);
     height: 406px;
-    margin-top: 24px; /* Espaciado superior */
-    margin-top: 24px; /* Espaciado superior */
-    padding: 20px;
+
+    background-color: #f56bff;
 }
 
 .experience__img {
     width: 752px;
     height: 406px;
-    margin-right: 24px; /* Margen derecho para separación */
-    background-color: #ba00c7;
+    margin: 0 30px 0 0; /* Margen derecho para separación */
 }
 
 .experience__info-container {
     flex: 1; /* El contenido ocupará el espacio restante */
-    background-color: #01c017;
-    text-align:left;
     width: 368px;
     height: 112px;
+    background-color: #01c017;
 }
 
 .experience__title {
     font-size: 22px;
     font-weight: bold;
-    color: #122ceb;
-    background-color: pink;
 }
 
 .experience__text {
@@ -459,12 +447,9 @@ section.menu {
 .experience__description {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-
+    align-items: flex-start; /* Alinear los elementos a la izquierda */
     width: 100%;
-    background-color: #e8fc82;
 }
-
 
 /* Estilos para los botones (repositorio y demo) */
 .experience__repo,
@@ -473,20 +458,20 @@ section.menu {
     font-weight:normal;
 }
 
-.experience__botao--repo,
+.experiencia__botao--repo,
 .experience__botao--demo, 
 button {
     width: 120px;
     height: 51px;
-    padding: 12px 24px;
-    margin-right: 12px;
-    background-color: var(--cor-de-fundo);
-    color: var(--cor-de-link);
-    border: 1px solid var(--cor-de-link);
+    border: 1px solid var(--cor-de-booton);
     cursor: pointer;
     font-size: 16px;
+    margin-right: 10px; /* Espaciado entre botones */
 }
 
+.experiencia__botao--repo {
+    color: var(--cor-de-booton);
+}
 
 /* *Sección Contacto */
 section.formcontato {

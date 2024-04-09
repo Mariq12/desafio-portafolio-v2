@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.querySelector('.menu__toggle');
     const menuNav = document.querySelector('.menu__nav'); // Seleccionar el contenedor del menú
     const menuList = document.querySelector('.menu__list');
 
     // Función para abrir/cerrar el menú al hacer clic en el icono de menú
-    menuToggle.addEventListener('click', function() {
+    menuToggle.addEventListener('click', function () {
         // Toggle para mostrar/ocultar el menú completo al hacer clic en el icono de menú
         menuNav.style.display = menuNav.style.display === 'block' ? 'none' : 'block';
     });
@@ -40,27 +40,37 @@ function toggleMenu() {
 }
 
 
-    // Definimos una función para cambiar la posición de las imágenes
-    function alternarPosiciones() {
-        const boxes = document.querySelectorAll('.experience__box');
+// Definimos una función para cambiar la posición de las imágenes
+function alternarPosiciones() {
+    const boxes = document.querySelectorAll('.experience__box');
 
-        boxes.forEach((box, index) => {
-            // Comprobamos si el índice es par o impar para decidir la posición de la imagen
-            if (index % 2 === 0) {
-                // Índice par: imagen a la izquierda
-                box.style.flexDirection = 'row-reverse'; // Invierte la disposición fila
-                box.querySelector('.experience__img').style.marginRight = '0'; // Elimina el margen derecho
-                box.querySelector('.experience__info-container').style.textAlign = 'right'; // Alinea el texto a la derecha
-            } else {
-                // Índice impar: imagen a la derecha (manteniendo la disposición predeterminada)
-                box.style.flexDirection = 'row'; // Restaura la disposición fila
-                box.querySelector('.experience__img').style.marginRight = '24px'; // Restaura el margen derecho
-                box.querySelector('.experience__info-container').style.textAlign = 'left'; // Alinea el texto a la izquierda
-            }
-        });
-    }
-
-    // Llamamos a la función cuando el DOM esté completamente cargado
-    document.addEventListener('DOMContentLoaded', () => {
-        alternarPosiciones();
+    boxes.forEach((box, index) => {
+        if (index > 0 && index % 2 !== 0) {
+            // Índice impar (excepto el primero): invertir disposición
+            box.style.flexDirection = 'row-reverse';
+            box.querySelector('.experience__img').style.marginRight = '0';
+            box.querySelector('.experience__info-container').style.textAlign = 'right';
+        }
     });
+}
+
+// Llamamos a la función cuando el DOM esté completamente cargado
+document.addEventListener('DOMContentLoaded', () => {
+    alternarPosiciones();
+});
+
+// Definimos una función para configurar los estilos de los contenedores de experiencia
+function configurarEstilosInfoContainers() {
+    const infoContainers = document.querySelectorAll('.experience__info-container');
+
+    infoContainers.forEach(container => {
+        container.style.textAlign = 'left'; // Siempre alinear el contenido a la izquierda
+        container.style.width = '368px'; // Ancho fijo para el contenedor
+        container.style.height = '112px'; // Altura fija para el contenedor
+    });
+}
+
+// Llamamos a la función cuando el DOM esté completamente cargado
+document.addEventListener('DOMContentLoaded', () => {
+    configurarEstilosInfoContainers();
+});
