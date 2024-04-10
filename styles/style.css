@@ -1504,73 +1504,122 @@ section.formcontato {
 
 
     /* *Sección Experiencia */
+    .experience {
+        margin-bottom: 20px;
+    }
     .experience__section__title {
-        font-size: 28px;
-        margin-top: 80%;
+        font-size: 24px;
+        margin-top: 20px;
+        text-align: center;
     }
 
     .experience__box {
-        flex-direction: column;
-        /* Cambiar a disposición de columna */
+        display: flex;
+        justify-content: center;
         align-items: center;
-        /* Centrar horizontalmente los elementos */
         height: auto;
-        /* Altura automática */
+        margin: 10px;
     }
 
     .experience__img {
-        width: 200px;
-        /* Reducir el ancho de la imagen */
+        width: 130px;
         height: auto;
-        /* Altura automática */
-        margin: 20px 0;
-        /* Ajustar el margen */
+        margin-bottom: 30px;
+    }
+
+    .experience__info-container {
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    .experience__title {
+        font-size: 16px;
+    }
+
+    .experience__info-container h3 {
+        font-size: 13px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    /* Estilos para los botones (repositorio y demo) */
+    .experience__repo,
+    .experience__demo {
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    .experiencia__botao--repo,
+    .experience__botao--demo,
+    button {
+        width: 82px;
+        height: 35px;
+        border: 1px solid var(--cor-de-border-booton);
+        cursor: pointer;
+        font-size: 14px;
+        margin-right: 5px;
     }
 
     /* *Sección Formulario de Contacto */
     .formcontato__contacto {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
         padding: 20px;
-        /* Ajustar el relleno */
-        margin-top: 30px;
-        /* Ajustar el margen superior */
+        margin-top: 10px;
     }
 
     .formcontato__img {
-        width: 250px;
-        /* Reducir el ancho de la imagen */
-        height: auto;
-        /* Altura automática */
+        width: 200px;
+        height: 150px;
         margin-bottom: 20px;
-        /* Ajustar el margen inferior */
+    }
+
+    .formcontato__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
     }
 
     .formcontato__input,
     .formcontato__textarea {
-        width: 100%;
-        /* Ancho completo */
+        width: 105%;
         height: 40px;
-        /* Reducir la altura */
         margin-bottom: 10px;
-        /* Reducir el margen inferior */
+    }
+    
+    .formcontato__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Centra horizontalmente los elementos */
+        justify-content: center;
+        /* Centra verticalmente los elementos */
+        text-align: center;
+        /* Alinea el texto en el centro */
     }
 
     .formcontato__botao {
-        width: 100%;
-        /* Ancho completo */
-        padding: 10px;
-        /* Ajustar el relleno */
-        font-size: 16px;
-        /* Tamaño de fuente */
         margin-top: 20px;
-        /* Espacio superior */
+        /* Espacio superior para separar el botón */
+        padding: 10px 20px;
+        /* Relleno interno del botón */
+        font-size: 16px;
+        background: var(--cor-de-booton);
+        /* Color de fondo del botón */
+        color: var(--cor-de-second-texto);
+        /* Color del texto del botón */
+        border: none;
+        /* Elimina el borde del botón */
+        cursor: pointer;
+        /* Cambia el cursor al pasar por encima del botón */
     }
 
     .formcontato__botao:hover {
         background: var(--cor-de-first-section);
-        /* Cambiar el color de fondo en hover */
+        /* Cambia el color de fondo al pasar el cursor sobre el botón */
         color: var(--cor-de-texto);
-        /* Cambiar el color del texto en hover */
         border: 1px solid var(--cor-de-border-booton);
-        /* Cambiar el borde en hover */
     }
 }
