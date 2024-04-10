@@ -5,9 +5,12 @@
     --cor-de-first-section: #FFFFFF;
     --cor-de-second-section: #EAF2FD;
     --cor-de-booton: #2A7AE4;
+    --cor-de-border-booton: #2A7AE4;
     --cor-de-texto: #000000;
     --cor-de-second-texto: #FFFFFF;
+    --cor-de-third-texto: #2A7AE4;
     --cor-de-link: #000;
+    --cor-de-hover-menu: #ddd;
 }
 
 body {
@@ -189,7 +192,7 @@ section.menu {
 
 .title__network__item a {
     text-decoration: none;
-    color: #333333;
+    color: var(--cor-de-link);
     /* Color del texto */
     display: flex;
     align-items: center;
@@ -200,7 +203,7 @@ section.menu {
 
 /* *Sección Sobre mí */
 .about {
-    background-color: #EAF2FD;
+    background: var(--cor-de-second-section);
     display: flex;
     justify-content: center;
     /* Centra horizontalmente en el viewport */
@@ -221,7 +224,7 @@ section.menu {
     /* Ancho máximo permitido */
     max-width: 88%;
     height: 255px;
-    background-color: #EAF2FD;
+    background: var(--cor-de-second-section);
 }
 
 .about__title {
@@ -380,8 +383,7 @@ section.menu {
 
 .hobbies__name {
     margin-top: auto;
-    /* Mueve el nombre hacia la parte inferior */
-    background-color: #ffffff;
+    background: var(--cor-de-first-section);
 }
 
 /* *Sección Formación Académica */
@@ -573,15 +575,21 @@ section.menu {
 button {
     width: 120px;
     height: 51px;
-    border: 1px solid var(--cor-de-booton);
+    border: 1px solid var(--cor-de-border-booton);
     cursor: pointer;
     font-size: 16px;
     margin-right: 10px;
-    /* Espaciado entre botones */
 }
 
 .experiencia__botao--repo {
-    color: var(--cor-de-booton);
+    color: var(--cor-de-third-texto);
+}
+
+.experiencia__botao--repo:hover,
+.experience__botao--demo:hover {
+    background: var(--cor-de-first-section); /* Cambia el color de fondo al pasar el cursor sobre el botón */
+    color: var(--cor-de-texto);
+    border: 1px solid var(--cor-de-border-booton);
 }
 
 /* *Sección Contacto */
@@ -744,20 +752,16 @@ section.formcontato {
     .title__subsection {
         font-size: 16px;
         margin-bottom: 16px;
-        /* Margen inferior para separación */
         font-weight: normal;
     }
 
     /* *Sección Sobre mí */
     .about {
-        background-color: #EAF2FD;
+        background: var(--cor-de-second-section);
         display: flex;
         justify-content: center;
-        /* Centra horizontalmente en el viewport */
         align-items: center;
-        /* Centra verticalmente en el viewport */
         width: 100%;
-        /* Ocupa todo el ancho disponible del viewport */
         height: 275px;
         padding-bottom: 30px;
         margin-bottom: 10%;
@@ -767,28 +771,21 @@ section.formcontato {
     .skills {
         display: flex;
         justify-content: flex-end;
-        /* Centra horizontalmente en el viewport */
         align-items: center;
-        /* Centra verticalmente en el viewport */
         width: 100%;
-        /* Ocupa todo el ancho disponible del viewport */
         padding-top: 30px;
         height: 40%;
-        /* Usar altura completa del viewport */
         padding-bottom: 30px;
         margin-bottom: 15%;
     }
 
     .skills__line {
         justify-content: center;
-        /* Centra los elementos en una línea */
     }
 
     .skills__box {
         width: 150px;
-        /* Reducir el ancho del cuadro */
         height: 180px;
-        /* Reducir la altura del cuadro */
         margin: 30px;
     }
 
@@ -796,29 +793,21 @@ section.formcontato {
     .hobbies {
         display: flex;
         justify-content: flex-end;
-        /* Centra horizontalmente en el viewport */
         align-items: center;
-        /* Centra verticalmente en el viewport */
         width: 100%;
-        /* Ocupa todo el ancho disponible del viewport */
         padding-top: 30px;
         height: 390px;
-        /* Usar altura completa del viewport */
         padding-bottom: 10px;
         margin-bottom: 8%;
-
     }
 
     .hobbies__line {
         justify-content: center;
-        /* Centra los elementos en una línea */
     }
 
     .hobbies__box {
         width: 150px;
-        /* Reducir el ancho del cuadro */
         height: 180px;
-        /* Reducir la altura del cuadro */
         margin: 30px;
     }
 
@@ -848,7 +837,7 @@ section.formcontato {
         /* Distancia desde la parte superior */
         right: 0;
         /* Pegar al borde derecho */
-        background-color: #f8f9fa;
+        background: var(--cor-de-fundo);
         /* Color de fondo */
         padding: 20px 20px 0 20px;
         /* Espaciado interno */
@@ -886,8 +875,7 @@ section.formcontato {
 
     .menu__list__item:hover,
     .menu__list__item__contato:hover {
-        background-color: #ddd;
-        /* Cambiar color de fondo en hover */
+        background: var(--cor-de-hover-menu);
         border-radius: 5px;
 
     }
@@ -1028,7 +1016,7 @@ section.formcontato {
         position: absolute;
         top: 90px;
         right: 0;
-        background-color: #f8f9fa;
+        background: var(--cor-de-fundo);
         padding: 20px 20px 0 20px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         z-index: 1;
@@ -1062,7 +1050,7 @@ section.formcontato {
 
     .menu__list__item:hover,
     .menu__list__item__contato:hover {
-        background-color: #ddd;
+        background: var(--cor-de-hover-menu);;
         /* Cambiar color de fondo en hover */
         border-radius: 5px;
     }
@@ -1209,7 +1197,8 @@ section.formcontato {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 30px 30px 85px 30px;
+        padding: 30px 30px 70px 30px;
+        margin-top: 55px;
     }
 
     .formcontato__img {
@@ -1245,7 +1234,7 @@ section.formcontato {
         padding: 10px 20px; /* Relleno interno del botón */
         font-size: 16px;
         background: var(--cor-de-booton); /* Color de fondo del botón */
-        color: #ffffff; /* Color del texto del botón */
+        color: var(--cor-de-second-texto); /* Color del texto del botón */
         border: none; /* Elimina el borde del botón */
         cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
     }
@@ -1253,6 +1242,6 @@ section.formcontato {
     .formcontato__botao:hover {
         background: var(--cor-de-first-section); /* Cambia el color de fondo al pasar el cursor sobre el botón */
         color: var(--cor-de-texto);
-        
+        border: 1px solid var(--cor-de-border-booton);
     }
 }
