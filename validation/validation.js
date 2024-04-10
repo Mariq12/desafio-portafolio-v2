@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Función para gestionar la visualización del menú y el icono basado en el ancho de la pantalla
     function toggleMenuDisplay() {
-        if (window.matchMedia("(max-width: 900px)").matches) {
+        if (window.matchMedia("(max-width: 1339px)").matches) {
             // Pantalla de 900px o menos: ocultar menú completo y mostrar solo el icono
             menuNav.style.display = 'none';
             menuToggle.style.display = 'flex'; // Mostrar icono de menú

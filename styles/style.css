@@ -167,6 +167,7 @@ section.menu {
     flex: 1;
     /* El contenido ocupará el espacio restante */
     background: var(--cor-de-first-section);
+    text-align: justify;
 }
 
 .title__bio {
@@ -587,7 +588,8 @@ button {
 
 .experiencia__botao--repo:hover,
 .experience__botao--demo:hover {
-    background: var(--cor-de-first-section); /* Cambia el color de fondo al pasar el cursor sobre el botón */
+    background: var(--cor-de-first-section);
+    /* Cambia el color de fondo al pasar el cursor sobre el botón */
     color: var(--cor-de-texto);
     border: 1px solid var(--cor-de-border-booton);
 }
@@ -718,19 +720,75 @@ section.formcontato {
 /* *** Estilos para dispositivos con ancho mínimo de 1290px *** */
 @media screen and (min-width: 1290px) and (max-width: 1339px) {
 
+    /* Estilo para el icono de menú */
+    .menu__toggle {
+        margin-right: 20px;
+    }
+
+    /* Estilo para el menú de navegación */
+    .menu__nav {
+        display: none;
+        width: 25%;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        background: var(--cor-de-fundo);
+        padding: 20px 20px 0 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    /* Estilo para la lista de elementos del menú */
+    .menu__list {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 0;
+        list-style-type: none;
+        align-items: flex-start;
+        /* Alinear los elementos a la izquierda */
+    }
+
+    .menu__list__item,
+    .menu__list__item__contato {
+        margin-bottom: 5px;
+        align-self: flex-start;
+        /* Alinear cada elemento a la izquierda */
+        width: 100%;
+        /* Ocupar todo el ancho disponible */
+        transition: background-color 0.3s ease;
+        /* Transición para cambiar el color de fondo */
+        height: 15px;
+        padding: 8px;
+        /* Ajustar el padding para aumentar el tamaño del área de clic */
+        height: auto;
+    }
+
+    .menu__list__item:hover,
+    .menu__list__item__contato:hover {
+        background: var(--cor-de-hover-menu);
+        ;
+        /* Cambiar color de fondo en hover */
+        border-radius: 5px;
+    }
+
+    /* Mostrar el menú principal cuando tiene la clase 'show' */
+    .menu__nav.show {
+        display: block;
+    }
+
     /* *Sección Título */
     .title__div {
-        width: 100%;
-        /* Ancho máximo permitido */
-        max-width: 88%;
+        width: 100px;
         height: 250px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         background: var(--cor-de-first-section);
         margin-top: 20px;
         margin-bottom: 20px;
-        padding-left: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .title__profile {
@@ -823,6 +881,8 @@ section.formcontato {
     /* Estilo para el icono de menú */
     .menu__toggle {
         margin-right: 20px;
+        display: block;
+        /* Asegurar que el icono sea visible */
     }
 
     /* Estilo para el menú de navegación */
@@ -839,7 +899,7 @@ section.formcontato {
         /* Pegar al borde derecho */
         background: var(--cor-de-fundo);
         /* Color de fondo */
-        padding: 20px 20px 0 20px;
+        padding: 20px;
         /* Espaciado interno */
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         /* Sombra */
@@ -1050,7 +1110,8 @@ section.formcontato {
 
     .menu__list__item:hover,
     .menu__list__item__contato:hover {
-        background: var(--cor-de-hover-menu);;
+        background: var(--cor-de-hover-menu);
+        ;
         /* Cambiar color de fondo en hover */
         border-radius: 5px;
     }
@@ -1150,17 +1211,19 @@ section.formcontato {
 
     .academic__courses {
         flex-direction: row;
-        flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
+        flex-wrap: wrap;
+        /* Permite que los elementos se envuelvan en varias líneas */
         justify-content: flex-start;
         align-items: flex-start;
     }
 
     /* Establece el ancho para acomodar 2 cajas por fila */
     .academic__courses__box {
-        width: calc(50% - 20px); /* Calcula el ancho para 2 cajas por fila con margen */
+        width: calc(50% - 20px);
+        /* Calcula el ancho para 2 cajas por fila con margen */
         margin-left: 20px;
         margin-bottom: 30%;
-        height: 260px; 
+        height: 260px;
     }
 
     .academic__courses__item__title {
@@ -1177,7 +1240,7 @@ section.formcontato {
         font-size: 32px;
         font-weight: bold;
     }
-    
+
     .experience__box {
         display: flex;
         flex-direction: row;
@@ -1224,24 +1287,290 @@ section.formcontato {
     .formcontato__form {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centra horizontalmente los elementos */
-        justify-content: center; /* Centra verticalmente los elementos */
-        text-align: center; /* Alinea el texto en el centro */
+        align-items: center;
+        /* Centra horizontalmente los elementos */
+        justify-content: center;
+        /* Centra verticalmente los elementos */
+        text-align: center;
+        /* Alinea el texto en el centro */
     }
 
     .formcontato__botao {
-        margin-top: 20px; /* Espacio superior para separar el botón */
-        padding: 10px 20px; /* Relleno interno del botón */
+        margin-top: 20px;
+        /* Espacio superior para separar el botón */
+        padding: 10px 20px;
+        /* Relleno interno del botón */
         font-size: 16px;
-        background: var(--cor-de-booton); /* Color de fondo del botón */
-        color: var(--cor-de-second-texto); /* Color del texto del botón */
-        border: none; /* Elimina el borde del botón */
-        cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+        background: var(--cor-de-booton);
+        /* Color de fondo del botón */
+        color: var(--cor-de-second-texto);
+        /* Color del texto del botón */
+        border: none;
+        /* Elimina el borde del botón */
+        cursor: pointer;
+        /* Cambia el cursor al pasar por encima del botón */
     }
-    
+
     .formcontato__botao:hover {
-        background: var(--cor-de-first-section); /* Cambia el color de fondo al pasar el cursor sobre el botón */
+        background: var(--cor-de-first-section);
+        /* Cambia el color de fondo al pasar el cursor sobre el botón */
         color: var(--cor-de-texto);
         border: 1px solid var(--cor-de-border-booton);
+    }
+}
+
+/* *Media queries para dispositivos Celulares */
+@media only screen and (max-width: 375px) and (max-height: 933px) {
+
+    /* Estilo para el icono de menú */
+    .menu__toggle {
+        margin-right: 10px;
+        /* Reducir el margen derecho */
+    }
+
+    /* Estilo para el menú de navegación */
+    .menu__nav {
+        display: none;
+        /* Ocultar el menú de navegación */
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        /* Ancho completo */
+        background: var(--cor-de-fundo);
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    /* Estilo para la lista de elementos del menú */
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .menu__list__item,
+    .menu__list__item__contato {
+        margin-bottom: 10px;
+        /* Reducir el margen inferior */
+        width: 100%;
+        /* Ocupar todo el ancho disponible */
+        transition: background-color 0.3s ease;
+        /* Transición para cambiar el color de fondo */
+    }
+
+    .menu__list__item:hover,
+    .menu__list__item__contato:hover {
+        background: var(--cor-de-hover-menu);
+        /* Cambiar color de fondo en hover */
+        border-radius: 5px;
+    }
+
+    /* Mostrar el menú principal cuando tiene la clase 'show' */
+    .menu__nav.show {
+        display: block;
+    }
+
+    /* *Sección Título */
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        /* Altura automática */
+        width: 100%;
+    }
+
+    .title__div {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .title__profile {
+        width: 120px;
+        /* Reducir el ancho de la imagen */
+        height: 120px;
+        /* Reducir la altura de la imagen */
+        margin-bottom: 20px;
+        /* Reducir el margen inferior */
+    }
+
+    .title__bio {
+        font-size: 18px;
+        /* Reducir el tamaño del texto */
+        padding: 10px;
+    }
+
+    .title__subsection {
+        font-size: 14px;
+        /* Reducir el tamaño del texto */
+        margin-bottom: 10px;
+        /* Reducir el margen inferior */
+        padding: 10px;
+    }
+
+    .title__network {
+        margin-top: 10px;
+    }
+
+    .title__network__item a {
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    /* *Sección Sobre mí */
+    .about {
+        margin-bottom: 10%;
+        padding-top: 70px;
+        padding-bottom: 95px;
+    }
+
+    /* *Sección Skills */
+    .skills {
+        margin-bottom: 10%;
+    }
+
+    .skills__box {
+        width: 100px;
+        /* Reducir el ancho del cuadro */
+        height: 100px;
+        /* Reducir la altura del cuadro */
+        margin: 5px;
+        /* Reducir el margen entre los cuadros */
+    }
+
+    /* *Sección Hobbies */
+    .hobbies {
+        margin-bottom: 15%;
+    }
+
+    .hobbies__box {
+        width: 100px;
+        /* Reducir el ancho del cuadro */
+        height: 100px;
+        /* Reducir la altura del cuadro */
+        margin: 0;
+        /* Reducir el margen entre los cuadros */
+        margin-top: 10px;
+    }
+
+    /* *Sección Academic */
+    .academic {
+        height: 1100px;
+        padding-top: 20%;
+        /* Ajustar el espacio superior */
+    }
+
+    .academic__title {
+        font-size: 26px;
+        text-align: center;
+        /* Centrar el título */
+    }
+
+    .academic__courses {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* Distribuir elementos uniformemente */
+        flex-wrap: wrap;
+        /* Permitir envoltura de elementos en múltiples líneas */
+    }
+
+    .academic__courses__box {
+        width: 90%;
+        margin-bottom: 90px;
+        /* Ajustar el margen inferior */
+        text-align: center;
+        /* Centrar contenido dentro del box */
+    }
+
+    .academic__courses__item__title {
+        font-size: 16px;
+        /* Tamaño de fuente para el título */
+        font-weight: bold;
+        /* Negrita para el título */
+    }
+
+    .academic__courses__item__subtitle {
+        font-size: 14px;
+        /* Tamaño de fuente para el subtítulo */
+    }
+
+
+    /* *Sección Experiencia */
+    .experience__section__title {
+        font-size: 28px;
+        margin-top: 80%;
+    }
+
+    .experience__box {
+        flex-direction: column;
+        /* Cambiar a disposición de columna */
+        align-items: center;
+        /* Centrar horizontalmente los elementos */
+        height: auto;
+        /* Altura automática */
+    }
+
+    .experience__img {
+        width: 200px;
+        /* Reducir el ancho de la imagen */
+        height: auto;
+        /* Altura automática */
+        margin: 20px 0;
+        /* Ajustar el margen */
+    }
+
+    /* *Sección Formulario de Contacto */
+    .formcontato__contacto {
+        padding: 20px;
+        /* Ajustar el relleno */
+        margin-top: 30px;
+        /* Ajustar el margen superior */
+    }
+
+    .formcontato__img {
+        width: 250px;
+        /* Reducir el ancho de la imagen */
+        height: auto;
+        /* Altura automática */
+        margin-bottom: 20px;
+        /* Ajustar el margen inferior */
+    }
+
+    .formcontato__input,
+    .formcontato__textarea {
+        width: 100%;
+        /* Ancho completo */
+        height: 40px;
+        /* Reducir la altura */
+        margin-bottom: 10px;
+        /* Reducir el margen inferior */
+    }
+
+    .formcontato__botao {
+        width: 100%;
+        /* Ancho completo */
+        padding: 10px;
+        /* Ajustar el relleno */
+        font-size: 16px;
+        /* Tamaño de fuente */
+        margin-top: 20px;
+        /* Espacio superior */
+    }
+
+    .formcontato__botao:hover {
+        background: var(--cor-de-first-section);
+        /* Cambiar el color de fondo en hover */
+        color: var(--cor-de-texto);
+        /* Cambiar el color del texto en hover */
+        border: 1px solid var(--cor-de-border-booton);
+        /* Cambiar el borde en hover */
     }
 }
