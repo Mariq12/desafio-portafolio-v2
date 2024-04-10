@@ -147,14 +147,14 @@ section.menu {
     justify-content: space-between;
     align-items: center;
     background: var(--cor-de-first-section);
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
 .title__profile {
     order: 2;
     /* Cambia el orden del elemento */
-    width: 368px;
+    width: 250px;
     /* Ancho de la imagen del perfil */
     height: 368px;
     /* Altura automática manteniendo la proporción */
@@ -166,13 +166,13 @@ section.menu {
     /* Cambia el orden del elemento */
     flex: 1;
     /* El contenido ocupará el espacio restante */
-    background: var(--cor-de-first-section);
+
     text-align: justify;
+    margin-left: 10px;
 }
 
 .title__bio {
-    font-size: 52px;
-    font-weight: bold;
+    font-size: 40px;
 }
 
 .title__subsection {
@@ -200,6 +200,10 @@ section.menu {
     margin-right: 20px;
     font-size: 16px;
     font-weight: medium;
+}
+
+.title__network__icon {
+    margin-left: 5px;
 }
 
 /* *Sección Sobre mí */
@@ -779,7 +783,7 @@ section.formcontato {
 
     /* *Sección Título */
     .title__div {
-        width: 100px;
+        width: 87%;
         height: 250px;
         display: flex;
         justify-content: center;
@@ -787,14 +791,14 @@ section.formcontato {
         background: var(--cor-de-first-section);
         margin-top: 20px;
         margin-bottom: 20px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .title__profile {
         order: 2;
         /* Cambia el orden del elemento */
-        width: 240px;
+        width: 150px;
         /* Ancho de la imagen del perfil */
         height: 240px;
         /* Altura automática manteniendo la proporción */
@@ -957,29 +961,26 @@ section.formcontato {
         background: var(--cor-de-first-section);
         margin-top: 20px;
         margin-bottom: 20px;
-        padding-left: 10px;
+        padding-left: 10px;        
+        padding: 10px;
     }
 
     .title__profile {
         order: 2;
-        /* Cambia el orden del elemento */
-        width: 240px;
-        /* Ancho de la imagen del perfil */
+        width: 170px;
         height: 240px;
-        /* Altura automática manteniendo la proporción */
         margin-left: 20px;
         margin-right: 10px;
     }
 
     .title__bio {
-        font-size: 30px;
+        font-size: 27px;
         font-weight: bold;
     }
 
     .title__subsection {
         font-size: 16px;
         margin-bottom: 16px;
-        /* Margen inferior para separación */
         font-weight: normal;
     }
 
@@ -1133,12 +1134,12 @@ section.formcontato {
         background: var(--cor-de-first-section);
         margin-top: 20px;
         margin-bottom: 20px;
-        padding-left: 25px;
+        padding: 10px;
     }
 
     .title__profile {
         order: 2;
-        width: 220px;
+        width: 170px;
         height: 220px;
         margin: auto;
         margin-bottom: 20px;
@@ -1147,6 +1148,7 @@ section.formcontato {
     .title__bio {
         font-size: 20px;
         font-weight: bold;
+        padding-left: 10px;
     }
 
     .title__subsection {
@@ -1392,7 +1394,7 @@ section.formcontato {
     }
 
     .title__profile {
-        width: 120px;
+        width: 100px;
         /* Reducir el ancho de la imagen */
         height: 120px;
         /* Reducir la altura de la imagen */
