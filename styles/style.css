@@ -233,6 +233,8 @@ section.menu {
 
 .about__paragraph {
     margin-bottom: 5px;
+    text-align: justify;
+    /* Aplica justificación al texto */
 }
 
 /* *Sección Skills */
@@ -1012,7 +1014,7 @@ section.formcontato {
 
 
 /* *** Estilos para dispositivos con ancho minimo 800px *** */
-@media screen and (min-width: 800px) and (max-width: 1290px) {
+@media screen and (min-width: 625px) and (max-width: 800px) {
 
     /* Estilo para el icono de menú */
     .menu__toggle {
@@ -1022,21 +1024,13 @@ section.formcontato {
     /* Estilo para el menú de navegación */
     .menu__nav {
         display: none;
-        /* Ocultar el menú principal por defecto en dispositivos pequeños */
         width: 25%;
-        /* Ocupar todo el ancho disponible */
         position: absolute;
-        /* Posicionar de manera absoluta */
         top: 90px;
-        /* Distancia desde la parte superior */
         right: 0;
-        /* Pegar al borde derecho */
         background-color: #f8f9fa;
-        /* Color de fondo */
         padding: 20px 20px 0 20px;
-        /* Espaciado interno */
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        /* Sombra */
         z-index: 1;
     }
 
@@ -1064,7 +1058,6 @@ section.formcontato {
         padding: 8px;
         /* Ajustar el padding para aumentar el tamaño del área de clic */
         height: auto;
-        /* Ajustar la altura automáticamente según el contenido */
     }
 
     .menu__list__item:hover,
@@ -1072,7 +1065,6 @@ section.formcontato {
         background-color: #ddd;
         /* Cambiar color de fondo en hover */
         border-radius: 5px;
-
     }
 
     /* Mostrar el menú principal cuando tiene la clase 'show' */
@@ -1082,118 +1074,185 @@ section.formcontato {
 
     /* *Sección Título */
     .title__div {
-        width: 100%;
-        /* Ancho máximo permitido */
-        max-width: 88%;
-        height: 250px;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        width: 100%;
+        max-width: 88%;
+        height: 420px;
         background: var(--cor-de-first-section);
         margin-top: 20px;
         margin-bottom: 20px;
-        padding-left: 10px;
+        padding-left: 25px;
     }
 
     .title__profile {
         order: 2;
-        /* Cambia el orden del elemento */
-        width: 240px;
-        /* Ancho de la imagen del perfil */
-        height: 240px;
-        /* Altura automática manteniendo la proporción */
-        margin-left: 20px;
-        margin-right: 10px;
+        width: 220px;
+        height: 220px;
+        margin: auto;
+        margin-bottom: 20px;
     }
 
     .title__bio {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bold;
     }
 
     .title__subsection {
-        font-size: 16px;
+        font-size: 15px;
         margin-bottom: 16px;
-        /* Margen inferior para separación */
         font-weight: normal;
     }
 
     /* *Sección Sobre mí */
     .about {
-        margin-bottom: 20%;
+        margin-bottom: 13%;
+        padding-top: 20px;
+        padding-bottom: 50px;
     }
 
     /* *Sección Skills */
     .skills {
-        margin-bottom: 35%;
+        margin-bottom: 20%;
     }
 
     .skills__line {
+        display: flex;
         justify-content: center;
-        /* Centra los elementos en una línea */
     }
 
     .skills__box {
-        width: 150px;
+        width: 130px;
         /* Reducir el ancho del cuadro */
-        height: 180px;
-        /* Reducir la altura del cuadro */
-        margin: 30px;
-    }
-
-    /* *Sección Academic */
-    .academic__title {
-        font-size: 32px;
-        font-weight: bold;
-    }
-
-    .academic__courses__box {
-        width: 350px;
-        /* Reducir el ancho del cuadro */
-        height: 250px;
+        height: 130px;
         /* Reducir la altura del cuadro */
         margin: 10px;
     }
 
     /* *Sección Hobbies */
     .hobbies {
-        padding-bottom: 20px;
         margin-bottom: 15%;
     }
 
+    .hobbies__line {
+        display: flex;
+        justify-content: center;
+    }
+
     .hobbies__box {
-        width: 150px;
-        /* Reducir el ancho del cuadro */
-        height: 180px;
-        /* Reducir la altura del cuadro */
-        margin: 30px;
+        width: 130px;
+        height: 130px;
+        margin: 10px;
+    }
+
+    /* *Sección Academic */
+    .academic {
+        width: 100%;
+        background: var(--cor-de-second-section);
+        height: 740px;
+        padding-top: 17%;
+    }
+
+    .academic__title {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .academic__courses {
+        flex-direction: row;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    /* Establece el ancho para acomodar 2 cajas por fila */
+    .academic__courses__box {
+        width: calc(50% - 20px); /* Calcula el ancho para 2 cajas por fila con margen */
+        margin-left: 20px;
+        margin-bottom: 30%;
+        height: 260px; 
+    }
+
+    .academic__courses__item__title {
+        font-size: 18px;
+    }
+
+    .academic__courses__item__subtitle {
+        font-size: 14px;
     }
 
     /* *Sección Experiencia */
+    .experience__section__title {
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    
+    .experience__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+
     .experience__img {
-        width: 440px;
-        height: 360px;
+        width: 240px;
+        height: 260px;
         margin: 0 30px 0 30px;
-        /* Margen derecho para separación */
     }
 
     /* *Sección Formulario de Contacto */
     .formcontato__contacto {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         padding: 30px 30px 85px 30px;
     }
+
     .formcontato__img {
-        width: 350px;
-        height: 200px;
+        width: 300px;
+        height: 180px;
+    }
+
+    .formcontato__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
     .formcontato__input,
     .formcontato__textarea {
-        width: 550px;
+        width: 350px;
         height: 56px;
         margin-bottom: 16px;
         border: none;
+    }
+
+    .formcontato__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra horizontalmente los elementos */
+        justify-content: center; /* Centra verticalmente los elementos */
+        text-align: center; /* Alinea el texto en el centro */
+    }
+
+    .formcontato__botao {
+        margin-top: 20px; /* Espacio superior para separar el botón */
+        padding: 10px 20px; /* Relleno interno del botón */
+        font-size: 16px;
+        background: var(--cor-de-booton); /* Color de fondo del botón */
+        color: #ffffff; /* Color del texto del botón */
+        border: none; /* Elimina el borde del botón */
+        cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+    }
+    
+    .formcontato__botao:hover {
+        background: var(--cor-de-first-section); /* Cambia el color de fondo al pasar el cursor sobre el botón */
+        color: var(--cor-de-texto);
+        
     }
 }
