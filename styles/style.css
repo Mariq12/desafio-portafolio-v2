@@ -138,12 +138,9 @@ section.menu {
 /* *Sección Título */
 .title {
     display: flex;
-    justify-content: center;
-    /* Centra horizontalmente en el viewport */
-    align-items: center;
-    /* Centra verticalmente en el viewport */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
     width: 100%;
-    /* Ocupa todo el ancho disponible del viewport */
 }
 
 .title__div {
@@ -177,18 +174,20 @@ section.menu {
 }
 
 .title__container {
-    order: 1;
-    flex: 1;
+    order: 1; /* Cambia el orden del elemento */
+    flex: 1; /* El contenido ocupará el espacio restante */
     text-align: justify;
     margin-left: 10px;
+    border-radius: 5px 100px;
 }
 
 .title__bio {
     font-size: 36px;
+    font-weight: bold;
 }
 
 .title__subsection {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 16px;
     font-weight: normal;
 }
@@ -198,7 +197,6 @@ section.menu {
     justify-content: flex-start;
     align-items: center;
     list-style-type: none;
-    padding: 0;
     margin-top: 30px;
 }
 
@@ -217,17 +215,15 @@ section.menu {
     font-size: 16px;
     font-weight: medium;
     transition: color 0.3s ease;
+    
 }
 
-.title__network__icon img:hover,
 .title__network__item a:hover {
     color: var(--cor-de-hover-menu);
 }
 
-.title__network__icon {
-    margin-left: 20px;
-    width: 24px; /* Tamaño deseado para los íconos */
-    height: auto; /* Altura automática para mantener la proporción */
+.title__network__item a img {
+    margin-left: 10px; /* Espacio entre el nombre y el icono */
 }
 
 /* *Sección Sobre mí */
