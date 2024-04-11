@@ -708,15 +708,14 @@ section.formcontato {
 
 /* *Sección Footer */
 .footer {
-    height: 102px;
+    height: 110px;
     font-size: 16px;
     font-weight: medium;
     text-align: center;
-    background: var(--cor-de-first-section);
+    background-image: url('../assets/image/footer_bg.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
     color: var(--cor-de-texto)
 }
 
