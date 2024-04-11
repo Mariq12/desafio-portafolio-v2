@@ -582,8 +582,8 @@ section.menu {
 }
 
 .experience__img {
-    width: 570px;
-    height: 270px;
+    width: 400px;
+    height: 200px;
     margin: 0 10px 0 0;
 }
 
@@ -601,7 +601,7 @@ section.menu {
 }
 
 .experience__text {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
 }
 
@@ -1031,7 +1031,7 @@ section.formcontato {
         width: 100%;
         /* Ancho máximo permitido */
         max-width: 88%;
-        height: 250px;
+        height: 310px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1045,7 +1045,7 @@ section.formcontato {
     .title__profile {
         order: 2;
         width: 170px;
-        height: 240px;
+        height: 200px;
         margin-left: 20px;
         margin-right: 10px;
     }
@@ -1061,43 +1061,71 @@ section.formcontato {
         font-weight: normal;
     }
 
+    .title__network {
+        margin-top: 40px;
+    }
+
     /* *Sección Sobre mí */
     .about {
         padding-bottom: 30px;
-        margin-bottom: 5%;
+        margin-bottom: 45%;
     }
 
     /* *Sección Skills */
     .skills {
         padding-top: 20px;
-        margin-bottom: 35%;
+        margin-bottom: 55%;
     }
 
     .skills__line {
         justify-content: center;
-        /* Centra los elementos en una línea */
     }
 
     .skills__box {
         width: 150px;
-        /* Reducir el ancho del cuadro */
         height: 180px;
-        /* Reducir la altura del cuadro */
         margin: 30px;
     }
 
     /* *Sección Academic */
-    .academic__title {
-        font-size: 32px;
-        font-weight: bold;
+    .academic {
+        height: 600px;
     }
 
+    .academic__title {
+        margin-top: 80px;
+    }
+    .academic__courses {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Espacio uniforme entre las cajas */
+        align-items: flex-start;
+        padding: 0 10px; /* Añade relleno a los lados */
+    }
+    
+    /* Establece el ancho para acomodar 2 cajas por fila */
     .academic__courses__box {
-        width: 350px;
-        /* Reducir el ancho del cuadro */
-        height: 250px;
-        /* Reducir la altura del cuadro */
-        margin: 10px;
+        width: calc(50% - 20px); /* Calcula el ancho para 2 cajas por fila con margen */
+        height: 170px;
+        margin-bottom: 70px; /* Ajusta el espacio inferior entre las cajas */
+        padding: 20px; /* Añade relleno interno */
+        box-sizing: border-box; /* Incluye el relleno en el ancho total */
+    }
+    .academic__courses__item {
+        margin-top: 45px;
+    }
+
+    .academic__courses__item__img {
+        height: 160px;
+    }
+    .academic__courses__item__title {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .academic__courses__item__subtitle {
+        font-size: 14px;
+        margin-top: 8px; /* Añade espacio superior al subtítulo */
     }
 
     /* *Sección Hobbies */
@@ -1115,9 +1143,12 @@ section.formcontato {
     }
 
     /* *Sección Experiencia */
+
+    
+    
     .experience__img {
         width: 400px;
-        height: 360px;
+        height: 270px;
         margin: 0 30px 0 30px;
         /* Margen derecho para separación */
     }
@@ -1300,7 +1331,7 @@ section.formcontato {
     .academic__courses__box {
         width: calc(50% - 20px);
         /* Calcula el ancho para 2 cajas por fila con margen */
-        margin-left: 20px;
+        height: 100px;
         margin-bottom: 30%;
         height: 260px;
     }
