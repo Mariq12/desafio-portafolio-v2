@@ -164,13 +164,20 @@ section.menu {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la intensidad de la sombra al hacer hover */
 }
 
-
 .title__profile {
     order: 2;
     width: 250px;
     height: 330px;
     margin-left: 20px;
-    border-radius: 100%;
+    border-radius: 50%; /* Usa 50% para un borde completamente redondeado */
+    border: 4px solid #ffffff; /* Borde blanco sólido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease-in-out; /* Transición suave al hacer hover */
+}
+
+.title__profile:hover {
+    transform: scale(1.05); /* Efecto de escala al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
 }
 
 .title__container {
@@ -214,8 +221,7 @@ section.menu {
     color: var(--cor-de-link);
     font-size: 16px;
     font-weight: medium;
-    transition: color 0.3s ease;
-    
+    transition: color 0.3s ease;    
 }
 
 .title__network__item a:hover {
@@ -224,6 +230,26 @@ section.menu {
 
 .title__network__item a img {
     margin-left: 10px; /* Espacio entre el nombre y el icono */
+    transition: transform 0.3s ease-in-out; /* Transición suave al hacer hover */
+}
+
+.title__network__item a:hover img {
+    transform: rotate(360deg); /* Rotar el icono 360 grados al hacer hover */
+}
+
+.title__network__item a:hover::after {
+    content: attr(data-text); /* Mostrar el texto del enlace al hacer hover */
+    position: absolute;
+    bottom: -20px; /* Ajustar la posición del texto */
+    left: 50%; /* Centrar el texto */
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    font-size: 14px;
+    font-weight: normal;
+    white-space: nowrap; /* Evitar saltos de línea */
 }
 
 /* *Sección Sobre mí */
@@ -250,7 +276,7 @@ section.menu {
     align-items: flex-start;
     width: 100%;
     max-width: 88%;
-    height: 275px;
+    height: 250px;
 }
 
 .about__title {
