@@ -107,17 +107,25 @@ section.menu {
 .menu__list {
     display: flex;
     align-items: center;
-    /* Centra verticalmente los elementos de la lista del menú */
     margin-top: 10px;
-    /* Margen superior para separación */
-    font-size: 16px;
+    font-size: 18px;
     font-size: medium;
     list-style-type: none;
 }
 
 /* Estilo para los elementos de la lista del menú */
 .menu__list__item {
-    margin-right: 30px;
+    margin-right: 35px;
+}
+
+.menu__list__item a {  
+    transition: color 0.3s ease;
+    /* Transición suave para el color del texto */
+}
+
+.menu__list__item a:hover {
+    color: var(--cor-de-hover-menu);
+    /* Cambia el color del texto en hover */
 }
 
 /* Estilo para el elemento de contacto en la lista del menú */
@@ -140,45 +148,48 @@ section.menu {
 
 .title__div {
     width: 100%;
-    /* Ancho máximo permitido */
     max-width: 88%;
     height: 368px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: var(--cor-de-first-section);
-    margin-top: 30px;
+    padding-left: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
+    border-radius: 5px 130px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+    transition: box-shadow 0.3s ease; /* Agrega una transición suave a la sombra */
 }
+
+/* Aplica la sombra cuando se hace hover sobre el elemento */
+.title__div:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la intensidad de la sombra al hacer hover */
+}
+
 
 .title__profile {
     order: 2;
-    /* Cambia el orden del elemento */
     width: 250px;
-    /* Ancho de la imagen del perfil */
-    height: 368px;
-    /* Altura automática manteniendo la proporción */
+    height: 330px;
     margin-left: 20px;
+    border-radius: 100%;
 }
 
 .title__container {
     order: 1;
-    /* Cambia el orden del elemento */
     flex: 1;
-    /* El contenido ocupará el espacio restante */
-
     text-align: justify;
     margin-left: 10px;
 }
 
 .title__bio {
-    font-size: 40px;
+    font-size: 36px;
 }
 
 .title__subsection {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 16px;
-    /* Margen inferior para separación */
     font-weight: normal;
 }
 
@@ -191,19 +202,32 @@ section.menu {
     margin-top: 30px;
 }
 
+/* Estilos para los íconos de las redes sociales */
+.title__network__item {
+    display: inline-block; /* Hace que los elementos de la lista se muestren en línea */
+    margin-left: 10%; /* Espacio entre los íconos */
+}
+
 .title__network__item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: var(--cor-de-link);
-    /* Color del texto */
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
     font-size: 16px;
     font-weight: medium;
+    transition: color 0.3s ease;
+}
+
+.title__network__icon img:hover,
+.title__network__item a:hover {
+    color: var(--cor-de-hover-menu);
 }
 
 .title__network__icon {
-    margin-left: 5px;
+    margin-left: 20px;
+    width: 24px; /* Tamaño deseado para los íconos */
+    height: auto; /* Altura automática para mantener la proporción */
 }
 
 /* *Sección Sobre mí */
@@ -211,101 +235,93 @@ section.menu {
     background: var(--cor-de-second-section);
     display: flex;
     justify-content: center;
-    /* Centra horizontalmente en el viewport */
     align-items: center;
-    /* Centra verticalmente en el viewport */
     width: 100%;
-    /* Ocupa todo el ancho disponible del viewport */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+    transition: box-shadow 0.3s ease; /* Agrega una transición suave a la sombra */
+}
+
+
+/* Aplica la sombra cuando se hace hover sobre el elemento */
+.about:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la intensidad de la sombra al hacer hover */
 }
 
 .about__container {
     display: flex;
     flex-direction: column;
-    /* Cambia a disposición en columna */
     justify-content: center;
     align-items: flex-start;
-    /* Alinea los elementos a la izquierda */
     width: 100%;
-    /* Ancho máximo permitido */
     max-width: 88%;
-    height: 255px;
-    background: var(--cor-de-second-section);
+    height: 275px;
 }
 
 .about__title {
     font-size: 32px;
     font-weight: 500;
-    margin-top: 30px;
-    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
 
 .about__paragraph {
     margin-bottom: 5px;
     text-align: justify;
-    /* Aplica justificación al texto */
 }
 
 /* *Sección Skills */
 .skills {
     display: flex;
     justify-content: center;
-    /* Centra horizontalmente en el viewport */
     align-items: center;
-    /* Centra verticalmente en el viewport */
     width: 100%;
-    /* Ocupa todo el ancho disponible del viewport */
 }
 
 .skills__container {
     display: flex;
     flex-direction: column;
-    /* Cambia la disposición a columna */
     justify-content: center;
-    /* Centra verticalmente en el viewport */
     align-items: center;
-    /* Centra horizontalmente */
     width: 100%;
-    /* Ocupa todo el ancho disponible */
     max-width: 88%;
-    /* Ancho máximo permitido */
-    height: 244px;
-    /* Usar altura completa del viewport */
-    margin-top: 10px;
+    height: 235px;
+    margin-top: 10%;
 }
 
 .skills__title {
     font-size: 32px;
     font-weight: 500;
     margin-bottom: 24px;
-    /* Espaciado inferior */
     margin-top: 5px;
 }
 
 .skills__line {
     display: flex;
     justify-content: space-between;
-    /* Distribuye los elementos con espacio proporcional */
     align-items: center;
-    /* Centra verticalmente */
     flex-wrap: wrap;
-    /* Permite que los elementos se envuelvan en varias líneas */
     width: 100%;
-    /* Ocupa todo el ancho disponible */
     margin-right: 30px;
     margin-left: 30px;
+    padding: 30px;
 }
 
 .skills__box {
     display: flex;
     flex-direction: column;
-    /* Cambia la disposición a columna */
-    justify-content: flex-end;
-    /* Alinea los elementos al final */
+    justify-content: center;
     align-items: flex-start;
-    /* Alinea los elementos a la izquierda */
     width: 185px;
-    height: 174px;
+    height: 140px;
+    margin: 5px; /* Margen entre las tarjetas */
     background: var(--cor-de-first-section);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+    transition: box-shadow 0.3s ease; /* Agrega una transición suave a la sombra */
+}
+
+/* Aplica la sombra cuando se hace hover sobre el elemento */
+.skills__box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la intensidad de la sombra al hacer hover */
 }
 
 .skills__img {
@@ -315,7 +331,6 @@ section.menu {
 
 .skills__name {
     margin-top: auto;
-    /* Mueve el nombre hacia la parte inferior */
 }
 
 /* *Sección Hobbies */
@@ -343,7 +358,7 @@ section.menu {
     /* Ancho máximo permitido */
     height: 244px;
     /* Usar altura completa del viewport */
-    margin-top: 25px;
+    margin-top: 8%;
 }
 
 .hobbies__title {
@@ -371,14 +386,19 @@ section.menu {
 .hobbies__box {
     display: flex;
     flex-direction: column;
-    /* Cambia la disposición a columna */
     justify-content: flex-end;
-    /* Alinea los elementos al final */
     align-items: flex-start;
-    /* Alinea los elementos a la izquierda */
     width: 185px;
     height: 174px;
     background: var(--cor-de-first-section);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+    transition: box-shadow 0.3s ease; /* Agrega una transición suave a la sombra */
+
+}
+
+/* Aplica la sombra cuando se hace hover sobre el elemento */
+.hobbies__box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la intensidad de la sombra al hacer hover */
 }
 
 .hobbies__img {
