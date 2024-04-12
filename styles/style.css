@@ -1661,7 +1661,7 @@ section.formcontato {
     .about {
         padding-top: 10px;
         padding-bottom: 40px;
-        margin-bottom: 80%;
+        margin-bottom: 70%;
     }
 
     /* *Sección Skills */
@@ -1669,23 +1669,29 @@ section.formcontato {
         margin-bottom: 100%;
     }
 
+    .skills__container {
+        height: 10px;
+    }
+
     .skills__line {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
-    .skills__box {
-        width: 130px;
-        /* Reducir el ancho del cuadro */
-        height: 130px;
-        /* Reducir la altura del cuadro */
-        margin: 10px;
+
+    .skills__name {
+        font-size: 13px;
     }
 
     /* *Sección Hobbies */
     .hobbies {
-        margin-top: 30px;
-        margin-bottom: 35%;
+        margin-top: 20px;
+        margin-bottom: 25%;
+    }
+
+    .hobbies__container {
+        height: 130px;
     }
 
     .hobbies__line {
@@ -1696,15 +1702,15 @@ section.formcontato {
     .hobbies__box {
         width: 130px;
         height: 130px;
-        margin: 10px;
     }
 
+    /* *Sección Academica */
     .academic {
         height: 700px;
     }
 
     .academic__title {
-        margin-top: 25%;
+        margin-top: 15%;
     }
 
     .academic__courses {
