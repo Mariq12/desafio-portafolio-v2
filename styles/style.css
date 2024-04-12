@@ -2095,7 +2095,7 @@ section.formcontato {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        height: 345px;
+        height: 280px;
     }
 
     .experience__img {
@@ -2119,7 +2119,7 @@ section.formcontato {
     }
 
     .experience__title {
-        font-size: 22px;
+        font-size: 20px;
         font-weight: bold;
         margin-right: 10px;
     }
@@ -2142,7 +2142,7 @@ section.formcontato {
     display: block;
     width: 100%; /* Opcional: Ajusta el ancho del botón al 100% del contenedor */
     padding: 8px 12px; /* Ajusta el relleno interno del botón */
-    font-size: 14px; /* Tamaño de fuente más pequeño */
+    font-size: 12px; /* Tamaño de fuente más pequeño */
     text-align: center; /* Centra el texto dentro del botón */
     text-decoration: none; /* Elimina la subrayado del enlace */
     border-radius: 4px; /* Bordes redondeados */
@@ -2162,7 +2162,7 @@ section.formcontato {
         flex-direction: column;
         justify-content: center;
         padding: 30px 30px 70px 30px;
-        margin-top: 55px;
+        margin-top: 65px;
     }
 
     .formcontato__img {
@@ -2176,13 +2176,14 @@ section.formcontato {
         justify-content: center;
         align-items: center;
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .formcontato__input,
     .formcontato__textarea {
-        width: 350px;
+        width: 280px;
         height: 56px;
-        margin-bottom: 16px;
+        margin-bottom: 10px;
         border: none;
     }
 
@@ -2191,4 +2192,8 @@ section.formcontato {
         background: var(--cor-de-second-gradient);
     }
 
+    .footer__rodape {
+        text-align: center;
+        margin: 20px;
+    }
 }
