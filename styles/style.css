@@ -174,13 +174,13 @@ section.menu {
     align-items: center;
     background: var(--cor-de-first-section);
     padding-left: 10px;
-    margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 5px 130px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Agrega una sombra suave */
     transition: box-shadow 0.3s ease;
     /* Agrega una transición suave a la sombra */
+    margin-top: 10%;
 }
 
 /* Aplica la sombra cuando se hace hover sobre el elemento */
@@ -927,7 +927,7 @@ section.formcontato {
         justify-content: center;
         align-items: center;
         background: var(--cor-de-first-section);
-        margin-top: 20px;
+        margin-top: 10%;
         margin-bottom: 20px;
         padding-left: 10px;
         padding-right: 10px;
@@ -938,7 +938,7 @@ section.formcontato {
         /* Cambia el orden del elemento */
         width: 150px;
         /* Ancho de la imagen del perfil */
-        height: 240px;
+        height: 220px;
         /* Altura automática manteniendo la proporción */
         margin-left: 20px;
         margin-right: 10px;
@@ -1097,7 +1097,7 @@ section.formcontato {
         justify-content: space-between;
         align-items: center;
         background: var(--cor-de-first-section);
-        margin-top: 20px;
+        margin-top: 15%;
         margin-bottom: 20px;
         padding-left: 10px;
         padding: 10px;
@@ -1211,9 +1211,6 @@ section.formcontato {
     }
 
     /* *Sección Experiencia */
-
-
-
     .experience__img {
         width: 400px;
         height: 270px;
@@ -1235,8 +1232,6 @@ section.formcontato {
         border: none;
     }
 }
-
-
 
 /* *** Estilos para dispositivos con ancho minimo 800px *** */
 @media screen and (min-width: 625px) and (max-width: 800px) {
@@ -1308,7 +1303,7 @@ section.formcontato {
         max-width: 88%;
         height: 450px;
         background: var(--cor-de-first-section);
-        margin-top: 20px;
+        margin-top: 20%;
         margin-bottom: 20px;
         padding: 10px;
     }
@@ -1339,9 +1334,11 @@ section.formcontato {
         margin-right: 55px;
     }
 
+  
+
     /* Estilos para los íconos de las redes sociales */
     .title__network__item {
-        margin-left: 5%;
+        margin-left: 5px;
         /* Espacio entre los íconos */
     }
 
