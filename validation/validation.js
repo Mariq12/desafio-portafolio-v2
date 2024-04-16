@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 function toggleMenu() {
-    var menuNav = document.getElementById("menuNav");
+    var menuNav = document.getElementById(".menu__nav");
     if (menuNav.style.display === "block") {
         menuNav.style.display = "none";
     } else {

@@ -151,8 +151,7 @@ section.menu {
 
 /* Estilo para el elemento de contacto en la lista del menú */
 .menu__list__item-contacto {
-    margin-left: auto;
-    /* Empuja el elemento de contacto hacia la derecha tanto como sea posible */
+    margin-right: 35px;
     font-weight: bold;
 }
 
@@ -1307,6 +1306,7 @@ section.formcontato {
         margin-top: 20%;
         margin-bottom: 20px;
         padding: 10px;
+        padding-top:33px;
     }
 
     .title__container {
