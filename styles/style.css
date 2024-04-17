@@ -670,7 +670,6 @@ body.active .footer {
 .academic__container {
     display: flex;
     flex-direction: column;
-    /* Cambia la disposición a columna */
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -903,7 +902,6 @@ section.formcontato {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 87%;
     height: 765px;
 }
 
@@ -912,11 +910,12 @@ section.formcontato {
     justify-content: center;
     align-items: center;
     height: 680px;
+    padding: 20px;
 }
 
 .formcontato__img {
-    width: 450px;
-    height: 593px;
+    aspect-ratio: 2000/2000;
+    height: 570px;
     border-radius: 20px;
 }
 
@@ -924,8 +923,8 @@ section.formcontato {
     flex: 1;
     text-align: left;
     margin-left: 20px;
-    width: 660px;
-    height: 559px;
+    width: 600px;
+    height: 605px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -937,6 +936,7 @@ section.formcontato {
             rgba(255, 255, 255, 0.2) 80%);
     /* Degradado con transparencia */
     border-radius: 20px;
+    margin-right: 25px;
 }
 
 .formcontato__title {
@@ -998,7 +998,7 @@ section.formcontato {
     margin-top: 0;
     /* Agrega un margen superior */
     align-self: center;
-    /* Centra horizontalmente */
+    margin-bottom: 30px;
 }
 
 .formcontato__botao:hover {
