@@ -502,6 +502,7 @@ body.active .footer {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .skills__container {
@@ -531,6 +532,19 @@ body.active .footer {
     margin-right: 30px;
     margin-left: 30px;
     padding: 30px;
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.2) 20%,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0.1) 80%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+/* Aplica la sombra cuando se hace hover sobre el elemento */
+.skills__line:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Aumenta la intensidad de la sombra al hacer hover */
 }
 
 .skills__box {
@@ -613,7 +627,22 @@ body.active .footer {
     /* Ocupa todo el ancho disponible */
     margin-right: 30px;
     margin-left: 30px;
+    
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.2) 20%,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0.1) 80%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
 }
+
+/* Aplica la sombra cuando se hace hover sobre el elemento */
+.hobbies__line:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Aumenta la intensidad de la sombra al hacer hover */
+}
+
 
 .hobbies__box {
     display: flex;
@@ -1129,7 +1158,7 @@ section.formcontato {
         width: 100%;
         height: 275px;
         padding-bottom: 30px;
-        margin-bottom: 10%;
+        margin-bottom: 7%;
     }
 
     /* *Sección Skills */
@@ -1138,10 +1167,8 @@ section.formcontato {
         justify-content: flex-end;
         align-items: center;
         width: 100%;
-        padding-top: 30px;
-        height: 40%;
+        height: 35%;
         padding-bottom: 30px;
-        margin-bottom: 15%;
     }
 
     .skills__line {
@@ -1149,8 +1176,8 @@ section.formcontato {
     }
 
     .skills__box {
-        width: 150px;
-        height: 180px;
+        width: 120px;
+        height: 120px;
         margin: 30px;
     }
 
@@ -1160,10 +1187,8 @@ section.formcontato {
         justify-content: flex-end;
         align-items: center;
         width: 100%;
-        padding-top: 30px;
-        height: 390px;
+        height: 370px;
         padding-bottom: 10px;
-        margin-bottom: 8%;
     }
 
     .hobbies__line {
@@ -1171,9 +1196,13 @@ section.formcontato {
     }
 
     .hobbies__box {
-        width: 150px;
-        height: 180px;
+        width: 125px;
+        height: 120px;
         margin: 30px;
+    }
+
+    .academic {
+    padding-bottom: 15px;
     }
 
     .experience__box {
@@ -1263,7 +1292,7 @@ section.formcontato {
         align-items: center;
         background: var(--cor-de-first-section);
         margin-top: 15%;
-        margin-bottom: 20px;
+
         padding-left: 10px;
         padding: 10px;
     }
@@ -1287,18 +1316,15 @@ section.formcontato {
         font-weight: normal;
     }
 
-    .title__network {}
-
     /* *Sección Sobre mí */
     .about {
-        padding-bottom: 30px;
-        margin-bottom: 45%;
+        margin-top: 20px;
+        margin-bottom: 50px;
     }
 
     /* *Sección Skills */
     .skills {
-        padding-top: 20px;
-        margin-bottom: 55%;
+        margin-bottom: 10%;
     }
 
     .skills__line {
@@ -1306,18 +1332,14 @@ section.formcontato {
     }
 
     .skills__box {
-        width: 150px;
-        height: 180px;
+        width: 120px;
+        height: 120px;
         margin: 30px;
     }
 
     /* *Sección Academic */
     .academic {
-        height: 600px;
-    }
-
-    .academic__title {
-        margin-top: 80px;
+        height: 680px;
     }
 
     .academic__courses {
@@ -1326,16 +1348,15 @@ section.formcontato {
         justify-content: space-between;
         /* Espacio uniforme entre las cajas */
         align-items: flex-start;
-        padding: 0 10px;
-        /* Añade relleno a los lados */
+
     }
 
     /* Establece el ancho para acomodar 2 cajas por fila */
     .academic__courses__box {
-        width: calc(50% - 20px);
+        width: calc(35% - 10px);
         /* Calcula el ancho para 2 cajas por fila con margen */
-        height: 170px;
-        margin-bottom: 70px;
+        height: 155px;
+        margin-bottom: 135px;
         /* Ajusta el espacio inferior entre las cajas */
         padding: 20px;
         /* Añade relleno interno */
@@ -1343,7 +1364,7 @@ section.formcontato {
     }
 
     .academic__courses__item {
-        margin-top: 45px;
+        margin-top: 105px;
     }
 
     .academic__courses__item__img {
@@ -1364,13 +1385,13 @@ section.formcontato {
     /* *Sección Hobbies */
     .hobbies {
         padding-bottom: 20px;
-        margin-bottom: 15%;
+        margin-bottom: 10%;
     }
 
     .hobbies__box {
-        width: 150px;
+        width: 125px;
         /* Reducir el ancho del cuadro */
-        height: 180px;
+        height: 120px;
         /* Reducir la altura del cuadro */
         margin: 30px;
     }
@@ -1381,6 +1402,10 @@ section.formcontato {
         height: 270px;
         margin: 0 30px 0 30px;
         /* Margen derecho para separación */
+    }
+
+    .experience__info-container {
+
     }
 
     /* *Sección Formulario de Contacto */
