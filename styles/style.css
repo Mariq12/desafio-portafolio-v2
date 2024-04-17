@@ -835,8 +835,6 @@ body.active .footer {
 }
 .experience__img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    /* Aumenta la intensidad de la sombra al hacer hover */
-    height: 210px;
 }
 
 .experience__info-container {
@@ -1211,6 +1209,7 @@ section.formcontato {
     }
 }
 
+
 /* *** Estilos para dispositivos con ancho minimo 800px *** */
 @media screen and (min-width: 800px) and (max-width: 1290px) {
 
@@ -1306,12 +1305,12 @@ section.formcontato {
     }
 
     .title__bio {
-        font-size: 27px;
+        font-size: 22px;
         font-weight: bold;
     }
 
     .title__subsection {
-        font-size: 16px;
+        font-size: 15px;
         margin-bottom: 16px;
         font-weight: normal;
     }
@@ -1398,30 +1397,81 @@ section.formcontato {
 
     /* *Sección Experiencia */
     .experience__img {
-        width: 400px;
-        height: 270px;
+        aspect-ratio: 1327/697;
+        height: 160px;
         margin: 0 30px 0 30px;
         /* Margen derecho para separación */
     }
 
-    .experience__info-container {
+    
+.experience__info-container {
+    flex: 1;
+    /* El contenido ocupará el espacio restante */
+    width: 368px;
+    height: 200px;
+    margin-left: 30px;
+    margin-right: 20px;
 
-    }
+}
+
+.experience__title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.experience__text {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.experience__description {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+}
 
     /* *Sección Formulario de Contacto */
     .formcontato__img {
-        width: 300px;
+        aspect-ratio: 2000/2000;
         height: 400px;
     }
 
     .formcontato__input,
     .formcontato__textarea {
-        width: 350px;
-        height: 56px;
+        width: 340px;
+        height: 54px;
         margin-bottom: 16px;
         border: none;
     }
 }
+
+/* *** Estilos para dispositivos con ancho minimo 800px *** */
+@media screen and (min-width: 800px) and (max-width: 1250px) {
+    /* *Sección Skills */
+    .skills {
+        margin-top: 35%;
+        margin-bottom: 45%;
+    }
+    .hobbies {
+        margin-top: 5%;
+        margin-bottom: 15%;
+    }
+
+    .academic {
+        padding-top: 15px;
+    }
+    .formcontato__img {
+        aspect-ratio: 2000/2000;
+        height: 300px;
+    }
+    .formcontato__text {
+        width: 550px;
+        height: 545px;
+        margin-right: 90px;
+    }
+}
+
 
 /* *** Estilos para dispositivos con ancho minimo 800px *** */
 @media screen and (min-width: 625px) and (max-width: 800px) {
@@ -2023,7 +2073,7 @@ section.formcontato {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 400px;
     }
 
     .formcontato__input,
