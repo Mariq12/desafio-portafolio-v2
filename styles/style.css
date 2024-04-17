@@ -785,11 +785,13 @@ body.active .footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 306px;
+    height: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Agrega una sombra suave */
     transition: box-shadow 0.3s ease;
     /* Agrega una transición suave a la sombra */
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 /* Aplica la sombra cuando se hace hover sobre el elemento */
@@ -803,7 +805,11 @@ body.active .footer {
     height: 200px;
     margin: 0 10px 0 0;
     border-radius: 10px;
-
+}
+.experience__img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Aumenta la intensidad de la sombra al hacer hover */
+    height: 210px;
 }
 
 .experience__info-container {
