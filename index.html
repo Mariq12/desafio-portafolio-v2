@@ -1,601 +1,821 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fonte del Proyecto Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Mi portafolio</title>
-</head>
-<body>
-
-    <!-- Sección del Menú  -->
-    <div class="tudo">
-        <section class="menu">
-            <header class="menu__header">
-                <img class="menu__logo" src="assets\logos\logo.png">
-                <h3 class="menu__title">Flor María Labanda</h3>
-                <!-- Icono de menú para dispositivos móviles -->
-                <div class="menu__toggle">
-                    <i class="fas fa-bars" onclick="toggleMenu()"></i>
-                </div>
-
-                <nav class="menu__nav">
-                    <ul class="menu__list">
-                        <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                        <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                        <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                        <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                        <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                        <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
-                        <li class="menu__list__item menu-contacto"><a href="">mariq.mx@gmail.com</a></li>
-                        <!-- Cambiar de tema -->
-                        <li class="menu__list__item-tema">
-                            <i class="fas fa-sun"></i>
-                            <i class="fas fa-moon"></i>
-
-                        </li>
-                    </ul>
-                </nav>
-
-            </header>
-        </section>
-
-       <!-- Sección del Header/Title/Hero -->
-       <section class="title">
-        <div class="title__div">
-            <img class="title__profile" src="assets\image\img.jpg">
-            <div class="title__container">
-                <h2 class="title__bio">Hola, mi nombre es Flor María Labanda Puchaicela, soy Ingeniera en Tecnologías de la Información y construyo aplicaciones construyo paginas web</h2>
-                <h3 class="title__subsection">Soy especialista en la gestión y desarrollo de soluciones basadas en el uso de Tecnologías de Información (TI), a nivel empresarial y gubernamental y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
-                <ul class="title__network">
-                    <!-- Pon los enlaces de tus redes sociales favoritas -->
-                    <li class="title__network__item"><a href="https://github.com/Mariq12">Github <img src="assets\icons\nav1.png"> <img class="img-nav5" src="assets/icons/nav5.png"></a></li>
-                    <li class="title__network__item"><a href="https://www.linkedin.com/in/flor-mar%C3%ADa-labanda-puchaicela-ing-ti/">Linkedin <img src="assets\icons\nav2.png"></a></li>
-                    <li class="title__network__item"><a href="https://www.instagram.com/flormarialabandapuchaicela">Instagram <img src="assets\icons\nav3.png"></a></li>
-                    <li class="title__network__item"><a href="https://www.canva.com/design/DAGCCZKa408/_Dmjz6fGMIkOk_yd3E0fEw/view?utm_content=DAGCCZKa408&utm_campaign=designshare&utm_medium=link&utm_source=editor">Currículo <img src="assets\icons\nav4.png"></a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-        <!-- Sección sobre mi -->
-        <section class="about" id="sobre-mi">
-            <div class="about__container">
-                <h3 class="about__title">Sobre mi</h3>
-                <p class="about__paragraph">Soy especialista en la gestión y desarrollo de soluciones basadas en el uso de Tecnologías de Información (TI), a nivel empresarial y gubernamental, con una visión de innovación tecnológica inclusiva.</p>
-                <p class="about__paragraph">Estoy en constante búsqueda de desarrollo profesional, actualmente me encuentro inmerso en la exploración y práctica de habilidades en Python, Django, React, gestión de bases de datos, IA... Mi compromiso con el aprendizaje continuo impulsa mi capacidad para adaptarme a los desafíos tecnológicos en constante evolución.</p>
-            </div>
-        </section>
-
-        <!-- Sección de Skills -->
-        <section class="skills" id="skills">
-            <div class="skills__container">
-                <h3 class="skills__title">Skills</h3>
-                <div class="skills__line">
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"><img src="assets\icons\skills\html_icon.png"></li>
-                            <li class="skills__name"> HTML 5</li>
-                        </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Fonte del Proyecto Raleway -->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>Mi portafolio</title>
+    </head>
+    <body>
+        <!-- Sección del Menú  -->
+        <div class="tudo">
+            <section class="menu">
+                <header class="menu__header">
+                    <img class="menu__logo" src="assets\logos\logo.png">
+                    <h3 class="menu__title">Flor María Labanda</h3>
+                    <!-- Icono de menú para dispositivos móviles -->
+                    <div class="menu__toggle">
+                        <i class="fas fa-bars" onclick="toggleMenu()"></i>
                     </div>
-
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"> <img src="assets\icons\skills\js_icon.png" alt=""></li>
-                            <li class="skills__name">Javascript</li>
+                    <nav class="menu__nav">
+                        <ul class="menu__list">
+                            <li class="menu__list__item">
+                                <a href="#sobre-mi">Sobre mi</a>
+                            </li>
+                            <li class="menu__list__item">
+                                <a href="#skills">Skills</a>
+                            </li>
+                            <li class="menu__list__item">
+                                <a href="#hobbies">Hobbies</a>
+                            </li>
+                            <li class="menu__list__item">
+                                <a href="#formacion">Formación</a>
+                            </li>
+                            <li class="menu__list__item">
+                                <a href="#xp">Proyectos</a>
+                            </li>
+                            <li class="menu__list__item">
+                                <a href="#contacto">Contacto</a>
+                            </li>
+                            <li class="menu__list__item menu-contacto">
+                                <a href="">mariq.mx@gmail.com</a>
+                            </li>
+                            <!-- Cambiar de tema -->
+                            <li class="menu__list__item-tema">
+                                <i class="fas fa-sun"></i>
+                                <i class="fas fa-moon"></i>
+                            </li>
                         </ul>
-                    </div>
-
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"> <img src="assets\icons\skills\python_icon.png" alt=""></li>
-                            <li class="skills__name">Python</li>
-                        </ul>
-                    </div>
-
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"><img src="assets\icons\skills\dart_icon.png" alt=""></li>
-                            <li class="skills__name">Dart</li>
-                        </ul>
-                    </div>
-
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"><img src="assets\icons\skills\java_icon.png" alt=""></li>
-                            <li class="skills__name">Java</li>
-                        </ul>
-                    </div>
-
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"><img src="assets\icons\skills\flutter_icon.png" alt=""></li>
-                            <li class="skills__name">Flutter</li>
-                        </ul>
-                    </div>
-
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"><img src="assets\icons\skills\sprint_icon.png" alt=""></li>
-                            <li class="skills__name">Sprint</li>
-                        </ul>
-                    </div>
-
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"> <img src="assets\icons\skills\react_icon.png" alt=""> </li>
-                            <li class="skills__name">React</li>
-                        </ul>
-                    </div>
-
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"> <img src="assets\icons\skills\css_icon.png" alt=""> </li>
-                            <li class="skills__name">CSS</li>
-                        </ul>
-                    </div>
-
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"> <img src="assets\icons\skills\firebase_icon.png" alt=""> </li>
-                            <li class="skills__name">Firebase</li>
-                        </ul>
-                    </div>
-
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"> <img src="assets\icons\skills\sql_icon.png" alt=""> </li>
-                            <li class="skills__name">MySQL</li>
-                        </ul>
-                    </div>
-
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"> <img src="assets\icons\skills\devops_icon.png" alt=""> </li>
-                            <li class="skills__name">DevOps</li>
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de Hobbies -->
-        <section class="hobbies" id="hobbies">
-            <div class="hobbies__container">
-                <h3 class="hobbies__title">Hobbies</h3>
-                <div class="hobbies__line">
-                    <div class="hobbies__box">
-                        <ul>
-                            <li class="hobbies__img"><img src="assets\icons\hobbies\lectura_icon.png"></li>
-                            <li class="hobbies__name"> Lectura</li>
-                        </ul>
-                    </div>
-
-                    <div class="hobbies__box">
-                        <ul>
-                            <li class="hobbies__img"> <img src="assets\icons\hobbies\cocinar_icon.png" alt=""></li>
-                            <li class="hobbies__name">Cocinar</li>
-                        </ul>
-                    </div>
-
-                    <div class="hobbies__box">
-                        <ul>
-                            <li class="hobbies__img"> <img src="assets\icons\hobbies\musica_icon.png" alt=""></li>
-                            <li class="hobbies__name">Oir música</li>
-                        </ul>
-                    </div>
-
-                    <div class="hobbies__box">
-                        <ul>
-                            <li class="hobbies__img"><img src="assets\icons\hobbies\tv_icon.png" alt=""></li>
-                            <li class="hobbies__name">Ver séries</li>
-                        </ul>
-                    </div>
-
-                    <div class="hobbies__box">
-                        <ul>
-                            <li class="hobbies__img"> <img src="assets\icons\hobbies\curso_icon.png" alt=""> </li>
-                            <li class="hobbies__name">Asistir taller</li>
-                        </ul>
-                    </div>
-
-                    <div class="hobbies__box">
-                        <ul>
-                            <li class="hobbies__img"> <img src="assets\icons\hobbies\cuidar_icon.png" alt=""> </li>
-                            <li class="hobbies__name">Cuidar mascota</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de Formación académica -->
-        <section class="academic" id="formacion">
-            <div class=" academic__container">
-                <h2 class="academic__title">Formación académica</h2>
-                <div class="academic__courses">
-                    <div class="academic__courses__box">
-                        <ul class="academic__courses__list">
-                            <!-- Pon el logotipo de la institución de formación -->
-                            <div class="academic__courses__item">
-                                <li class="academic__courses__item__img"><img src="assets\logos\utpl_logo.png"></li>
-                            </div>
-                            <div class="academic__courses__item__datos">
-                                <li class="academic__courses__item__title">
-                                    <h4>Ingeniería de TI</h4>
-                                </li>
-                                <li class="academic__courses__item__subtitle">
-                                    <p>2024 - UTPL</p>
-                                </li>
-                            </div>
-                        </ul>
-                    </div>
-                    <div class="academic__courses__box">
-                        <ul class="academic__courses__list">
-                            <!--Pon el logotipo de la institución de formación -->
-                            <div class="academic__courses__item">
-                                <li class="academic__courses__item__img"><img src="assets\logos\alura_logo.png"></li>
-                            </div>
-                            <div class="academic__courses__item__datos">
-                                <li class="academic__courses__item__title">
-                                    <h4>Formación en Desarrollo Web</h4>
-                                </li>
-                                <li class="academic__courses__item__subtitle">
-                                    <p>En curso - Alura</p>
-                                </li>
-                            </div>
-                        </ul>
-                    </div>
-                    <div class="academic__courses__box">
-                        <ul class="academic__courses__list">
-                            <!-- Pon el logotipo de la institución de formación -->
-                            <div class="academic__courses__item">
-                                <li class="academic__courses__item__img"><img src="assets\logos\cisco_logo.png"></li>
-                            </div>
-                            <div class="academic__courses__item__datos">
-                                <li class="academic__courses__item__title">
-                                    <h4>Fundamentos en Python</h4>
-                                </li>
-                                <li class="academic__courses__item__subtitle">
-                                    <p>2023 - Cisco</p>
-                                </li>
-                            </div>
-                        </ul>
-                    </div>
-
-                    <div class="academic__courses__box">
-                        <ul class="academic__courses__list">
-                            <!--Pon el logotipo de la institución de formación -->
-                            <div class="academic__courses__item">
-                                <li class="academic__courses__item__img"><img src="assets\logos\google_logo.png"></li>
-                            </div>
-                            <div class="academic__courses__item__datos">
-                                <li class="academic__courses__item__title">
-                                    <h4>Formación en Desarrollo Web</h4>
-                                </li>
-                                <li class="academic__courses__item__subtitle">
-                                    <p>En curso - Google</p>
-                                </li>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de Experiencia Profesional/Proyectos-->
-        <section class="experience" id="xp">
-            <div class="container">
-                <h2 class="experience__section__title">Experiencia Profesional</h2>
-                <div class="experience__box">
-                    <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                    <img class="experience__img" src="assets\image\expeiriencia\movil_img.png">
-
-                    <div class="experience__info-container">
-                        <h2 class="experience__title">App Móvil</h2>
-                        <h3 class="experience__text">Tesis <br>
-                        Aplicación creado con Flutter y arquitectura de microsrvicios, para la empresa Capacity-Soft.<br>
-                        </h3>                     
-                        <div class="experience__description">
-                            <span class="experience__demo">
-                                <a href="https://www.figma.com/proto/pcxnSW65Ycsvu0tPFS1Xra/Figma-basics?node-id=645-13">
-                                    <button class="experience__botao--demo">Ver prototio Figma</button>
+                    </nav>
+                </header>
+            </section>
+            <!-- Sección del Header/Title/Hero -->
+            <section class="title">
+                <div class="title__div">
+                    <img class="title__profile" src="assets\image\img.jpg">
+                    <div class="title__container">
+                        <h2 class="title__bio">Hola, mi nombre es Flor María Labanda Puchaicela, soy Ingeniera en Tecnologías de la Información y construyo aplicaciones construyo paginas web</h2>
+                        <h3 class="title__subsection">Soy especialista en la gestión y desarrollo de soluciones basadas en el uso de Tecnologías de Información (TI), a nivel empresarial y gubernamental y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
+                        <ul class="title__network">
+                            <!-- Pon los enlaces de tus redes sociales favoritas -->
+                            <li class="title__network__item">
+                                <a href="https://github.com/Mariq12">
+                                    Github
+                                    <img src="assets\icons\nav1.png">
+                                    <img class="img-nav5" src="assets/icons/nav5.png">
                                 </a>
-                            </span>
+                            </li>
+                            <li class="title__network__item">
+                                <a href="https://www.linkedin.com/in/flor-mar%C3%ADa-labanda-puchaicela-ing-ti/">
+                                    Linkedin
+                                    <img src="assets\icons\nav2.png">
+                                </a>
+                            </li>
+                            <li class="title__network__item">
+                                <a href="https://www.instagram.com/flormarialabandapuchaicela">
+                                    Instagram
+                                    <img src="assets\icons\nav3.png">
+                                </a>
+                            </li>
+                            <li class="title__network__item">
+                                <a href="https://www.canva.com/design/DAGCCZKa408/_Dmjz6fGMIkOk_yd3E0fEw/view?utm_content=DAGCCZKa408&utm_campaign=designshare&utm_medium=link&utm_source=editor">
+                                    Currículo
+                                    <img src="assets\icons\nav4.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Sección sobre mi -->
+            <section class="about" id="sobre-mi">
+                <div class="about__container">
+                    <h3 class="about__title">Sobre mi</h3>
+                    <p class="about__paragraph">Soy especialista en la gestión y desarrollo de soluciones basadas en el uso de Tecnologías de Información (TI), a nivel empresarial y gubernamental, con una visión de innovación tecnológica inclusiva.</p>
+                    <p class="about__paragraph">Estoy en constante búsqueda de desarrollo profesional, actualmente me encuentro inmerso en la exploración y práctica de habilidades en Python, Django, React, gestión de bases de datos, IA... Mi compromiso con el aprendizaje continuo impulsa mi capacidad para adaptarme a los desafíos tecnológicos en constante evolución.</p>
+                </div>
+            </section>
+            <!-- Sección de Skills -->
+            <section class="skills" id="skills">
+                <div class="skills__container">
+                    <h3 class="skills__title">Skills</h3>
+                    <div class="skills__line">
+                        <div class="skills__box">
+                            <ul>
+                                <li class="skills__img">
+                                    <img src="assets\icons\skills\html_icon.png">
+                                </li>
+                                <li class="skills__name"> HTML 5</li>
+                            </ul>
+                        </div>
+                        <div class="skills__box">
+                            <ul>
+                                <li class="skills__img">
+                                    <img src="assets\icons\skills\js_icon.png" alt="">
+                                </li>
+                                <li class="skills__name">Javascript</li>
+                            </ul>
+                        </div>
+                        <div class="skills__box">
+                            <ul>
+                                <li class="skills__img">
+                                    <img src="assets\icons\skills\python_icon.png" alt="">
+                                </li>
+                                <li class="skills__name">Python</li>
+                            </ul>
+                        </div>
+                        <div class="skills__box">
+                            <ul>
+                                <li class="skills__img">
+                                    <img src="assets\icons\skills\dart_icon.png" alt="">
+                                </li>
+                                <li class="skills__name">Dart</li>
+                            </ul>
+                        </div>
+                        <div class="skills__box">
+                            <ul>
+                                <li class="skills__img">
+                                    <img src="assets\icons\skills\java_icon.png" alt="">
+                                </li>
+                                <li class="skills__name">Java</li>
+                            </ul>
+                        </div>
+                        <div class="skills__box">
+                            <ul>
+                                <li class="skills__img">
+                                    <img src="assets\icons\skills\flutter_icon.png" alt="">
+                                </li>
+                                <li class="skills__name">Flutter</li>
+                            </ul>
+                        </div>
+                        <div class="skills__box">
+                            <ul>
+                                <li class="skills__img">
+                                    <img src="assets\icons\skills\sprint_icon.png" alt="">
+                                </li>
+                                <li class="skills__name">Sprint</li>
+                            </ul>
+                        </div>
+                        <div class="skills__box">
+                            <ul>
+                                <li class="skills__img">
+                                    <img src="assets\icons\skills\react_icon.png" alt="">
+                                </li>
+                                <li class="skills__name">React</li>
+                            </ul>
+                        </div>
+                        <div class="skills__box">
+                            <ul>
+                                <li class="skills__img">
+                                    <img src="assets\icons\skills\css_icon.png" alt="">
+                                </li>
+                                <li class="skills__name">CSS</li>
+                            </ul>
+                        </div>
+                        <div class="skills__box">
+                            <ul>
+                                <li class="skills__img">
+                                    <img src="assets\icons\skills\firebase_icon.png" alt="">
+                                </li>
+                                <li class="skills__name">Firebase</li>
+                            </ul>
+                        </div>
+                        <div class="skills__box">
+                            <ul>
+                                <li class="skills__img">
+                                    <img src="assets\icons\skills\sql_icon.png" alt="">
+                                </li>
+                                <li class="skills__name">MySQL</li>
+                            </ul>
+                        </div>
+                        <div class="skills__box">
+                            <ul>
+                                <li class="skills__img">
+                                    <img src="assets\icons\skills\devops_icon.png" alt="">
+                                </li>
+                                <li class="skills__name">DevOps</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
-                <div class="experience__box">
-                    <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                    <img class="experience__img" src="assets\image\expeiriencia\login1_img.jpg">
-                    <div class="experience__info-container">
-                        <h2 class="experience__title">Login 1</h2>
-                        <h3 class="experience__text">Login creado con React. </h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a
-                                    href="https://github.com/Mariq12/login-uno"><button
-                                        class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://mariq12.github.io/login-uno/"><button class="experience__botao--demo">Ver
-                                        demo</button></a></span>
+            </section>
+            <!-- Sección de Hobbies -->
+            <section class="hobbies" id="hobbies">
+                <div class="hobbies__container">
+                    <h3 class="hobbies__title">Hobbies</h3>
+                    <div class="hobbies__line">
+                        <div class="hobbies__box">
+                            <ul>
+                                <li class="hobbies__img">
+                                    <img src="assets\icons\hobbies\lectura_icon.png">
+                                </li>
+                                <li class="hobbies__name"> Lectura</li>
+                            </ul>
+                        </div>
+                        <div class="hobbies__box">
+                            <ul>
+                                <li class="hobbies__img">
+                                    <img src="assets\icons\hobbies\cocinar_icon.png" alt="">
+                                </li>
+                                <li class="hobbies__name">Cocinar</li>
+                            </ul>
+                        </div>
+                        <div class="hobbies__box">
+                            <ul>
+                                <li class="hobbies__img">
+                                    <img src="assets\icons\hobbies\musica_icon.png" alt="">
+                                </li>
+                                <li class="hobbies__name">Oir música</li>
+                            </ul>
+                        </div>
+                        <div class="hobbies__box">
+                            <ul>
+                                <li class="hobbies__img">
+                                    <img src="assets\icons\hobbies\tv_icon.png" alt="">
+                                </li>
+                                <li class="hobbies__name">Ver séries</li>
+                            </ul>
+                        </div>
+                        <div class="hobbies__box">
+                            <ul>
+                                <li class="hobbies__img">
+                                    <img src="assets\icons\hobbies\curso_icon.png" alt="">
+                                </li>
+                                <li class="hobbies__name">Asistir taller</li>
+                            </ul>
+                        </div>
+                        <div class="hobbies__box">
+                            <ul>
+                                <li class="hobbies__img">
+                                    <img src="assets\icons\hobbies\cuidar_icon.png" alt="">
+                                </li>
+                                <li class="hobbies__name">Cuidar mascota</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
-                <div class="experience__box">
-                    <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                    <img class="experience__img" src="assets\image\expeiriencia\login2_img.jpg">
-                    <div class="experience__info-container">
-                        <h2 class="experience__title">Login 2</h2>
-                        <h3 class="experience__text">Login creado con React </h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a
-                                    href="https://github.com/Mariq12/login-dos"><button
-                                        class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://mariq12.github.io/login-dos/"><button class="experience__botao--demo">Ver
-                                        demo</button></a></span>
+            </section>
+            <!-- Sección de Formación académica -->
+            <section class="academic" id="formacion">
+                <div class=" academic__container">
+                    <h2 class="academic__title">Formación académica</h2>
+                    <div class="academic__courses">
+                        <div class="academic__courses__box">
+                            <ul class="academic__courses__list">
+                                <!-- Pon el logotipo de la institución de formación -->
+                                <div class="academic__courses__item">
+                                    <li class="academic__courses__item__img">
+                                        <img src="assets\logos\utpl_logo.png">
+                                    </li>
+                                </div>
+                                <div class="academic__courses__item__datos">
+                                    <li class="academic__courses__item__title">
+                                        <h4>Ingeniería de TI</h4>
+                                    </li>
+                                    <li class="academic__courses__item__subtitle">
+                                        <p>2024 - UTPL</p>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="academic__courses__box">
+                            <ul class="academic__courses__list">
+                                <!--Pon el logotipo de la institución de formación -->
+                                <div class="academic__courses__item">
+                                    <li class="academic__courses__item__img">
+                                        <img src="assets\logos\alura_logo.png">
+                                    </li>
+                                </div>
+                                <div class="academic__courses__item__datos">
+                                    <li class="academic__courses__item__title">
+                                        <h4>Formación en Desarrollo Web</h4>
+                                    </li>
+                                    <li class="academic__courses__item__subtitle">
+                                        <p>En curso - Alura</p>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="academic__courses__box">
+                            <ul class="academic__courses__list">
+                                <!-- Pon el logotipo de la institución de formación -->
+                                <div class="academic__courses__item">
+                                    <li class="academic__courses__item__img">
+                                        <img src="assets\logos\cisco_logo.png">
+                                    </li>
+                                </div>
+                                <div class="academic__courses__item__datos">
+                                    <li class="academic__courses__item__title">
+                                        <h4>Fundamentos en Python</h4>
+                                    </li>
+                                    <li class="academic__courses__item__subtitle">
+                                        <p>2023 - Cisco</p>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="academic__courses__box">
+                            <ul class="academic__courses__list">
+                                <!--Pon el logotipo de la institución de formación -->
+                                <div class="academic__courses__item">
+                                    <li class="academic__courses__item__img">
+                                        <img src="assets\logos\google_logo.png">
+                                    </li>
+                                </div>
+                                <div class="academic__courses__item__datos">
+                                    <li class="academic__courses__item__title">
+                                        <h4>Formación en Desarrollo Web</h4>
+                                    </li>
+                                    <li class="academic__courses__item__subtitle">
+                                        <p>En curso - Google</p>
+                                    </li>
+                                </div>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
-                <div class="experience__box">
-                    <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                    <img class="experience__img" src="assets\image\expeiriencia\login3_img.jpg">
-                    <div class="experience__info-container">
-                        <h2 class="experience__title">Login 3</h2>
-                        <h3 class="experience__text">Login creado con React. </h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a
-                                    href="https://github.com/Mariq12/login-tres"><button
-                                        class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://mariq12.github.io/login-tres/"><button class="experience__botao--demo">Ver
-                                        demo</button></a></span>
+            </section>
+            <!-- Sección de Experiencia Profesional/Proyectos-->
+            <section class="experience" id="xp">
+                <div class="container">
+                    <h2 class="experience__section__title">Experiencia Profesional</h2>
+                    <div class="experience__box">
+                        <!-- Enlace que contiene la imagen -->
+                        <a href="https://live.staticflickr.com/65535/53659457256_300e086eeb_c.jpg" target="_blank">
+                            <img class="experience__img" src="assets\image\expeiriencia\movil_img.png" alt="Imagen de experiencia">
+                        </a>
+                        <div class="experience__info-container">
+                            <h2 class="experience__title">App Móvil</h2>
+                            <h3 class="experience__text">
+                                Tesis
+                                <br>
+                                Aplicación creado con Flutter y arquitectura de microsrvicios, para la empresa Capacity-Soft.
+                                <br>
+                            </h3>
+                            <div class="experience__description">
+                                <span class="experience__demo">
+                                    <a href="https://www.figma.com/proto/pcxnSW65Ycsvu0tPFS1Xra/Figma-basics?node-id=645-13">
+                                        <button class="experience__botao--demo">Ver prototio Figma</button>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__box">
+                        <!-- Enlace que contiene la imagen -->
+                        <a href="https://live.staticflickr.com/65535/53658598512_403e652569_z.jpg" target="_blank">
+                            <img class="experience__img" src="assets\image\expeiriencia\login1_img.jpg">
+                        </a>
+                        <div class="experience__info-container">
+                            <h2 class="experience__title">Login 1</h2>
+                            <h3 class="experience__text">Login creado con React.</h3>
+                            <div class="experience__description">
+                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                                <span class="experience__repo">
+                                    <a href="https://github.com/Mariq12/login-uno">
+                                        <button class="experiencia__botao--repo">Repositório</button>
+                                    </a>
+                                </span>
+                                <span class="experience__demo">
+                                    <a href="https://mariq12.github.io/login-uno/">
+                                        <button class="experience__botao--demo">
+                                            Ver
+                                        demo
+                                        </button>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__box">
+                        <!-- Enlace que contiene la imagen -->
+                        <a href="https://live.staticflickr.com/65535/53659817089_e72e459f28_z.jpg" target="_blank">
+                            <img class="experience__img" src="assets\image\expeiriencia\login2_img.jpg">
+                        </a>
+                        <div class="experience__info-container">
+                            <h2 class="experience__title">Login 2</h2>
+                            <h3 class="experience__text">Login creado con React</h3>
+                            <div class="experience__description">
+                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                                <span class="experience__repo">
+                                    <a href="https://github.com/Mariq12/login-dos">
+                                        <button class="experiencia__botao--repo">Repositório</button>
+                                    </a>
+                                </span>
+                                <span class="experience__demo">
+                                    <a href="https://mariq12.github.io/login-dos/">
+                                        <button class="experience__botao--demo">
+                                            Ver
+                                        demo
+                                        </button>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__box">
+                        <!-- Enlace que contiene la imagen -->
+                        <a href="https://live.staticflickr.com/65535/53659457246_7b686bd6c2_z.jpg" target="_blank">
+                            <img class="experience__img" src="assets\image\expeiriencia\login3_img.jpg">
+                        </a>
+                        <div class="experience__info-container">
+                            <h2 class="experience__title">Login 3</h2>
+                            <h3 class="experience__text">Login creado con React.</h3>
+                            <div class="experience__description">
+                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                                <span class="experience__repo">
+                                    <a href="https://github.com/Mariq12/login-tres">
+                                        <button class="experiencia__botao--repo">Repositório</button>
+                                    </a>
+                                </span>
+                                <span class="experience__demo">
+                                    <a href="https://mariq12.github.io/login-tres/">
+                                        <button class="experience__botao--demo">
+                                            Ver
+                                        demo
+                                        </button>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__box">
+                        <!-- Enlace que contiene la imagen -->
+                        <a href="https://live.staticflickr.com/65535/53659684653_471233132f_z.jpg" target="_blank">
+                            <img class="experience__img" src="assets\image\expeiriencia\login4_img.jpg">
+                        </a>
+                        <div class="experience__info-container">
+                            <h2 class="experience__title">Login 4</h2>
+                            <h3 class="experience__text">Login creado con HTML, CSS y JavaScript.</h3>
+                            <div class="experience__description">
+                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                                <span class="experience__repo">
+                                    <a href="https://github.com/Mariq12/login-cuatro">
+                                        <button class="experiencia__botao--repo">Repositório</button>
+                                    </a>
+                                </span>
+                                <span class="experience__demo">
+                                    <a href="https://mariq12.github.io/login-cuatro/">
+                                        <button class="experience__botao--demo">
+                                            Ver
+                                        demo
+                                        </button>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__box">
+                        <!-- Enlace que contiene la imagen -->
+                        <a href="https://live.staticflickr.com/65535/53658598532_7b640959d2_z.jpg" target="_blank">
+                            <img class="experience__img" src="assets\image\expeiriencia\barberia_img.jpg">
+                        </a>
+                        <div class="experience__info-container">
+                            <h2 class="experience__title">Barberia</h2>
+                            <h3 class="experience__text">Página creado con HTML, CSS y JavaScript</h3>
+                            <div class="experience__description">
+                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                                <span class="experience__repo">
+                                    <a href="https://github.com/Mariq12/barberia-alura-mari">
+                                        <button class="experiencia__botao--repo">Repositório</button>
+                                    </a>
+                                </span>
+                                <span class="experience__demo">
+                                    <a href="https://mariq12.github.io/barberia-alura-mari/">
+                                        <button class="experience__botao--demo">
+                                            Ver
+                                        demo
+                                        </button>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__box">
+                        <!-- Enlace que contiene la imagen -->
+                        <a href="https://live.staticflickr.com/65535/53659929615_c7e97a6d14_z.jpg" target="_blank">
+                            <img class="experience__img" src="assets\image\expeiriencia\juego_img.jpg">
+                        </a>
+                        <div class="experience__info-container">
+                            <h2 class="experience__title">
+                                Juego creado con HTML, CSS y
+                            JavaScript
+                            </h2>
+                            <h3 class="experience__text">Challenge Oracle</h3>
+                            <div class="experience__description">
+                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                                <span class="experience__repo">
+                                    <a href="https://github.com/Mariq12/logica-programacion">
+                                        <button class="experiencia__botao--repo">Repositório</button>
+                                    </a>
+                                </span>
+                                <span class="experience__demo">
+                                    <a href="https://mariq12.github.io/logica-programacion/">
+                                        <button class="experience__botao--demo">
+                                            Ver
+                                        demo
+                                        </button>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__box">
+                        <!-- Enlace que contiene la imagen -->
+                        <a href="https://live.staticflickr.com/65535/53658648647_f78dab0986_c.jpg" target="_blank">
+                            <img class="experience__img" src="assets\image\expeiriencia\encriptar-img2.jpg">
+                        </a>
+                        <div class="experience__info-container">
+                            <h2 class="experience__title">Encriptador</h2>
+                            <h3 class="experience__text">Challenge Oracle</h3>
+                            <div class="experience__description">
+                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                                <span class="experience__repo">
+                                    <a href="https://github.com/Mariq12/encriptar">
+                                        <button class="experiencia__botao--repo">Repositório</button>
+                                    </a>
+                                </span>
+                                <span class="experience__demo">
+                                    <a href="https://mariq12.github.io/encriptar/">
+                                        <button class="experience__botao--demo">
+                                            Ver
+                                        demo
+                                        </button>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__box">
+                        <!-- Enlace que contiene la imagen -->
+                        <a href="https://live.staticflickr.com/65535/53658598487_fc5701233f_b.jpg" target="_blank">
+                            <img class="experience__img" src="assets\image\expeiriencia\project1_img.jpg">
+                        </a>
+                        <div class="experience__info-container">
+                            <h2 class="experience__title">Conversor de temperatura</h2>
+                            <h3 class="experience__text">Alura LATAM</h3>
+                            <div class="experience__description">
+                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                                <span class="experience__repo">
+                                    <a href="https://github.com/Mariq12/conversor-temperatura">
+                                        <button class="experiencia__botao--repo">Repositório</button>
+                                    </a>
+                                </span>
+                                <span class="experience__demo">
+                                    <a href="https://mariq12.github.io/conversor-temperatura/">
+                                        <button class="experience__botao--demo">
+                                            Ver
+                                        demo
+                                        </button>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__box">
+                        <!-- Enlace que contiene la imagen -->
+                        <a href="https://live.staticflickr.com/65535/53659929560_215c6bc9ab_b.jpg" target="_blank">
+                            <img class="experience__img" src="assets\image\expeiriencia\project2_img.jpg">
+                        </a>
+                        <div class="experience__info-container">
+                            <h2 class="experience__title">Conversor de monedas</h2>
+                            <h3 class="experience__text">Alura LATAM</h3>
+                            <div class="experience__description">
+                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                                <span class="experience__repo">
+                                    <a href="https://github.com/Mariq12/conversor-monedas">
+                                        <button class="experiencia__botao--repo">Repositório</button>
+                                    </a>
+                                </span>
+                                <span class="experience__demo">
+                                    <a href="https://mariq12.github.io/conversor-monedas/">
+                                        <button class="experience__botao--demo">
+                                            Ver
+                                        demo
+                                        </button>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__box">
+                        <!-- Enlace que contiene la imagen -->
+                        <a href="https://live.staticflickr.com/65535/53659684638_330947fe8f_b.jpg" target="_blank">
+                            <img class="experience__img" src="assets\image\expeiriencia\project3_img.jpg">
+                        </a>
+                        <div class="experience__info-container">
+                            <h2 class="experience__title">Conversor de Bitcoin</h2>
+                            <h3 class="experience__text">Alura LATAM</h3>
+                            <div class="experience__description">
+                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                                <span class="experience__repo">
+                                    <a href="https://github.com/Mariq12/conversor-bitcoin">
+                                        <button class="experiencia__botao--repo">Repositório</button>
+                                    </a>
+                                </span>
+                                <span class="experience__demo">
+                                    <a href="https://mariq12.github.io/conversor-bitcoin/">
+                                        <button class="experience__botao--demo">
+                                            Ver
+                                        demo
+                                        </button>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__box">
+                        <!-- Enlace que contiene la imagen -->
+                        <a href="https://live.staticflickr.com/65535/53658598477_fc0a01560c_b.jpg" target="_blank">
+                            <img class="experience__img" src="assets\image\expeiriencia\project4_img.jpg">
+                        </a>
+                        <div class="experience__info-container">
+                            <h2 class="experience__title">Mentalista</h2>
+                            <h3 class="experience__text">Alura LATAM</h3>
+                            <div class="experience__description">
+                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                                <span class="experience__repo">
+                                    <a href="https://github.com/Mariq12/mentalista-v3">
+                                        <button class="experiencia__botao--repo">Repositório</button>
+                                    </a>
+                                </span>
+                                <span class="experience__demo">
+                                    <a href="https://mariq12.github.io/mentalista-v3/">
+                                        <button class="experience__botao--demo">
+                                            Ver
+                                        demo
+                                        </button>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__box">
+                        <!-- Enlace que contiene la imagen -->
+                        <a href="https://live.staticflickr.com/65535/53659817034_fd0f2d0d68_b.jpg" target="_blank">
+                            <img class="experience__img" src="assets\image\expeiriencia\project5_img.jpg">
+                        </a>
+                        <div class="experience__info-container">
+                            <h2 class="experience__title">Mis peliculas favoritas</h2>
+                            <h3 class="experience__text">Alura LATAM</h3>
+                            <div class="experience__description">
+                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                                <span class="experience__repo">
+                                    <a href="https://github.com/Mariq12/peliculas">
+                                        <button class="experiencia__botao--repo">Repositório</button>
+                                    </a>
+                                </span>
+                                <span class="experience__demo">
+                                    <a href="https://mariq12.github.io/peliculas/">
+                                        <button class="experience__botao--demo">
+                                            Ver
+                                        demo
+                                        </button>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__box">
+                        <!-- Enlace que contiene la imagen -->
+                        <a href="https://live.staticflickr.com/65535/53659817024_e6495cbd43_b.jpg" target="_blank">
+                            <img class="experience__img" src="assets\image\expeiriencia\project6_img.jpg">
+                        </a>
+                        <div class="experience__info-container">
+                            <h2 class="experience__title">AluraFlix</h2>
+                            <h3 class="experience__text">Alura LATAM</h3>
+                            <div class="experience__description">
+                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                                <span class="experience__repo">
+                                    <a href="https://github.com/Mariq12/aluraflix-v2">
+                                        <button class="experiencia__botao--repo">Repositório</button>
+                                    </a>
+                                </span>
+                                <span class="experience__demo">
+                                    <a href="https://mariq12.github.io/aluraflix-v2/">
+                                        <button class="experience__botao--demo">
+                                            Ver
+                                        demo
+                                        </button>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__box">
+                        <!-- Enlace que contiene la imagen -->
+                        <a href="https://live.staticflickr.com/65535/53659817019_3d24845447_z.jpg" target="_blank">
+                            <img class="experience__img" src="assets\image\expeiriencia\project7_img.jpg">
+                        </a>
+                        <div class="experience__info-container">
+                            <h2 class="experience__title">AluraPlay</h2>
+                            <h3 class="experience__text">Alura LATAM</h3>
+                            <div class="experience__description">
+                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                                <span class="experience__repo">
+                                    <a href="https://github.com/Mariq12/aluraplay-proyecto-base">
+                                        <button class="experiencia__botao--repo">Repositório</button>
+                                    </a>
+                                </span>
+                                <span class="experience__demo">
+                                    <a href="https://mariq12.github.io/aluraplay-proyecto-base/">
+                                        <button class="experience__botao--demo">
+                                            Ver
+                                        demo
+                                        </button>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__box">
+                        <!-- Enlace que contiene la imagen -->
+                        <a href="https://live.staticflickr.com/65535/53659817064_7970cb459e_b.jpg" target="_blank">
+                            <img class="experience__img" src="assets\image\expeiriencia\portfolio-img.jpg">
+                        </a>
+                        <div class="experience__info-container">
+                            <h2 class="experience__title">Portafolio</h2>
+                            <h3 class="experience__text">Construido con React</h3>
+                            <div class="experience__description">
+                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                                <span class="experience__demo">
+                                    <a href="https://mariq12.github.io/portfolio/">
+                                        <button class="experience__botao--demo">
+                                            Ver
+                                        demo
+                                        </button>
+                                    </a>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="experience__box">
-                    <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                    <img class="experience__img" src="assets\image\expeiriencia\login4_img.jpg">
-                    <div class="experience__info-container">
-                        <h2 class="experience__title">Login 4</h2>
-                        <h3 class="experience__text">Login creado con HTML, CSS y JavaScript. </h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a
-                                    href="https://github.com/Mariq12/login-cuatro"><button
-                                        class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://mariq12.github.io/login-cuatro/"><button class="experience__botao--demo">Ver
-                                        demo</button></a></span>
-                        </div>
+            </section>
+            <!-- Sección de Contacto -->
+            <section class="formcontato" id="contacto">
+                <div class="formcontato__contacto">
+                    <div class="formcontato--box">
+                        <img class="formcontato__img" src="assets\image\contact_image.jpg">
+                    </div>
+                    <div class="formcontato__text">
+                        <h2 class="formcontato__title">Contacto</h2>
+                        <h3 class="formcontato__subtext__sub">¿Quieres contactarme?</h3>
+                        <h3 class="formcontato__subtext">
+                            Complete el siguiente formulario y me pondré en contacto con
+                        usted lo antes posible.
+                        </h3>
+                        <form class="formcontato__form" name="form">
+                            <input
+                                class="formcontato__input"
+                                type="text"
+                                name="nombre"
+                                placeholder="Nombre"
+                                required
+                            >
+                            <input
+                                class="formcontato__input"
+                                type="email"
+                                name="email"
+                                placeholder="E-mail"
+                                required
+                            >
+                            <input
+                                class="formcontato__input"
+                                type="text"
+                                name="asunto"
+                                placeholder="Asunto"
+                                required
+                            >
+                            <textarea
+                                class="formcontato__textarea"
+                                rows="5"
+                                cols="40"
+                                id="mensagem"
+                                name="mensaje"
+                                placeholder="Mensaje"
+                                required
+                            ></textarea>
+                            <button type="submit" class="formcontato__botao">Enviar mensaje</button>
+                        </form>
                     </div>
                 </div>
-
-                <div class="experience__box">
-                    <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                    <img class="experience__img" src="assets\image\expeiriencia\barberia_img.jpg">
-                    <div class="experience__info-container">
-                        <h2 class="experience__title">Barberia</h2>
-                        <h3 class="experience__text">Página creado con HTML, CSS y JavaScript </h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a
-                                    href="https://github.com/Mariq12/barberia-alura-mari"><button
-                                        class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://mariq12.github.io/barberia-alura-mari/"><button class="experience__botao--demo">Ver
-                                        demo</button></a></span>
-                        </div>
-                    </div>
+            </section>
+            <!-- Sección de Footer -->
+            <section class="footer">
+                <div class="footer__rodape">
+                    <p>Desarrollado por Flor María Labanda Puchaicela</p>
+                    <p>Abril de 2024</p>
                 </div>
-
-                <div class="experience__box">
-                    <img class="experience__img" src="assets\image\expeiriencia\juego_img.jpg">
-                    <div class="experience__info-container">
-                        <h2 class="experience__title">Juego creado con HTML, CSS y
-                            JavaScript</h2>
-                        <h3 class="experience__text">Challenge Oracle </h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a
-                                    href="https://github.com/Mariq12/logica-programacion"><button
-                                        class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://mariq12.github.io/logica-programacion/"><button class="experience__botao--demo">Ver
-                                        demo</button></a></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="experience__box">
-                    <img class="experience__img" src="assets\image\expeiriencia\encriptar-img.jpg">
-                    <div class="experience__info-container">
-                        <h2 class="experience__title">Encriptador</h2>
-                        <h3 class="experience__text">Challenge Oracle </h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a
-                                    href="https://github.com/Mariq12/encriptar"><button
-                                        class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://mariq12.github.io/encriptar/"><button class="experience__botao--demo">Ver
-                                        demo</button></a></span>
-                        </div>
-                    </div>
-                </div>
-                
-
-                <div class="experience__box">
-                    <img class="experience__img" src="assets\image\expeiriencia\project1_img.jpg">
-                    <div class="experience__info-container">
-                        <h2 class="experience__title">Conversor de temperatura</h2>
-                        <h3 class="experience__text">Alura LATAM </h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a
-                                    href="https://github.com/Mariq12/conversor-temperatura"><button
-                                        class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://mariq12.github.io/conversor-temperatura/"><button class="experience__botao--demo">Ver
-                                        demo</button></a></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="experience__box">
-                    <img class="experience__img" src="assets\image\expeiriencia\project2_img.jpg">
-                    <div class="experience__info-container">
-                        <h2 class="experience__title">Conversor de monedas</h2>
-                        <h3 class="experience__text">Alura LATAM </h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a
-                                    href="https://github.com/Mariq12/conversor-monedas"><button
-                                        class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://mariq12.github.io/conversor-monedas/"><button class="experience__botao--demo">Ver
-                                        demo</button></a></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="experience__box">
-                    <img class="experience__img" src="assets\image\expeiriencia\project3_img.jpg">
-                    <div class="experience__info-container">
-                        <h2 class="experience__title">Conversor de Bitcoin</h2>
-                        <h3 class="experience__text">Alura LATAM </h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a
-                                    href="https://github.com/Mariq12/conversor-bitcoin"><button
-                                        class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://mariq12.github.io/conversor-bitcoin/"><button class="experience__botao--demo">Ver
-                                        demo</button></a></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="experience__box">
-                    <img class="experience__img" src="assets\image\expeiriencia\project4_img.jpg">
-                    <div class="experience__info-container">
-                        <h2 class="experience__title">Mentalista</h2>
-                        <h3 class="experience__text">Alura LATAM </h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a
-                                    href="https://github.com/Mariq12/mentalista-v3"><button
-                                        class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://mariq12.github.io/mentalista-v3/"><button class="experience__botao--demo">Ver
-                                        demo</button></a></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="experience__box">
-                    <img class="experience__img" src="assets\image\expeiriencia\project5_img.jpg">
-                    <div class="experience__info-container">
-                        <h2 class="experience__title">Mis peliculas favoritas</h2>
-                        <h3 class="experience__text">Alura LATAM </h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a
-                                    href="https://github.com/Mariq12/peliculas"><button
-                                        class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://mariq12.github.io/peliculas/"><button class="experience__botao--demo">Ver
-                                        demo</button></a></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="experience__box">
-                    <img class="experience__img" src="assets\image\expeiriencia\project6_img.jpg">
-                    <div class="experience__info-container">
-                        <h2 class="experience__title">AluraFlix</h2>
-                        <h3 class="experience__text">Alura LATAM </h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a
-                                    href="https://github.com/Mariq12/aluraflix-v2"><button
-                                        class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://mariq12.github.io/aluraflix-v2/"><button class="experience__botao--demo">Ver
-                                        demo</button></a></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="experience__box">
-                    <img class="experience__img" src="assets\image\expeiriencia\project7_img.jpg">
-                    <div class="experience__info-container">
-                        <h2 class="experience__title">AluraPlay</h2>
-                        <h3 class="experience__text">Alura LATAM </h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a
-                                    href="https://github.com/Mariq12/aluraplay-proyecto-base"><button
-                                        class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://mariq12.github.io/aluraplay-proyecto-base/"><button class="experience__botao--demo">Ver
-                                        demo</button></a></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="experience__box">
-                    <img class="experience__img" src="assets\image\expeiriencia\portfolio-img.jpg">
-                    <div class="experience__info-container">
-                        <h2 class="experience__title">Portafolio</h2>
-                        <h3 class="experience__text">Construido con React </h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__demo"><a href="https://mariq12.github.io/portfolio/"><button class="experience__botao--demo">Ver
-                                        demo</button></a></span>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-        </section>
-
-        <!-- Sección de Contacto -->
-        <section class="formcontato" id="contacto">
-            <div class="formcontato__contacto">
-                <div class="formcontato--box">
-                    <img class="formcontato__img" src="assets\image\contact_image.jpg">
-                </div>
-                <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contacto</h2>
-                    <h3 class="formcontato__subtext__sub">¿Quieres contactarme?</h3>
-                    <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con
-                        usted lo antes posible. </h3>
-                    <form class="formcontato__form" name="form">
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre" required>
-                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail" required>
-                        <input class="formcontato__input" type="text" name="asunto" placeholder="Asunto" required>
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje"
-                            placeholder="Mensaje" required></textarea>
-                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de Footer -->
-        <section class="footer">
-            <div class="footer__rodape">
-                <p>Desarrollado por Flor María Labanda Puchaicela</p>
-                <p>Abril de 2024</p>
-            </div>
-        </section>
-    </div>
-    <!-- Script del documento JavaScript -->
-    <script src="validation/validation.js"></script>
-    
-</body>
+            </section>
+        </div>
+        <!-- Script del documento JavaScript -->
+        <script src="validation/validation.js"></script>
+    </body>
 </html>
