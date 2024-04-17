@@ -152,8 +152,7 @@ section.menu {
 }
 
 /* Estilo para el elemento de contacto en la lista del menú */
-.menu__list__item-contacto {
-    margin-right: 35px;
+.menu-contacto {
     font-weight: bold;
 }
 
@@ -223,8 +222,14 @@ body.active .menu__logo {
 
 }
 
+body.active .menu__list__item a:hover {
+    color: var(--cor-de-dark-tema-box);
+    /* Cambia el color del texto en hover */
+}
+
 /* Menú y Encabezado */
 body.active section.menu,
+body.active .menu__nav,
 body.active header,
 body.active nav ul {
     background-color: var(--cor-de-dark-tema-box);
