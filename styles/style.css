@@ -257,7 +257,6 @@ body.active .title__network a,
 body.active .about,
 body.active .skills,
 body.active .hobbies,
-body.active .academic,
 body.active .formcontato {
     background-color: var(--cor-de-dark-tema-box);
     color: var(--cor-de-dark-tema-text);
@@ -340,8 +339,8 @@ body.active .footer {
 
 .title__profile {
     order: 2;
-    width: 250px;
-    height: 330px;
+    aspect-ratio: 1327/697; 
+    height: 320px;
     margin-left: 20px;
     border-radius: 50%;
     /* Usa 50% para un borde completamente redondeado */
@@ -576,6 +575,7 @@ body.active .footer {
     /* Centra verticalmente en el viewport */
     width: 100%;
     /* Ocupa todo el ancho disponible del viewport */
+    margin-bottom: 50px;
 }
 
 .hobbies__container {
@@ -652,9 +652,7 @@ body.active .footer {
 .academic {
     display: flex;
     justify-content: center;
-    /* Centra verticalmente */
     align-items: center;
-    /* Centra horizontalmente */
     width: 100%;
     background: var(--cor-de-second-section);
     height: 420px;
@@ -676,8 +674,8 @@ body.active .footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 500px;
-    margin-bottom: 75px;
+    height: 465px;
+    margin-bottom: 40px;
 }
 
 .academic__title {
@@ -749,12 +747,14 @@ body.active .footer {
 .academic__courses__item__title {
     font-size: 17px;
     font-weight: bold;
+    padding-top: 10px;
 }
 
 .academic__courses__item__subtitle {
     font-size: 16px;
     font-weight: normal;
     margin: 0;
+    padding-bottom: 30px;
 }
 
 
@@ -777,7 +777,8 @@ body.active .footer {
     text-align: center;
     font-size: 32px;
     font-weight: bold;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
+    padding-top: 35px;
 }
 
 .experience__box {
@@ -799,10 +800,11 @@ body.active .footer {
 }
 
 .experience__img {
-    width: 400px;
+    aspect-ratio: 1327/697;
     height: 200px;
     margin: 0 10px 0 0;
     border-radius: 10px;
+
 }
 
 .experience__info-container {
