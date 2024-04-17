@@ -1,7 +1,7 @@
 :root {
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-    --cor-de-fundo: #F5F5F5;
+    --cor-de-fundo: linear-gradient(135deg,  #fbfafa 0%,#E0E0E0 100%);
     --cor-de-first-section: #FFFFFF;
     --cor-de-second-section: #EAF2FD;
     --cor-de-booton: #2A7AE4;
@@ -24,10 +24,8 @@
 }
 
 body {
-    /* Aplicar el color de fondo como degradado utilizando la variable */
-    background: var(--cor-de-gradient);
     /* Fondo con degradado */
-    background-color: var(--cor-de-fundo);
+    background: var(--cor-de-fundo);
     font-family: 'Raleway';
     margin: 0;
     overflow-x: hidden;
