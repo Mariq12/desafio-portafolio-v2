@@ -625,9 +625,9 @@ body.active .footer {
     /* Permite que los elementos se envuelvan en varias líneas */
     width: 100%;
     /* Ocupa todo el ancho disponible */
-    margin-right: 30px;
-    margin-left: 30px;
-    
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 180px;
     background: linear-gradient(135deg,
             rgba(255, 255, 255, 0.2) 20%,
             rgba(255, 255, 255, 0.5) 50%,
@@ -649,8 +649,8 @@ body.active .footer {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    width: 185px;
-    height: 140px;
+    width: 175px;
+    height: 130px;
     background: var(--cor-de-first-section);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Agrega una sombra suave */
