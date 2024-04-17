@@ -16,6 +16,11 @@
     --cor-de-footer-gradient: linear-gradient(135deg, #273e81 0%, #2d53c8 0%, #c4dcf9 58%, #c4dcf9 90%, #deeafb 100%, #f0f6fe 100%);
     --cor-de-border-input: rgba(31, 23, 255, 0.5);
     /* Define la variable con un color verde semi-transparente */
+
+    /* *Cambiar de tema */
+    --cor-de-ligth-tema-box: #6b6868;
+    --cor-de-dark-tema-box: #313131;
+    --cor-de-dark-tema-text: #cfcfcf;
 }
 
 body {
@@ -91,11 +96,8 @@ section.menu {
 /* Estilo para el logo en el encabezado */
 .menu__logo {
     width: 70px;
-    /* Tamaño del logo */
     height: 40px;
-    /* Mantiene la proporción del logo */
     margin-right: 10px;
-    /* Margen derecho para separación */
 }
 
 .menu__title {
@@ -154,6 +156,158 @@ section.menu {
     margin-right: 35px;
     font-weight: bold;
 }
+
+/* *----------------------------------------*/
+/* *Tema switch */
+.menu__list__item-tema {
+    width: 60px;
+    height: 30px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-radius: 100px;
+    border: #333 solid 2px;
+    background-color: #132b41;
+}
+
+.menu__list__item-tema {
+    font-size: 1rem;
+    color: #f5fd1c;
+}
+
+.menu__list li:last-child::before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: solid thin #000;
+    left: 0;
+    right: unset;
+}
+
+.menu__list li:last-child.active::before {
+    right: 0;
+    left: unset;
+    border: solid thin #fff;
+}
+
+.menu__list li:last-child.active i:first-child {
+    color: #fff;
+}
+
+.menu__list li:last-child.active {
+    background-color: rgb(210, 30, 201);
+    border: solid 2px #fff;
+}
+
+/* * Body */
+
+/* Estilos para elementos dentro del cuerpo activo */
+body.active {
+    /* Establece color de fondo oscuro */
+    background-color: var(--cor-de-dark-tema-box);
+    color: var(--cor-de-dark-tema-text);
+}
+
+/* Estilo para el logo en el encabezado */
+body.active .menu__logo {
+    width: 70px;
+    height: 40px;
+    margin-right: 10px;
+    /* Redondear los bordes */
+    border-radius: 10px; /* Ajusta el valor según el grado de redondeo deseado */
+
+}
+
+/* Menú y Encabezado */
+body.active section.menu,
+body.active header,
+body.active nav ul {
+    background-color: var(--cor-de-dark-tema-box);
+}
+
+/* Estilo para el nuevo ícono en tema oscuro (body.active) */
+body.active .title__network__item img[src*="nav1.png"] {
+    display: none; /* Ocultar el ícono nav1.png en tema oscuro */
+}
+
+body.active .title__network__item .img-nav5[src*="nav5.png"] {
+    display: inline-block; /* Mostrar el ícono nav5.png en tema oscuro */
+}
+
+
+body.active .menu__title,
+body.active nav ul li a {
+    color: var(--cor-de-dark-tema-text);
+}
+
+/* Contenido principal */
+body.active .tudo,
+body.active .title__div,
+body.active .about,
+body.active .skills,
+body.active .hobbies,
+body.active .academic,
+body.active .formcontato {
+    background-color: var(--cor-de-dark-tema-box);
+    color: var(--cor-de-dark-tema-text);
+}
+
+/* Estilos para secciones específicas */
+body.active .skills__box,
+body.active .hobbies__box,
+body.active .hobbies__name,
+body.active .academic__container,
+body.active .academic__courses__box {
+    background-color: var(--cor-de-ligth-tema-box);
+}
+
+/* Experiencia */
+body.active .experience,
+body.active .experience__botao--demo,
+body.active .experiencia__botao--repo {
+    background-color: var(--cor-de-dark-tema-box);
+}
+
+/* Estilos para capa de oscuridad sobre la imagen */
+body.active .formcontato--box {
+    position: relative;
+}
+
+body.active .formcontato--box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Estilos para campos de formulario */
+body.active .formcontato__input,
+body.active .formcontato__textarea {
+    background-color: var(--cor-de-ligth-tema-box);
+    color: var(--cor-de-dark-tema-text);
+}
+
+body.active .formcontato__input::placeholder,
+body.active .formcontato__textarea::placeholder {
+    color: var(--cor-de-dark-tema-text);
+}
+
+/* Estilos para botón de enviar mensaje y pie de página */
+body.active .formcontato__botao,
+body.active .footer {
+    color: var(--cor-de-dark-tema-text);
+    background-color: var(--cor-de-ligth-tema-box);
+}
+
 
 /* *Sección Título */
 .title {
@@ -261,6 +415,10 @@ section.menu {
 
 .title__network__item a:hover {
     color: var(--cor-de-hover-menu);
+}
+
+.img-nav5 {
+    display:none;
 }
 
 .title__network__item a img {
@@ -644,6 +802,7 @@ section.menu {
     width: 400px;
     height: 200px;
     margin: 0 10px 0 0;
+    border-radius: 10px;
 }
 
 .experience__info-container {

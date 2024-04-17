@@ -74,3 +74,10 @@ function configurarEstilosInfoContainers() {
 document.addEventListener('DOMContentLoaded', () => {
     configurarEstilosInfoContainers();
 });
+
+const tema = document.querySelector('.menu__list__item-tema');
+
+tema.addEventListener('click', e  => {
+    tema.classList.toggle('active');
+    document.body.classList.toggle('active');
+})
