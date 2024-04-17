@@ -253,6 +253,7 @@ body.active nav ul li a {
 /* Contenido principal */
 body.active .tudo,
 body.active .title__div,
+body.active .title__network a,
 body.active .about,
 body.active .skills,
 body.active .hobbies,
@@ -278,26 +279,11 @@ body.active .experiencia__botao--repo {
     background-color: var(--cor-de-dark-tema-box);
 }
 
-/* Estilos para capa de oscuridad sobre la imagen */
-body.active .formcontato--box {
-    position: relative;
-}
-
-body.active .formcontato--box::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1;
-}
 
 /* Estilos para campos de formulario */
 body.active .formcontato__input,
 body.active .formcontato__textarea {
-    background-color: var(--cor-de-ligth-tema-box);
+    background: var(--cor-de-ligth-tema-box);
     color: var(--cor-de-dark-tema-text);
 }
 
@@ -307,10 +293,14 @@ body.active .formcontato__textarea::placeholder {
 }
 
 /* Estilos para botón de enviar mensaje y pie de página */
-body.active .formcontato__botao,
-body.active .footer {
+body.active .formcontato__botao {
     color: var(--cor-de-dark-tema-text);
-    background-color: var(--cor-de-ligth-tema-box);
+    background: var(--cor-de-dark-tema-box);
+}
+
+body.active .footer {
+    background: var(--cor-de-ligth-tema-box);
+    color: var(--cor-de-dark-tema-text);
 }
 
 
@@ -907,14 +897,14 @@ section.formcontato {
     align-items: center;
     width: 100%;
     max-width: 87%;
-    height: 660px;
+    height: 765px;
 }
 
 .formcontato--box {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 660px;
+    height: 680px;
 }
 
 .formcontato__img {
@@ -990,7 +980,7 @@ section.formcontato {
 
 .formcontato__botao {
     width: 150px;
-    height: 51px;
+    height: 40px;
     font-size: 16px;
     font-weight: normal;
     background: var(--cor-de-first-gradient);
@@ -998,7 +988,7 @@ section.formcontato {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 0;
     /* Agrega un margen superior */
     align-self: center;
     /* Centra horizontalmente */
@@ -1011,7 +1001,7 @@ section.formcontato {
 
 /* *Sección Footer */
 .footer {
-    height: 140px;
+    height: 110px;
     font-size: 16px;
     font-weight: medium;
     text-align: center;
