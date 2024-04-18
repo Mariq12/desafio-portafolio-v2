@@ -24,12 +24,10 @@
 }
 
 body {
-    /* Fondo con degradado */
     background: var(--cor-de-fundo);
     font-family: 'Raleway';
     margin: 0;
     overflow-x: hidden;
-    /* Esconde barra de rolagem horizontal */
 }
 
 ol,
@@ -44,51 +42,34 @@ a {
 }
 
 
-/*Sección Menu*/
+/* *Sección Menu*/
 
 section.menu {
     width: 100%;
     display: flex;
     justify-content: center;
-    /* Centra horizontalmente el contenido */
     align-items: center;
-    /* Centra verticalmente el contenido */
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    /* Asegura que el menú esté sobre otros elementos */
     background: var(--cor-de-first-section);
-    /* Color de fondo del encabezado */
     height: 88px;
-    /* Altura fija del menú */
     padding: 0 20px;
-    /* Añade espacio interno a los lados del encabezado */
-
 }
 
 .menu__header {
     width: 100%;
-    /* Ocupa todo el ancho disponible del viewport */
     max-width: 85%;
-    /* Ancho máximo permitido */
     height: 88px;
     display: flex;
     justify-content: center;
-    /* Alinea los elementos del encabezado en los extremos */
     align-items: center;
-    /* Centra verticalmente los elementos del encabezado */
-    /* Añade espacio interno a los lados del encabezado */
     background: var(--cor-de-first-section);
-    /* Color de fondo del encabezado */
     margin-top: 0px;
-    /* Elimina el margen superior */
     padding: 0 20px;
-    /* Añade espacio interno a los lados del encabezado */
-    /* Centra y distribuye el espacio equitativamente */
     margin: 0;
-    /* Centra el encabezado horizontalmente */
 }
 
 /* Estilo para el logo en el encabezado */
@@ -107,21 +88,16 @@ section.menu {
 /* Estilo para el icono de menú */
 .menu__toggle {
     display: none;
-    /* Oculta el icono de menú */
     cursor: pointer;
-    /* Cambia el cursor al pasar por encima */
 }
 
 /* Estilo para el icono de barras en el menú */
 .menu__toggle i.fas.fa-bars {
     font-size: 30px;
-    /* Cambia el tamaño del ícono de barras */
 }
-
 
 .menu__nav {
     display: block;
-    /* Mostrar el menú en pantallas grandes por defecto */
 }
 
 /* Estilo para la lista del menú */
@@ -141,12 +117,10 @@ section.menu {
 
 .menu__list__item a {
     transition: color 0.3s ease;
-    /* Transición suave para el color del texto */
 }
 
 .menu__list__item a:hover {
     color: var(--cor-de-hover-menu);
-    /* Cambia el color del texto en hover */
 }
 
 /* Estilo para el elemento de contacto en la lista del menú */
@@ -154,8 +128,7 @@ section.menu {
     font-weight: bold;
 }
 
-/* *----------------------------------------*/
-/* *Tema switch */
+/* *----------------------Tema switch-------------------* */
 .menu__list__item-tema {
     width: 60px;
     height: 30px;
@@ -205,7 +178,6 @@ section.menu {
 
 /* Estilos para elementos dentro del cuerpo activo */
 body.active {
-    /* Establece color de fondo oscuro */
     background-color: var(--cor-de-dark-tema-box);
     color: var(--cor-de-dark-tema-text);
 }
@@ -215,15 +187,11 @@ body.active .menu__logo {
     width: 70px;
     height: 40px;
     margin-right: 10px;
-    /* Redondear los bordes */
     border-radius: 10px;
-    /* Ajusta el valor según el grado de redondeo deseado */
-
 }
 
 body.active .menu__list__item a:hover {
     color: var(--cor-de-dark-tema-box);
-    /* Cambia el color del texto en hover */
 }
 
 /* Menú y Encabezado */
@@ -237,12 +205,10 @@ body.active nav ul {
 /* Estilo para el nuevo ícono en tema oscuro (body.active) */
 body.active .title__network__item img[src*="nav1.png"] {
     display: none;
-    /* Ocultar el ícono nav1.png en tema oscuro */
 }
 
 body.active .title__network__item .img-nav5[src*="nav5.png"] {
     display: inline-block;
-    /* Mostrar el ícono nav5.png en tema oscuro */
 }
 
 
@@ -310,9 +276,7 @@ body.active .footer {
 .title {
     display: flex;
     justify-content: center;
-    /* Centra horizontalmente */
     align-items: center;
-    /* Centra verticalmente */
     width: 100%;
     height: auto;
 }
@@ -329,16 +293,12 @@ body.active .footer {
     margin-bottom: 20px;
     border-radius: 5px 130px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Agrega una sombra suave */
     transition: box-shadow 0.3s ease;
-    /* Agrega una transición suave a la sombra */
     margin-top: 13%;
 }
 
-/* Aplica la sombra cuando se hace hover sobre el elemento */
 .title__div:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    /* Aumenta la intensidad de la sombra al hacer hover */
 }
 
 .title__profile {
@@ -347,28 +307,20 @@ body.active .footer {
     height: 280px;
     margin-left: 20px;
     border-radius: 50%;
-    /* Usa 50% para un borde completamente redondeado */
     border: 4px solid #ffffff;
-    /* Borde blanco sólido */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra sutil */
     transition: transform 0.3s ease-in-out;
-    /* Transición suave al hacer hover */
     margin-right: 10px;
 }
 
 .title__profile:hover {
     transform: scale(1.05);
-    /* Efecto de escala al hacer hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    /* Sombra más pronunciada al hacer hover */
 }
 
 .title__container {
     order: 1;
-    /* Cambia el orden del elemento */
     flex: 1;
-    /* El contenido ocupará el espacio restante */
     text-align: justify;
     margin-left: 10px;
     border-radius: 5px 100px;
@@ -400,9 +352,7 @@ body.active .footer {
 /* Estilos para los íconos de las redes sociales */
 .title__network__item {
     display: inline-block;
-    /* Hace que los elementos de la lista se muestren en línea */
     margin-left: 10%;
-    /* Espacio entre los íconos */
 }
 
 .title__network__item a {
@@ -426,38 +376,26 @@ body.active .footer {
 
 .title__network__item a img {
     margin-left: 10px;
-    /* Espacio entre el nombre y el icono */
     transition: transform 0.3s ease-in-out;
-    /* Transición suave al hacer hover */
 }
 
 .title__network__item a:hover img {
     transform: rotate(360deg);
-    /* Rotar el icono 360 grados al hacer hover */
 }
 
 .title__network__item a:hover::after {
     content: attr(data-text);
-    /* Mostrar el texto del enlace al hacer hover */
     position: absolute;
     bottom: -20px;
-    /* Ajustar la posición del texto */
     left: 50%;
-    /* Centrar el texto */
     transform: translateX(-50%);
-    /* Centrar horizontalmente */
     background-color: rgba(255, 255, 255, 0.9);
-    /* Fondo del texto */
     padding: 5px 10px;
-    /* Espaciado interno */
     border-radius: 5px;
-    /* Borde redondeado */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    /* Sombra sutil */
     font-size: 14px;
     font-weight: normal;
     white-space: nowrap;
-    /* Evitar saltos de línea */
 }
 
 /* *Sección Sobre mí */
@@ -468,15 +406,11 @@ body.active .footer {
     align-items: center;
     width: 100%;
     min-height: 290px;
-    /* Cambiamos 'height' a 'min-height' */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Agrega una sombra suave */
     transition: box-shadow 0.3s ease;
     margin-bottom: 30px;
     padding: 20px;
-    /* Añadir relleno para espacio interno */
     box-sizing: border-box;
-    /* Incluir relleno en el cálculo del tamaño */
 }
 
 .about__container {
@@ -507,9 +441,7 @@ body.active .footer {
     width: 100%;
     margin-bottom: 20px;
     padding: 20px;
-    /* Añadir relleno para espacio interno */
     box-sizing: border-box;
-    /* Incluir relleno en el cálculo del tamaño */
     background: var(--cor-de-first-section);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease;
@@ -549,12 +481,9 @@ body.active .footer {
     width: 185px;
     height: 140px;
     margin: 5px;
-    /* Margen entre las tarjetas */
     background: var(--cor-de-first-section);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Agrega una sombra suave */
     transition: box-shadow 0.3s ease;
-    /* Agrega una transición suave a la sombra */
 }
 
 .skills__box ul {
@@ -580,9 +509,7 @@ body.active .footer {
     width: 100%;
     margin-bottom: 20px;
     padding: 20px;
-    /* Añadir relleno para espacio interno */
     box-sizing: border-box;
-    /* Incluir relleno en el cálculo del tamaño */
     background: var(--cor-de-first-section);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease;
@@ -603,7 +530,6 @@ body.active .footer {
     font-size: 32px;
     font-weight: 500;
     margin-bottom: 24px;
-    /* Espaciado inferior */
     margin-top: 5px;
 }
 
@@ -616,7 +542,6 @@ body.active .footer {
     margin-right: 30px;
     margin-left: 30px;
 }
-
 
 .hobbies__box {
     display: flex;
@@ -639,7 +564,6 @@ body.active .footer {
 /* Aplica la sombra cuando se hace hover sobre el elemento */
 .hobbies__box:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    /* Aumenta la intensidad de la sombra al hacer hover */
 }
 
 .hobbies__img {
@@ -661,14 +585,11 @@ body.active .footer {
     width: 100%;
     margin-bottom: 20px;
     box-sizing: border-box;
-    /* Incluir relleno en el cálculo del tamaño */
     background: var(--cor-de-second-section);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease;
     height: auto;
-    /* Cambiar altura a auto para adaptarse al contenido */
     padding: 20px;
-    /* Añadir relleno para espacio interno */
 }
 
 .academic__container {
@@ -689,9 +610,7 @@ body.active .footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    /* Alinear elementos arriba */
     flex-wrap: wrap;
-    /* Permitir que los elementos se envuelvan */
     width: 100%;
     max-width: 88%;
     margin-right: 30px;
@@ -706,7 +625,6 @@ body.active .footer {
     width: 220px;
     background: var(--cor-de-first-section);
     height: auto;
-    /* Cambiar altura a auto para adaptarse al contenido */
     padding: 20px;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -717,7 +635,6 @@ body.active .footer {
 /* Aplica la sombra cuando se hace hover sobre el elemento */
 .academic__courses__box:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    /* Aumenta la intensidad de la sombra al hacer hover */
 }
 
 .academic__courses__list {
@@ -741,9 +658,7 @@ body.active .footer {
 
 .academic__courses__item__img {
     width: 100%;
-    /* Ajustar imagen al 100% del contenedor */
     height: auto;
-    /* Altura automática para mantener proporción */
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -796,27 +711,21 @@ body.active .footer {
     justify-content: center;
     align-items: center;
     align-items: flex-start;
-    /* Alinea los elementos al inicio */
     height: auto;
-    /* Ajustar altura automáticamente según el contenido */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease;
     padding: 20px;
-    /* Agrega un espacio interno */
 }
 
 /* Aplica la sombra cuando se hace hover sobre el elemento */
 .experience__box:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    /* Aumenta la intensidad de la sombra al hacer hover */
 }
 
 .experience__img {
     aspect-ratio: 1327/697;
     height: 170px;
-    /* Reducir la altura de la imagen */
     width: auto;
-    /* Mantener la relación de aspecto */
     margin-right: 20px;
     border-radius: 10px;
 }
@@ -827,9 +736,7 @@ body.active .footer {
 
 .experience__info-container {
     flex: 1;
-    /* El contenido ocupará el espacio restante */
     margin-right: 20px;
-    /* Ajusta el margen derecho */
 }
 
 .experience__title {
@@ -920,10 +827,8 @@ section.formcontato {
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    /* Establece un ancho máximo */
     padding: 20px;
     box-sizing: border-box;
-    /* Incluye el relleno en el cálculo del ancho */
 }
 
 .formcontato--box {
@@ -936,31 +841,23 @@ section.formcontato {
 
 .formcontato__img {
     aspect-ratio: 1/1;
-    /* Proporción cuadrada */
     max-width: 100%;
-    /* Ajusta el tamaño máximo */
     height: auto;
-    /* Altura ajustada automáticamente */
     border-radius: 20px;
     max-height: 300px;
-    /* Altura máxima de la imagen */
     margin-right: 20px;
-    /* Margen a la derecha para separar del texto */
 }
 
 .formcontato__text {
     flex: 1;
     text-align: left;
     max-width: 600px;
-    /* Ancho máximo del texto */
     width: 100%;
-    /* Ocupa todo el espacio disponible */
     padding: 20px;
     background: linear-gradient(135deg,
             rgba(255, 255, 255, 0.3) 20%,
             rgba(255, 255, 255, 0.5) 50%,
             rgba(255, 255, 255, 0.2) 80%);
-    /* Degradado con transparencia */
     border-radius: 20px;
 }
 
@@ -968,7 +865,6 @@ section.formcontato {
     font-size: 32px;
     font-weight: bold;
     margin: 15px 0;
-    /* Ajusta el margen superior e inferior */
 }
 
 .formcontato__subtext__sub {
@@ -985,16 +881,13 @@ section.formcontato {
     display: flex;
     flex-direction: column;
     max-width: 600px;
-    /* Ancho máximo del formulario */
     width: 100%;
-    /* Ocupa todo el espacio disponible */
     padding: 20px;
 }
 
 .formcontato__input,
 .formcontato__textarea {
     width: 80%;
-    /* Ocupa todo el ancho disponible */
     height: 56px;
     margin-bottom: 16px;
     border: none;
@@ -1075,20 +968,17 @@ section.formcontato {
     .hobbies,
     .academic {
         padding: 10px;
-        /* Reducir el relleno en pantallas más pequeñas */
     }
 
     /* Estilo para el icono de menú */
     .menu__toggle {
         margin-right: 20px;
         display: block;
-        /* Asegurar que el icono sea visible */
     }
 
     /* Estilo para el menú de navegación */
     .menu__nav {
         display: none;
-        /* Ocultar el menú principal por defecto en dispositivos pequeños */
         width: 25%;
         position: absolute;
         top: 90px;
@@ -1114,23 +1004,17 @@ section.formcontato {
     .menu__list__item__contato {
         margin-bottom: 5px;
         align-self: flex-start;
-        /* Alinear cada elemento a la izquierda */
         width: 100%;
-        /* Ocupar todo el ancho disponible */
         transition: background-color 0.3s ease;
-        /* Transición para cambiar el color de fondo */
         height: 15px;
         padding: 8px;
-        /* Ajustar el padding para aumentar el tamaño del área de clic */
         height: auto;
-        /* Ajustar la altura automáticamente según el contenido */
     }
 
     .menu__list__item:hover,
     .menu__list__item__contato:hover {
         background: var(--cor-de-hover-menu);
         border-radius: 5px;
-
     }
 
     /* Mostrar el menú principal cuando tiene la clase 'show' */
@@ -1138,31 +1022,23 @@ section.formcontato {
         display: block;
     }
 
-
     .title {
-
         margin-top: 30px;
-        /* Añade espacio interno */
     }
-
     .title__div {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
     .title__container {
         order: 1;
-        /* Cambia el orden del elemento */
         flex: 1;
-        /* El contenido ocupará el espacio restante */
         text-align: justify;
         margin-left: 10px;
         margin-right: 10px;
         border-radius: 5px 100px;
     }
-
     .title__profile {
         order: 2;
         width: 170px;
@@ -1170,7 +1046,6 @@ section.formcontato {
         margin: auto;
         margin-bottom: 20px;
     }
-
     .title__bio {
         font-size: 18px;
         font-weight: bold;
@@ -1183,9 +1058,7 @@ section.formcontato {
     /* Estilos para los íconos de las redes sociales */
     .title__network__item {
         margin-left: 5px;
-        /* Espacio entre los íconos */
     }
-
     .title__subsection {
         font-size: 13px;
         margin-bottom: 16px;
@@ -1193,19 +1066,15 @@ section.formcontato {
         margin-left: 40px;
         margin-right: 50px;
     }
-
     .title__network {
-
         padding-left: 10px;
     }
-
     .title__network__item a {
         font-size: 0;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
     .title__network__item a img {
         width: 30px;
         height: 30px;
@@ -1213,8 +1082,6 @@ section.formcontato {
         margin-left: 40px;
         transition: transform 0.3s ease-in-out;
     }
-
-
     .skills__line {
         display: flex;
         flex-direction: column;
@@ -1238,7 +1105,6 @@ section.formcontato {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         transition: box-shadow 0.3s ease;
     }
-
     .hobbies__line {
         display: flex;
         flex-direction: column;
@@ -1248,8 +1114,6 @@ section.formcontato {
         margin-right: 30px;
         margin-left: 30px;
     }
-
-    /* Estilos adicionales para las cajas de Hobbies */
     .hobbies__box {
         display: flex;
         flex-direction: column;
@@ -1261,7 +1125,6 @@ section.formcontato {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         transition: box-shadow 0.3s ease;
     }
-
     .academic__title {
         text-align: center;
         font-size: 28px;    
@@ -1272,14 +1135,12 @@ section.formcontato {
         width: 100%;
         max-width: 100%;
     }
-
     .experience__section__title {
         text-align: center;
         font-size: 30px;
         font-weight: bold;
         margin-bottom: 15px;
     }
-
     .experience__box {
         display: flex;
         flex-direction: row;
@@ -1287,39 +1148,32 @@ section.formcontato {
         align-items: center;
         height: 280px;
     }
-
     .experience__img {
         aspect-ratio: 1327/697;
         height: 120px;
         margin-left: 0;
     }
-
     .experience__info-container {
         flex: 1;
-        /* El contenido ocupará el espacio restante */
         width: 368px;
         height: 112px;
         margin-left: 40px;
         margin-right: 20px;
     }
-
     .experience__title {
         font-size: 16px;
         font-weight: bold;
     }
-
     .experience__text {
         font-size: 14px;
         font-weight: normal;
         text-align: justify;
     }
-
     .experience__repo,
     .experience__demo {
         display: block;
         margin-bottom: 10px;
     }
-
     .experiencia__botao--repo,
     .experience__botao--demo {
         display: block;
@@ -1331,14 +1185,11 @@ section.formcontato {
         border-radius: 4px;
         background: var(--cor-de-first-gradient);
     }
-
     .experiencia__botao--repo:hover,
     .experience__botao--demo:hover {
         background-color: #e0e0e0;
         cursor: pointer;
     }
-
-
     .formcontato__img {
         display: none;
     }
@@ -1359,23 +1210,20 @@ section.formcontato {
         flex: 1;
         margin-left: 0;
     }
-
     .experience__description {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centra los elementos horizontalmente */
-        justify-content: center; /* Centra los elementos verticalmente */
-        text-align: center; /* Alinea el texto al centro */
+        align-items: center;
+        justify-content: center;
+        text-align: center; 
     }
-
     /* Estilos adicionales para los botones */
     .experience__repo button,
     .experience__demo button {
-        width: 150px; /* Ajusta el ancho de los botones */
-        height: 40px; /* Ajusta la altura de los botones */
-        font-size: 14px; /* Ajusta el tamaño del texto */
+        width: 150px; 
+        height: 40px; 
+        font-size: 14px;
     }
-
 }
 
 /* *Dispositivo Móvil 412 */
@@ -1387,8 +1235,7 @@ section.formcontato {
         margin-left: 0;
     }
     .experience__info-container {
-        flex: 1;
-        /* El contenido ocupará el espacio restante */
+        flex: 1; /* Contenido ocupará espacio restante */
         width: 368px;
         height: 112px;
         margin-left:10px;
@@ -1398,13 +1245,10 @@ section.formcontato {
     .experience__title {
         text-align: center;
     }
-
     .formcontato__form {
         padding-left: 5px;
     }
-
 }
-
 
 /* *Dispositivo Móvil */
 /* *Media queries para dispositivos Celulares */
@@ -1418,7 +1262,6 @@ section.formcontato {
         margin-right: 30px;
         margin-left: 30px;
     }
-
     .skills__line {
         display: flex;
         flex-direction: column;
@@ -1438,15 +1281,12 @@ section.formcontato {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* Alinea los elementos al inicio */
         height: auto;
-        /* Ajustar altura automáticamente según el contenido */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         transition: box-shadow 0.3s ease;
         padding: 20px;
         height: 300px;
     }
-
     .experience__info-container {
         display: flex;
         flex-direction: column;
@@ -1454,32 +1294,26 @@ section.formcontato {
         align-items: center;
         flex: 1;
     }
-
     .experience__description {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centra los elementos horizontalmente */
-        justify-content: center; /* Centra los elementos verticalmente */
-        text-align: center; /* Alinea el texto al centro */
+        align-items: center;
+        justify-content: center;
+        text-align: center; 
     }
-
     .experience__text {
         margin-left: 20px;
     }
-
     /* Estilos para los botones en dispositivos móviles */
     .experience__repo,
     .experience__demo {
-        margin-top: 10px; /* Añade espacio entre los botones */
+        margin-top: 10px; 
     }
-
     /* Estilos adicionales para los botones */
     .experience__repo button,
     .experience__demo button {
-        width: 150px; /* Ajusta el ancho de los botones */
-        height: 40px; /* Ajusta la altura de los botones */
-        font-size: 14px; /* Ajusta el tamaño del texto */
+        width: 150px; 
+        height: 40px; 
+        font-size: 14px; 
     }
-
-
 }
