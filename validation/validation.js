@@ -41,7 +41,32 @@ function toggleMenu() {
 
 
 // Definimos una función para cambiar la posición de las imágenes
+// Definimos una función para cambiar la posición de las imágenes
 function alternarPosiciones() {
+    const boxes = document.querySelectorAll('.experience__box');
+
+    boxes.forEach((box, index) => {
+        if (window.matchMedia("(max-width: 375px)").matches) {
+            // Si la pantalla es menor o igual a 375px, colocar la imagen encima de la descripción
+            box.style.flexDirection = 'column'; // Cambia la dirección del flexbox a columna
+            box.querySelector('.experience__img').style.marginRight = '0'; // Elimina el margen derecho de la imagen
+            box.querySelector('.experience__info-container').style.textAlign = 'center'; // Centra el contenido
+        } else {
+            // Restablecer la disposición original para pantallas más grandes
+            if (index > 0 && index % 2 !== 0) {
+                box.style.flexDirection = 'row-reverse';
+                box.querySelector('.experience__img').style.marginRight = '0';
+                box.querySelector('.experience__info-container').style.textAlign = 'right';
+            }
+        }
+    });
+}
+
+// Llama a la función cuando la página se carga por primera vez y al cambiar el tamaño de la ventana
+window.addEventListener('load', alternarPosiciones);
+window.addEventListener('resize', alternarPosiciones);
+
+/*function alternarPosiciones() {
     const boxes = document.querySelectorAll('.experience__box');
 
     boxes.forEach((box, index) => {
@@ -52,7 +77,7 @@ function alternarPosiciones() {
             box.querySelector('.experience__info-container').style.textAlign = 'right';
         }
     });
-}
+}*/
 
 // Llamamos a la función cuando el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
