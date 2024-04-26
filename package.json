@@ -1,0 +1,22 @@
+{
+  "name": "desafio-portafolio-v2",
+  "version": "1.0.0",
+  "description": "portafolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mariq12/desafio-portafolio-v2.git"
+  },
+  "author": "flor-maria-labanda-puchaicela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mariq12/desafio-portafolio-v2/issues"
+  },
+  "homepage": "https://github.com/Mariq12/desafio-portafolio-v2#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

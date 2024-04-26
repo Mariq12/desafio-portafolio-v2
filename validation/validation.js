@@ -41,7 +41,6 @@ function toggleMenu() {
 
 
 // Definimos una función para cambiar la posición de las imágenes
-// Definimos una función para cambiar la posición de las imágenes
 function alternarPosiciones() {
     const boxes = document.querySelectorAll('.experience__box');
 
@@ -65,19 +64,6 @@ function alternarPosiciones() {
 // Llama a la función cuando la página se carga por primera vez y al cambiar el tamaño de la ventana
 window.addEventListener('load', alternarPosiciones);
 window.addEventListener('resize', alternarPosiciones);
-
-/*function alternarPosiciones() {
-    const boxes = document.querySelectorAll('.experience__box');
-
-    boxes.forEach((box, index) => {
-        if (index > 0 && index % 2 !== 0) {
-            // Índice impar (excepto el primero): invertir disposición
-            box.style.flexDirection = 'row-reverse';
-            box.querySelector('.experience__img').style.marginRight = '0';
-            box.querySelector('.experience__info-container').style.textAlign = 'right';
-        }
-    });
-}*/
 
 // Llamamos a la función cuando el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
@@ -106,3 +92,32 @@ tema.addEventListener('click', e  => {
     tema.classList.toggle('active');
     document.body.classList.toggle('active');
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+
+        // Obtén los valores del formulario
+        var name = document.getElementById("nombre").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("mensaje").value;
+
+        // Crea un objeto JavaScript con los datos del formulario
+        var formData = {
+            "name": name,
+            "email": email,
+            "message": message
+        };
+
+        // Convierte el objeto a una cadena JSON
+        var formDataJSON = JSON.stringify(formData);
+
+        // Guarda la cadena JSON en localStorage (puedes cambiar esto según tus necesidades)
+        localStorage.setItem("formData", formDataJSON);
+
+        // Mensaje de éxito al usuario
+        alert("Mensaje enviado correctamente");
+
+        // Puedes redirigir al usuario a otra página o hacer cualquier otra acción que desees después de enviar el formulario
+    });
+});
