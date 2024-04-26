@@ -28,8 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('resize', toggleMenuDisplay); // Ejecutar al cambiar el tamaño de la pantalla
 });
 
-
-
 function toggleMenu() {
     var menuNav = document.getElementById(".menu__nav");
     if (menuNav.style.display === "block") {
@@ -38,7 +36,6 @@ function toggleMenu() {
         menuNav.style.display = "block";
     }
 }
-
 
 // Definimos una función para cambiar la posición de las imágenes
 function alternarPosiciones() {
@@ -97,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("contact-form").addEventListener("submit", function(event) {
         event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
 
-        // Obtén los valores del formulario
+        // Obtiene los valores del formulario
         var name = document.getElementById("nombre").value;
         var email = document.getElementById("email").value;
         var message = document.getElementById("mensaje").value;
@@ -114,10 +111,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Guarda la cadena JSON en localStorage (puedes cambiar esto según tus necesidades)
         localStorage.setItem("formData", formDataJSON);
-
-        // Mensaje de éxito al usuario
-        alert("Mensaje enviado correctamente");
-
-        // Puedes redirigir al usuario a otra página o hacer cualquier otra acción que desees después de enviar el formulario
     });
 });
+
+function limpiarYEnviar() {
+    limpiarCampos(); // Limpia los campos del formulario
+    document.getElementById("formcontato__form").submit(); // Envía el formulario
+}
+
+function limpiarCampos() {
+    document.getElementById("nombre").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("asunto").value = "";
+    document.getElementById("mensaje").value = "";
+}
