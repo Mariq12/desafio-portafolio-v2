@@ -786,6 +786,8 @@
                                 name="nombre"
                                 placeholder="Nombre"
                                 required
+                                minlength="3"
+                                maxlength="50"
                             >
                             <input
                                 class="formcontato__input"
@@ -793,6 +795,8 @@
                                 name="email"
                                 placeholder="E-mail"
                                 required
+                                minlength="5"
+                                maxlength="100"
                             >
                             <input
                                 class="formcontato__input"
@@ -800,6 +804,8 @@
                                 name="asunto"
                                 placeholder="Asunto"
                                 required
+                                minlength="5"
+                                maxlength="50"
                             >
                             <textarea
                                 class="formcontato__textarea"
@@ -809,6 +815,8 @@
                                 name="mensaje"
                                 placeholder="Mensaje"
                                 required
+                                minlength="10"
+                                maxlength="500"
                             ></textarea>
                             <button type="submit" class="formcontato__botao" onclick="limpiarYEnviar()">Enviar mensaje</button>
                         </form>
