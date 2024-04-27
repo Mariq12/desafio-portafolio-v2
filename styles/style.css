@@ -185,7 +185,8 @@ body.active .title__network__item .img-nav5[src*="nav5.png"] {
     display: inline-block;
 }
 body.active .menu__title,
-body.active nav ul li a {
+body.active nav ul li a,
+body.active .formcontato a {
     color: var(--cor-de-dark-tema-text);
 }
 /* Contenido principal */
@@ -233,6 +234,17 @@ body.active .formcontato__botao {
 body.active .footer {
     background: var(--cor-de-ligth-tema-box);
     color: var(--cor-de-dark-tema-text);
+}
+/* Estilo para el icono nav6 en tema claro */
+#scrollUpIconDark {
+    display: none; /* Mostrar el icono nav6 */
+}
+/* Estilo para el icono nav7 en tema oscuro */
+body.active #scrollUpIconLight {
+    display: none; /* Ocultar el icono nav7 */
+}
+body.active #scrollUpIconDark {
+    display: inline; /* Ocultar el icono nav7 */
 }
 
 /* *Sección Título */
@@ -810,6 +822,11 @@ section.formcontato {
 }
 .formcontato__botao:hover {
     background: var(--cor-de-second-gradient);
+}
+
+/* *Sección Hobbies */
+.icon-hacia__arriba img {
+    margin-right: 10px;
 }
 
 /* *Sección Footer */
