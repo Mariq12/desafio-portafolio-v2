@@ -279,7 +279,7 @@ body.active .footer {
 .title__container {
     order: 1;
     flex: 1;
-    text-align: justify;
+    text-align: center;
     margin-left: 10px;
     border-radius: 5px 100px;
 }
@@ -911,7 +911,7 @@ section.formcontato {
     .title__container {
         order: 1;
         flex: 1;
-        text-align: justify;
+        text-align: center;
         margin-left: 10px;
         margin-right: 10px;
         border-radius: 5px 100px;
