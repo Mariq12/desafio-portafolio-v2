@@ -8,11 +8,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.post('/guardar', (req, res) => {
-    const { name, email, message } = req.body;
+    const { name, email, subject, message } = req.body;
 
     const formData = {
         name,
         email,
+        subject,
         message
     };
 

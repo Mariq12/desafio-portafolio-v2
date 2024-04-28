@@ -779,11 +779,11 @@
                             Complete el siguiente formulario y me pondré en contacto con
                         usted lo antes posible.
                         </h3>
-                        <form class="formcontato__form" name="form" action="http://localhost:3000/guardar" method="POST">
+                        <form class="formcontato__form" name="form" action="http://localhost:3000/guardar" method="POST" data-formulario >
                             <input
                                 class="formcontato__input"
                                 type="text"
-                                name="nombre"
+                                name="name"
                                 placeholder="Nombre"
                                 required
                                 minlength="3"
@@ -801,7 +801,7 @@
                             <input
                                 class="formcontato__input"
                                 type="text"
-                                name="asunto"
+                                name="subject"
                                 placeholder="Asunto"
                                 required
                                 minlength="5"
@@ -812,13 +812,14 @@
                                 rows="5"
                                 cols="40"
                                 id="mensagem"
-                                name="mensaje"
+                                name="message"
                                 placeholder="Mensaje"
                                 required
                                 minlength="10"
                                 maxlength="500"
                             ></textarea>
-                            <button type="submit" class="formcontato__botao" onclick="limpiarYEnviar()">Enviar mensaje</button>
+                            <button type="submit" data-enviar class="formcontato__botao">Enviar mensaje</button>
+
                         </form>
                     </div>
                 </div>

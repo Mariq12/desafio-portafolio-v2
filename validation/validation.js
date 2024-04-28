@@ -90,38 +90,119 @@ tema.addEventListener('click', e  => {
     document.body.classList.toggle('active');
 })
 
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("contact-form").addEventListener("submit", function(event) {
-        event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
 
-        // Obtiene los valores del formulario
-        var name = document.getElementById("nombre").value;
-        var email = document.getElementById("email").value;
-        var message = document.getElementById("mensaje").value;
+// Guarda los datos en el almacenamiento local
+// BLOQUEA Y NO DEJA GUARDAR LOS DATOS EN CONTACTOS.JSON
+/*document.addEventListener("DOMContentLoaded", function() {
+    const formulario = document.querySelector("[data-formulario]");
 
-        // Crea un objeto JavaScript con los datos del formulario
-        var formData = {
-            "name": name,
-            "email": email,
-            "message": message
+    formulario.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const listaRespuestas = {
+            name: formulario.elements["name"].value,
+            email: formulario.elements["email"].value,
+            subject: formulario.elements["subject"].value,
+            message: formulario.elements["message"].value,
         };
 
-        // Convierte el objeto a una cadena JSON
-        var formDataJSON = JSON.stringify(formData);
+        // Guarda los datos en el almacenamiento local
+        localStorage.setItem("registro", JSON.stringify(listaRespuestas));
 
-        // Guarda la cadena JSON en localStorage (puedes cambiar esto según tus necesidades)
-        localStorage.setItem("formData", formDataJSON);
+        // Redirige a otra página
+        window.location.href = "./index.html";
     });
+});*/
+
+/*function guardarDatos() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+
+    localStorage.setItem("name", name);
+    localStorage.setItem("email", email);
+    localStorage.setItem("subject", subject);
+    localStorage.setItem("message", message);
+}
+
+guardarDatos();*/
+
+// *Cargar datos si están presentes en el almacenamiento local
+/*document.addEventListener("DOMContentLoaded", function() {
+    const formulario = document.querySelector("[data-formulario]");
+
+    formulario.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const name = formulario.elements["name"].value;
+        const email = formulario.elements["email"].value;
+        const subject = formulario.elements["subject"].value;
+        const message = formulario.elements["message"].value;
+
+        // Guarda los datos en el almacenamiento local
+        localStorage.setItem("name", name);
+        localStorage.setItem("email", email);
+        localStorage.setItem("subject", subject);
+        localStorage.setItem("message", message);
+
+        // Redirige a otra página
+        window.location.href = "./index.html";
+    });
+
+    // Cargar datos si están presentes en el almacenamiento local
+    const nameStored = localStorage.getItem("name");
+    const emailStored = localStorage.getItem("email");
+    const subjectStored = localStorage.getItem("subject");
+    const messageStored = localStorage.getItem("message");
+
+    if (nameStored) {
+        formulario.elements["name"].value = nameStored;
+    }
+    if (emailStored) {
+        formulario.elements["email"].value = emailStored;
+    }
+    if (subjectStored) {
+        formulario.elements["subject"].value = subjectStored;
+    }
+    if (messageStored) {
+        formulario.elements["message"].value = messageStored;
+    }
 });
+*/
 
-function limpiarYEnviar() {
-    limpiarCampos(); // Limpia los campos del formulario
-    document.getElementById("formcontato__form").submit(); // Envía el formulario
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const formulario = document.querySelector("[data-formulario]");
 
-function limpiarCampos() {
-    document.getElementById("nombre").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("asunto").value = "";
-    document.getElementById("mensaje").value = "";
-}
+    function guardarDatos() {
+        const name = formulario.elements["name"].value;
+        const email = formulario.elements["email"].value;
+        const subject = formulario.elements["subject"].value;
+        const message = formulario.elements["message"].value;
+
+        localStorage.setItem("name", name);
+        localStorage.setItem("email", email);
+        localStorage.setItem("subject", subject);
+        localStorage.setItem("message", message);
+    }
+
+    formulario.addEventListener('input', guardarDatos);
+
+    const nameStored = localStorage.getItem("name");
+    const emailStored = localStorage.getItem("email");
+    const subjectStored = localStorage.getItem("subject");
+    const messageStored = localStorage.getItem("message");
+
+    if (nameStored) {
+        formulario.elements["name"].value = nameStored;
+    }
+    if (emailStored) {
+        formulario.elements["email"].value = emailStored;
+    }
+    if (subjectStored) {
+        formulario.elements["subject"].value = subjectStored;
+    }
+    if (messageStored) {
+        formulario.elements["message"].value = messageStored;
+    }
+});
