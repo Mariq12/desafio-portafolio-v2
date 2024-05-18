@@ -855,6 +855,16 @@ section.formcontato {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+.mensaje-error {
+    display: block;
+    margin-top: 5px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: .925rem;
+    color: red;
+}
+
+
 /* ***Sección Media Queries*** */
 
 /* *** Estilos para dispositivos con ancho mínimo de 1290px *** */

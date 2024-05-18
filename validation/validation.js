@@ -1,3 +1,8 @@
+import { tiposError, mensajes } from "./customErrors.js";
+
+const tema = document.querySelector('.menu__list__item-tema');
+const camposDeFormulario = document.querySelectorAll("[required");
+
 document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.querySelector('.menu__toggle');
     const menuNav = document.querySelector('.menu__nav'); // Seleccionar el contenedor del menú
@@ -83,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
     configurarEstilosInfoContainers();
 });
 
-const tema = document.querySelector('.menu__list__item-tema');
+
 
 tema.addEventListener('click', e  => {
     tema.classList.toggle('active');
@@ -125,4 +130,42 @@ document.addEventListener("DOMContentLoaded", function() {
     if (messageStored) {
         formulario.elements["message"].value = messageStored;
     }
+});
+
+// *Validación de formulario
+function verificarCampo(campo) {
+    let mensaje = "";
+    campo.setCustomValidity("");
+
+    // Validación personalizada
+    if (campo.name === "name") {
+        if (!campo.validity.valid) {
+            mensaje = mensajes.name[campo.validationMessage] || mensajes.name.valueMissing;
+        }
+    } else if (campo.name === "email") {
+        if (!campo.validity.valid) {
+            mensaje = mensajes.email[campo.validationMessage] || mensajes.email.valueMissing;
+        }
+    } else if (campo.name === "subject" || campo.name === "message") {
+        if (!campo.validity.valid) {
+            mensaje = mensajes[campo.name][campo.validationMessage] || mensajes[campo.name].valueMissing;
+        }
+    }
+
+    const mensajeError = campo.parentNode.querySelector(".mensaje-error");
+    const validarInputCheck = campo.checkValidity();
+
+    if (!validarInputCheck) {
+        campo.setCustomValidity(mensaje || "Por favor, complete este campo correctamente.");
+        campo.reportValidity(); // Mostrar el mensaje de validación personalizado
+        mensajeError.textContent = mensaje || ""; // Mostrar el mensaje de error personalizado
+    } else {
+        mensajeError.textContent = "";
+    }
+}
+
+
+camposDeFormulario.forEach(campo => {
+    campo.addEventListener("blur", () => verificarCampo(campo));
+    campo.addEventListener("invalid", () => verificarCampo(campo));
 });
