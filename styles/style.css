@@ -461,7 +461,7 @@ body.active #scrollUpIconDark {
     margin-top: auto;
 }
 
-/* *Sección Hobbies */
+/* *-----Sección Hobbies----- */
 .hobbies {
     display: flex;
     justify-content: center;
@@ -491,9 +491,10 @@ body.active #scrollUpIconDark {
 }
 .hobbies__line {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 20px;
     width: 100%;
     margin-right: 30px;
     margin-left: 30px;
@@ -986,26 +987,6 @@ section.formcontato {
         transition: transform 0.3s ease-in-out;
     }
 
-    .hobbies__line {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-right: 30px;
-        margin-left: 30px;
-    }
-    .hobbies__box {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        width: 175px;
-        height: 130px;
-        background: var(--cor-de-first-section);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: box-shadow 0.3s ease;
-    }
     .academic__title {
         text-align: center;
         font-size: 28px;    
@@ -1089,20 +1070,16 @@ section.formcontato {
         z-index: 1;
         background: var(--cor-de-hover-menu);
     }
-        /* *Sección Skills */
-        .skills__box {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 155px;
-            height: 140px;
-            margin: 5px;
-            background: var(--cor-de-first-section);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: box-shadow 0.3s ease;
-        }
-    
+    /* *Sección Skills */
+    .skills__box {
+        width: 155px;
+        height: 140px;
+    }
+    /* *Sección Hobbies */
+    .hobbies__box {
+        width: 155px;
+        height: 140px;
+    }
 }
 
 /* *Dispositivo Móvil 412 */
@@ -1173,20 +1150,6 @@ section.formcontato {
 @media only screen and (max-width: 375px) {
     .menu__nav {
         width: 38%;
-    }
-
-
-
-
-
-    .hobbies__line {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-right: 30px;
-        margin-left: 30px;
     }
 
     /* *Sección Experiencia */
