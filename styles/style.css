@@ -865,10 +865,10 @@ section.formcontato {
 
 .mensaje-error {
     display: block;
-    margin-top: 5px;
+    margin-bottom: 1rem;
     font-weight: 400;
     font-style: italic;
-    font-size: .925rem;
+    font-size: clamp(0.8rem, 1.5vw, 0.925rem);
     color: red;
 }
 
@@ -881,7 +881,6 @@ section.formcontato {
     .menu__toggle {
         margin-right: 20px;
     }
-    /* Estilo para el menú de navegación */
     .menu__nav {
         display: none;
         width: 15%;
@@ -925,7 +924,6 @@ section.formcontato {
         color: var(--cor-de-texto);
         font-weight: bold;
     }
-    /* Mostrar el menú principal cuando tiene la clase 'show' */
     .menu__nav.show {
         display: block;
     }

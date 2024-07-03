@@ -1,19 +1,17 @@
 import { mensajes } from "./customErrors.js";
 
 const tema = document.querySelector('.menu__list__item-tema');
-const camposDeFormulario = document.querySelectorAll("[required");
+const camposDeFormulario = document.querySelectorAll("[required]");
 
 document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.querySelector('.menu__toggle');
     const menuNav = document.querySelector('.menu__nav'); 
     const menuList = document.querySelector('.menu__list');
 
-    // Función para abrir/cerrar el menú al hacer clic en el icono de menú
     menuToggle.addEventListener('click', function () {
         menuNav.style.display = menuNav.style.display === 'block' ? 'none' : 'block';
     });
 
-    // Función para gestionar la visualización del menú y el icono basado en el ancho de la pantalla
     function toggleMenuDisplay() {
         if (window.matchMedia("(max-width: 1339px)").matches) {
             menuNav.style.display = 'none';
@@ -28,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function toggleMenu() {
-    var menuNav = document.getElementById(".menu__nav");
+    var menuNav = document.querySelector(".menu__nav");
     if (menuNav.style.display === "block") {
         menuNav.style.display = "none";
     } else {
@@ -36,7 +34,6 @@ function toggleMenu() {
     }
 }
 
-// Definimos una función para cambiar la posición de las imágenes
 function alternarPosiciones() {
     const boxes = document.querySelectorAll('.experience__box');
 
@@ -55,28 +52,18 @@ function alternarPosiciones() {
     });
 }
 
-// Llama a la función cuando la página se carga por primera vez y al cambiar el tamaño de la ventana
 window.addEventListener('load', alternarPosiciones);
 window.addEventListener('resize', alternarPosiciones);
 
-// Llamamos a la función cuando el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
     alternarPosiciones();
-});
-
-
-
-// Llamamos a la función cuando el DOM esté completamente cargado
-document.addEventListener('DOMContentLoaded', () => {
-    configurarEstilosInfoContainers();
 });
 
 tema.addEventListener('click', e  => {
     tema.classList.toggle('active');
     document.body.classList.toggle('active');
-})
+});
 
-// *Guarda los datos en el almacenamiento local localStorage
 document.addEventListener("DOMContentLoaded", function() {
     const formulario = document.querySelector("[data-formulario]");
 
@@ -113,39 +100,40 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-// *Validación de formulario
 function verificarCampo(campo) {
     let mensaje = "";
     campo.setCustomValidity("");
 
-    // Validación personalizada
     if (campo.name === "name") {
         if (!campo.validity.valid) {
-            mensaje = mensajes.name[campo.validationMessage] || mensajes.name.valueMissing;
+            mensaje = mensajes.name[campo.validity.valueMissing ? "valueMissing" : "tooShort"];
         }
     } else if (campo.name === "email") {
         if (!campo.validity.valid) {
-            mensaje = mensajes.email[campo.validationMessage] || mensajes.email.valueMissing;
+            mensaje = mensajes.email[campo.validity.valueMissing ? "valueMissing" : "typeMismatch"];
         }
     } else if (campo.name === "subject" || campo.name === "message") {
         if (!campo.validity.valid) {
-            mensaje = mensajes[campo.name][campo.validationMessage] || mensajes[campo.name].valueMissing;
+            mensaje = mensajes[campo.name][campo.validity.valueMissing ? "valueMissing" : "tooShort"];
         }
     }
 
     const mensajeError = campo.parentNode.querySelector(".mensaje-error");
-    const validarInputCheck = campo.checkValidity();
+    if (mensajeError) {
+        mensajeError.textContent = mensaje;
+    }
 
-    if (!validarInputCheck) {
-        campo.setCustomValidity(mensaje || "Por favor, complete este campo correctamente.");
-        campo.reportValidity(); 
-        mensajeError.textContent = mensaje || "";
+    if (mensaje) {
+        campo.setCustomValidity(mensaje);
     } else {
-        mensajeError.textContent = "";
+        campo.setCustomValidity("");
     }
 }
 
 camposDeFormulario.forEach(campo => {
-    campo.addEventListener("blur", () => verificarCampo(campo));
-    campo.addEventListener("invalid", () => verificarCampo(campo));
+    campo.addEventListener("blur", (e) => verificarCampo(e.target));
+    campo.addEventListener("invalid", (e) => {
+        e.preventDefault();
+        verificarCampo(e.target);
+    });
 });
