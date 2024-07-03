@@ -399,7 +399,7 @@ body.active #scrollUpIconDark {
     text-align: justify;
 }
 
-/* *Sección Skills */
+/* *-----Sección Skills----- */
 .skills {
     display: flex;
     justify-content: center;
@@ -428,9 +428,10 @@ body.active #scrollUpIconDark {
 }
 .skills__line {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 20px;
     width: 100%;
     margin-right: 30px;
     margin-left: 30px;
@@ -984,28 +985,7 @@ section.formcontato {
         margin-left: 40px;
         transition: transform 0.3s ease-in-out;
     }
-    .skills__line {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-right: 30px;
-        margin-left: 30px;
-    }
-    /* Estilos adicionales para tarjetas de habilidades */
-    .skills__box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 185px;
-        height: 140px;
-        margin: 5px;
-        background: var(--cor-de-first-section);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: box-shadow 0.3s ease;
-    }
+
     .hobbies__line {
         display: flex;
         flex-direction: column;
@@ -1109,6 +1089,20 @@ section.formcontato {
         z-index: 1;
         background: var(--cor-de-hover-menu);
     }
+        /* *Sección Skills */
+        .skills__box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 155px;
+            height: 140px;
+            margin: 5px;
+            background: var(--cor-de-first-section);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease;
+        }
+    
 }
 
 /* *Dispositivo Móvil 412 */
@@ -1171,22 +1165,21 @@ section.formcontato {
     }
 }
 
+
+
+
 /* *Dispositivo Móvil */
 /* *Media queries para dispositivos Celulares */
 @media only screen and (max-width: 375px) {
     .menu__nav {
         width: 38%;
     }
+
+
+
+
+
     .hobbies__line {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-right: 30px;
-        margin-left: 30px;
-    }
-    .skills__line {
         display: flex;
         flex-direction: column;
         justify-content: center;
