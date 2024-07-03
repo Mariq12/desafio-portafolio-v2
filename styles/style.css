@@ -52,25 +52,23 @@ section.menu {
     z-index: 1000;
     background: var(--cor-de-first-section);
     height: 88px;
-    padding: 0 20px;
 }
 .menu__header {
     width: 100%;
-    max-width: 85%;
+    max-width: 90%;
     height: 88px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: var(--cor-de-first-section);
     margin-top: 0px;
-    padding: 0 20px;
     margin: 0;
 }
 /* Estilo para el logo en el encabezado */
 .menu__logo {
     width: 70px;
     height: 40px;
-    margin-right: 10px;
+    margin-right: 0;
 }
 .menu__title {
     margin-right: auto;

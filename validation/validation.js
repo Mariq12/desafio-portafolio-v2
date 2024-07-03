@@ -1,36 +1,30 @@
-import { tiposError, mensajes } from "./customErrors.js";
+import { mensajes } from "./customErrors.js";
 
 const tema = document.querySelector('.menu__list__item-tema');
 const camposDeFormulario = document.querySelectorAll("[required");
 
 document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.querySelector('.menu__toggle');
-    const menuNav = document.querySelector('.menu__nav'); // Seleccionar el contenedor del menú
+    const menuNav = document.querySelector('.menu__nav'); 
     const menuList = document.querySelector('.menu__list');
 
     // Función para abrir/cerrar el menú al hacer clic en el icono de menú
     menuToggle.addEventListener('click', function () {
-        // Toggle para mostrar/ocultar el menú completo al hacer clic en el icono de menú
         menuNav.style.display = menuNav.style.display === 'block' ? 'none' : 'block';
     });
 
     // Función para gestionar la visualización del menú y el icono basado en el ancho de la pantalla
     function toggleMenuDisplay() {
         if (window.matchMedia("(max-width: 1339px)").matches) {
-            // Pantalla de 900px o menos: ocultar menú completo y mostrar solo el icono
             menuNav.style.display = 'none';
-            menuToggle.style.display = 'flex'; // Mostrar icono de menú
+            menuToggle.style.display = 'flex';
         } else {
-            // Pantalla mayor a 900px: mostrar menú completo y ocultar el icono
             menuNav.style.display = 'flex';
-            menuToggle.style.display = 'none'; // Ocultar icono de menú
+            menuToggle.style.display = 'none';
         }
     }
-
-    // Ejecutar la función al cargar la página y cada vez que cambie el tamaño de la pantalla
-    toggleMenuDisplay(); // Ejecutar al cargar la página
-
-    window.addEventListener('resize', toggleMenuDisplay); // Ejecutar al cambiar el tamaño de la pantalla
+    toggleMenuDisplay(); 
+    window.addEventListener('resize', toggleMenuDisplay);
 });
 
 function toggleMenu() {
@@ -48,12 +42,10 @@ function alternarPosiciones() {
 
     boxes.forEach((box, index) => {
         if (window.matchMedia("(max-width: 375px)").matches) {
-            // Si la pantalla es menor o igual a 375px, colocar la imagen encima de la descripción
-            box.style.flexDirection = 'column'; // Cambia la dirección del flexbox a columna
-            box.querySelector('.experience__img').style.marginRight = '0'; // Elimina el margen derecho de la imagen
-            box.querySelector('.experience__info-container').style.textAlign = 'center'; // Centra el contenido
+            box.style.flexDirection = 'column'; 
+            box.querySelector('.experience__img').style.marginRight = '0'; 
+            box.querySelector('.experience__info-container').style.textAlign = 'center'; 
         } else {
-            // Restablecer la disposición original para pantallas más grandes
             if (index > 0 && index % 2 !== 0) {
                 box.style.flexDirection = 'row-reverse';
                 box.querySelector('.experience__img').style.marginRight = '0';
@@ -77,9 +69,9 @@ function configurarEstilosInfoContainers() {
     const infoContainers = document.querySelectorAll('.experience__info-container');
 
     infoContainers.forEach(container => {
-        container.style.textAlign = 'left'; // Siempre alinear el contenido a la izquierda
-        container.style.width = '368px'; // Ancho fijo para el contenedor
-        container.style.height = '112px'; // Altura fija para el contenedor
+        container.style.textAlign = 'left';
+        container.style.width = '368px'; 
+        container.style.height = '112px';
     });
 }
 
@@ -87,8 +79,6 @@ function configurarEstilosInfoContainers() {
 document.addEventListener('DOMContentLoaded', () => {
     configurarEstilosInfoContainers();
 });
-
-
 
 tema.addEventListener('click', e  => {
     tema.classList.toggle('active');
@@ -157,13 +147,12 @@ function verificarCampo(campo) {
 
     if (!validarInputCheck) {
         campo.setCustomValidity(mensaje || "Por favor, complete este campo correctamente.");
-        campo.reportValidity(); // Mostrar el mensaje de validación personalizado
-        mensajeError.textContent = mensaje || ""; // Mostrar el mensaje de error personalizado
+        campo.reportValidity(); 
+        mensajeError.textContent = mensaje || "";
     } else {
         mensajeError.textContent = "";
     }
 }
-
 
 camposDeFormulario.forEach(campo => {
     campo.addEventListener("blur", () => verificarCampo(campo));
