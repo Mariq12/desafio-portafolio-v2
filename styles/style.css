@@ -648,7 +648,7 @@ body.active #scrollUpIconDark {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 .experience__img {
-    aspect-ratio: 1327/697;
+    aspect-ratio: 16/9;
     height: 170px;
     width: auto;
     margin-right: 20px;
