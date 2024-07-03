@@ -627,7 +627,7 @@ body.active #scrollUpIconDark {
 }
 .experience__section__title {
     text-align: center;
-    font-size: 32px;
+    font-size: clamp(1.5rem, 2vw, 2rem);
     font-weight: bold;
     margin-bottom: 20px;
     padding-top: 35px;
@@ -637,7 +637,6 @@ body.active #scrollUpIconDark {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    align-items: flex-start;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease;
@@ -647,43 +646,48 @@ body.active #scrollUpIconDark {
 .experience__box:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+.experience__box a {
+    margin-right: 10px;
+}
 .experience__img {
     aspect-ratio: 16/9;
-    height: 170px;
+    height: clamp(4.375rem, 20vw, 12.5rem);
     width: auto;
-    margin-right: 20px;
+    margin: 20px;
     border-radius: 10px;
+    border: none;
 }
 .experience__img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 .experience__info-container {
     flex: 1;
-    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 .experience__title {
-    font-size: 22px;
+    font-size: clamp(1rem, 1.5vw, 1.375rem);
     font-weight: bold;
+    text-align: center;
 }
 .experience__text {
-    font-size: 14px;
+    font-size: clamp(0.6rem, 1.5vw, 0.875rem);
     font-weight: normal;
+    text-align: center;
 }
 .experience__description {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;    
     width: 100%;
+
 }
 /* Estilos para los botones (repositorio y demo) */
-.experience__repo,
-.experience__demo {
-    font-size: 16px;
-    font-weight: normal;
-    background: var(--cor-de-first-gradient);
-    margin: 10px;
-    border-radius: 10px;
-}
 .experiencia__botao--repo,
 .experience__botao--demo,
 button {
@@ -697,9 +701,10 @@ button {
     color: var(--cor-de-second-texto);
     font-size: 14px;
     position: relative;
-    background-color: transparent;
+    background: var(--cor-de-first-gradient);
     transition: 0.2s ease-in-out;
     box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.7);
+    margin: 10px;
 }
 .experiencia__botao--repo:hover,
 .experience__botao--demo:hover {
@@ -937,121 +942,49 @@ section.formcontato {
     }
     .title__profile {
         order: 1;
-        margin: auto;
-        margin-bottom: 10px;
     }
+
 }
 
 @media (max-width: 768px) {
     .menu__nav {
         width: 20%;
     }
-    .title__div {
-        flex-direction: column;
-        margin-top: 20%;
-        padding-top: 20px;
-    }
     .title__profile {
         order: 1;
-        margin: auto;
-        margin-bottom: 10px;
-    }
-    .title__bio {
-        margin-right: 89px;
-        margin-left: 30px;
-        padding-top: 50px;
-        padding: 10px;
-    }
-    
-    .title__subsection {
-        margin-bottom: 16px;
-        margin-left: 40px;
-        margin-right: 50px;
-    }
-    .title__network {
-        padding-left: 10px;
     }
     .title__network__item a {
         font-size: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .title__network__item a img {
-        width: 30px;
-        height: 30px;
-        margin: 10px;
-        margin-left: 40px;
-        transition: transform 0.3s ease-in-out;
     }
 
-    .academic__title {
-        text-align: center;
-        font-size: 28px;    
-    }
+    
 
     /* *Sección Experiencia */
-    .container {
-        width: 100%;
-        max-width: 100%;
-    }
-    .experience__section__title {
-        text-align: center;
-        font-size: 30px;
-        font-weight: bold;
-        margin-bottom: 15px;
-    }
-    .experience__box {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 280px;
+    .experience__title,
+    .experience__text {
+        margin: 5px;
+        padding: 0;
     }
     .experience__img {
-        aspect-ratio: 1327/697;
-        height: 120px;
-        margin-left: 0;
+        margin: 0;
     }
-    .experience__info-container {
-        flex: 1;
-        width: 368px;
-        height: 112px;
-        margin-left: 40px;
-        margin-right: 20px;
-    }
-    .experience__title {
-        font-size: 16px;
-        font-weight: bold;
-    }
-    .experience__text {
-        font-size: 14px;
-        font-weight: normal;
-        text-align: justify;
-    }
-    .experience__repo,
-    .experience__demo {
-        display: block;
-        margin-bottom: 10px;
+    .experience__description {
+        margin: 0;
+        gap: 0.5rem;
+        
     }
     .experiencia__botao--repo,
     .experience__botao--demo {
-        display: block;
         width: 100%;
-        padding: 8px 12px;
-        font-size: 12px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 4px;
-        background: var(--cor-de-first-gradient);
+        font-size: 10px;
+        padding: 5px;
+        margin: 0;
     }
-    .experiencia__botao--repo:hover,
-    .experience__botao--demo:hover {
-        background-color: #e0e0e0;
-        cursor: pointer;
-    }
+
     .formcontato__img {
         display: none;
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -1081,55 +1014,12 @@ section.formcontato {
     .menu__nav {
         width: 32%;
     }
-    .experience__img {
-        aspect-ratio: 1327/697;
-        height: 80px;
-        margin-left: 0;
-    }
-    .experience__info-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-        margin-left: 0;
-    }
-    .experience__description {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center; 
-    }
-    /* Estilos adicionales para los botones */
-    .experience__repo button,
-    .experience__demo button {
-        width: 150px; 
-        height: 40px; 
-        font-size: 14px;
-    }
 }
 
 /* *Dispositivo Móvil 414 */
 @media only screen and (max-width: 414px) {
     .menu__nav {
         width: 35%;
-    }
-    .experience__img {
-        aspect-ratio: 1327/697;
-        height: 70px;
-        margin-left: 0;
-    }
-    .experience__info-container {
-        flex: 1; /* Contenido ocupará espacio restante */
-        width: 368px;
-        height: 112px;
-        margin-left:10px;
-        margin-right: 20px;
-    }
-    .experience__text,
-    .experience__title {
-        text-align: center;
     }
     .formcontato__form {
         padding-left: 5px;
@@ -1144,50 +1034,6 @@ section.formcontato {
 @media only screen and (max-width: 375px) {
     .menu__nav {
         width: 38%;
-    }
-
-    /* *Sección Experiencia */
-    .experience__section__title {
-        font-size: 24px;
-    }
-    .experience__box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: box-shadow 0.3s ease;
-        padding: 20px;
-        height: 300px;
-    }
-    .experience__info-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-    }
-    .experience__description {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center; 
-    }
-    .experience__text {
-        margin-left: 20px;
-    }
-    /* Estilos para los botones en dispositivos móviles */
-    .experience__repo,
-    .experience__demo {
-        margin-top: 10px; 
-    }
-    /* Estilos adicionales para los botones */
-    .experience__repo button,
-    .experience__demo button {
-        width: 150px; 
-        height: 40px; 
-        font-size: 14px; 
+    
     }
 }

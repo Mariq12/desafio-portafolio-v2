@@ -64,16 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     alternarPosiciones();
 });
 
-// Definimos una función para configurar los estilos de los contenedores de experiencia
-function configurarEstilosInfoContainers() {
-    const infoContainers = document.querySelectorAll('.experience__info-container');
 
-    infoContainers.forEach(container => {
-        container.style.textAlign = 'left';
-        container.style.width = '368px'; 
-        container.style.height = '112px';
-    });
-}
 
 // Llamamos a la función cuando el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
