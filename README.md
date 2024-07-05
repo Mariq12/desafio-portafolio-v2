@@ -33,6 +33,35 @@ Dentro del proyecto se crea los archivos:
 a mismo nivel que el index.html.
    El archivo`contactos.json` debe tener [].
 
+## Uso de EmailJS
+Para enviar los datos del formulario de contacto al correo electrónico se utiliza [EmailJS](https://www.emailjs.com/).
+### Pasos
+
+1. Agregar en el **index.html** el script:
+
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+2. En [EmailJS](https://www.emailjs.com/), crear la plantilla con los nombres del id de cada campo. En este caso se tiene los campos con nombre de id:
+
+            id="name"
+            id="email"
+            id="subject"
+            id="message"
+
+3. Agregar en el **index.html** el script de la librería [Sweetalert2](https://sweetalert2.github.io/), para crear los mensajes de confirmación:
+
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+4. En el formulario agregarle un id:
+
+            id="frmEmail"
+5. Crear un archivo con la configuración, donde se agregan los datos que se obtienen al abrir la cuenta en [EmailJS](https://www.emailjs.com/), en 
+
+            data/configEmailJS.js
+
+            const serviceId = 'service_XXXXX'; // Sustituye con tu service ID de EmailJS
+            const templateId = 'template_XXXXX'; // Sustituye con tu template ID de EmailJS
+            const apikey = 'XXXXXX'; // Sustituye con tu API key de EmailJS
 
 ## Estructura del proyecto:
 
@@ -44,6 +73,8 @@ a mismo nivel que el index.html.
       │   |── image
       │   |     └── experiencia
       |   └── logos  
+      |── data
+      │   └── configEmailJS.js
       |── node_modules 
       |── styles
       |   └── style.css  
