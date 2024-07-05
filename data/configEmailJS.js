@@ -1,5 +1,3 @@
-// data/configEmailJS.js
-
 const frmEmail = document.getElementById('frmEmail');
 
 const serviceId = window.EMAILJS_SERVICE_ID;
