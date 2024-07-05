@@ -1,8 +1,10 @@
+// data/configEmailJS.js
+
 const frmEmail = document.getElementById('frmEmail');
 
-const serviceId = window.EMAILJS_SERVICE_ID;
-const templateId = window.EMAILJS_TEMPLATE_ID;
-const apikey = window.EMAILJS_API_KEY;
+const serviceId = process.env.EMAILJS_SERVICE_ID;
+const templateId = process.env.EMAILJS_TEMPLATE_ID;
+const apikey = process.env.EMAILJS_API_KEY;
 
 console.log(`Service ID: ${serviceId}`);
 console.log(`Template ID: ${templateId}`);
