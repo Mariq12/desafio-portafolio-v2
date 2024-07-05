@@ -1,9 +1,8 @@
 const frmEmail = document.getElementById('frmEmail');
 
-// Definir las variables de entorno (reemplazar con las reales al desplegar)
-const serviceId = window.EMAILJS_SERVICE_ID;
-const templateId = window.EMAILJS_TEMPLATE_ID;
-const apikey = window.EMAILJS_API_KEY;
+const serviceId = process.env.EMAILJS_SERVICE_ID;
+const templateId = process.env.EMAILJS_TEMPLATE_ID;
+const apikey = process.env.EMAILJS_API_KEY;
 
 console.log(`Service ID: ${serviceId}`);
 console.log(`Template ID: ${templateId}`);
@@ -14,6 +13,11 @@ frmEmail.addEventListener('submit', sendEmail);
 function sendEmail(e) {
     e.preventDefault();
 
+    if (!serviceId || !templateId || !apikey) {
+        console.error('Variables de entorno no definidas correctamente.');
+        return;
+    }
+
     emailjs.init(serviceId);
 
     emailjs.sendForm(serviceId, templateId, frmEmail, apikey)
@@ -22,6 +26,7 @@ function sendEmail(e) {
         frmEmail.reset(); // Reinicia el formulario después de enviar
     })
     .catch((error) => {
+        console.error('Error al enviar el formulario:', error);
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
