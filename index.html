@@ -854,6 +854,11 @@
         </div>
         <!-- Script del documento JavaScript -->
         <script type="module" src="./validation/validation.js"></script>
+        <script>
+            window.EMAILJS_SERVICE_ID = '<%= process.env.EMAILJS_SERVICE_ID %>';
+            window.EMAILJS_TEMPLATE_ID = '<%= process.env.EMAILJS_TEMPLATE_ID %>';
+            window.EMAILJS_API_KEY = '<%= process.env.EMAILJS_API_KEY %>';
+        </script>
         <script src="./data/configEmailJS.js"></script>
     </body>
 </html>
