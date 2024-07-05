@@ -5,6 +5,11 @@ const serviceId = process.env.EMAILJS_SERVICE_ID;
 const templateId = process.env.EMAILJS_TEMPLATE_ID;
 const apikey = process.env.EMAILJS_API_KEY;
 
+console.log(`Service ID: ${serviceId}`);
+console.log(`Template ID: ${templateId}`);
+console.log(`API Key: ${apikey}`);
+
+
 
 function sendEmail(e) {
     e.preventDefault()
