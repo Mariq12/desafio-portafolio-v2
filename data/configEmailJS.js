@@ -1,12 +1,8 @@
 const frmEmail = document.getElementById('frmEmail');
 
-const serviceId = window.EMAILJS_SERVICE_ID;
-const templateId = window.EMAILJS_TEMPLATE_ID;
-const apikey = window.EMAILJS_API_KEY;
-
-console.log(`Service ID: ${serviceId}`);
-console.log(`Template ID: ${templateId}`);
-console.log(`API Key: ${apikey}`);
+const serviceId = 'service_XXXXX';
+const templateId = 'template_XXXXX';
+const apikey = 'XXXXXX'; 
 
 frmEmail.addEventListener('submit', sendEmail);
 

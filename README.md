@@ -55,13 +55,18 @@ Para enviar los datos del formulario de contacto al correo electrónico se utili
 4. En el formulario agregarle un id:
 
             id="frmEmail"
-5. Crear un archivo con la configuración, donde se agregan los datos que se obtienen al abrir la cuenta en [EmailJS](https://www.emailjs.com/), en 
+5. Crear un archivo `configEmailJS.js` con la configuración, donde se agregan los datos que se obtienen al abrir la cuenta en [EmailJS](https://www.emailjs.com/), en 
 
             data/configEmailJS.js
 
-            const serviceId = 'service_XXXXX'; // Sustituye con tu service ID de EmailJS
-            const templateId = 'template_XXXXX'; // Sustituye con tu template ID de EmailJS
-            const apikey = 'XXXXXX'; // Sustituye con tu API key de EmailJS
+*Datos:*
+            const serviceId = 'service_XXXXX'; // Sustituye con el service ID de EmailJS
+            const templateId = 'template_XXXXX'; // Sustituye con el template ID de EmailJS
+            const apikey = 'XXXXXX'; // Sustituye con el API key de EmailJS
+
+6. Agregar al index.html el script:
+
+            <script src="./data/configEmailJS.js"></script>
 
 ## Estructura del proyecto:
 
